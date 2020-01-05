@@ -23,24 +23,5 @@ Universidade Estadual de Maringá / Centro de Tecnologia / Maringá, PR.
 Resumo Óleos vegetais podem ser utilizados como fonte de biomassa para a produção de combustíveis renováveis, os produtos obtidos a partir destes óleos têm baixa concentração de contaminantes e são potenciais substitutos a combustíveis obtidos a partir do petróleo.</description>
     </item>
     
-    <item>
-      <title>Instruções para utilização de Markdown</title>
-      <link>https://rafaelbeloduarte.github.io/posts/mardown/</link>
-      <pubDate>Sat, 04 Jan 2020 17:10:06 -0300</pubDate>
-      
-      <guid>https://rafaelbeloduarte.github.io/posts/mardown/</guid>
-      <description>Headers # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6  Alternativamente, para H1 e H2, em estilo sublinhado: Alt-H1 ====== Alt-H2 ------ H1 H2 H3 H4 H5 H6 Alternativamente, para H1 e H2, em estilo sublinhado:
-Alt-H1 Alt-H2 </description>
-    </item>
-    
-    <item>
-      <title>Meu primeiro post de teste</title>
-      <link>https://rafaelbeloduarte.github.io/posts/primeiro-post/</link>
-      <pubDate>Sat, 04 Jan 2020 16:53:17 -0300</pubDate>
-      
-      <guid>https://rafaelbeloduarte.github.io/posts/primeiro-post/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
