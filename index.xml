@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rafael Belo Duarte</title>
+    <link>http://www.example.com/</link>
+    <description>Recent content on Rafael Belo Duarte</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Sat, 04 Jan 2020 19:04:44 -0300</lastBuildDate>
+    
+	<atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dimensionamento de coluna de destilação para separação de hidrocarbonetos obtidos a partir  da desoxigenação de Ácido oleico com catalisador aerogel</title>
+      <link>http://www.example.com/posts/torre_destilacao/</link>
+      <pubDate>Sat, 04 Jan 2020 19:04:44 -0300</pubDate>
+      
+      <guid>http://www.example.com/posts/torre_destilacao/</guid>
+      <description>Rafael Belo Duarte (PIBIC/CNPq/FA/Uem), João L. C. W. Pimenta, Onélia Aparecida Andreo dos Santos (Coorientadora), Luiz Mário de Matos Jorge (Orientador).
+Universidade Estadual de Maringá / Centro de Tecnologia / Maringá, PR.
+Área: Engenharia Química. Subárea: Operações industriais e equipamentos para Engenharia Química.
+Resumo Óleos vegetais podem ser utilizados como fonte de biomassa para a produção de combustíveis renováveis, os produtos obtidos a partir destes óleos têm baixa concentração de contaminantes e são potenciais substitutos a combustíveis obtidos a partir do petróleo.</description>
+    </item>
+    
+    <item>
+      <title>Currículo</title>
+      <link>http://www.example.com/cv/</link>
+      <pubDate>Sat, 04 Jan 2020 18:06:21 -0300</pubDate>
+      
+      <guid>http://www.example.com/cv/</guid>
+      <description>Rafael Belo Duarte Brasileiro, solteiro, 25 anos
+E-mail: rafaelbeloduarte@protonmail.com (rafaelbeloduarte@pm.me)
+Linkedin: https://br.linkedin.com/in/rafaelbeloduarte
+QUALIFICAÇÕES   Estudante do quinto ano de Engenharia Química na Universidade Estadual de Maringá.
+  Intercâmbio de dois anos na China, com curso de mandarim na Universidade Tongji em Xangai, e graduação sanduíche na Universidade de Wuhan.
+  Conhecimentos em Python, C++ e sistemas de controle.
+  Experiência com cromatografia gasosa adquirida em projeto de iniciação científica.</description>
+    </item>
+    
+    <item>
+      <title>Contato</title>
+      <link>http://www.example.com/contato/</link>
+      <pubDate>Sat, 04 Jan 2020 17:10:06 -0300</pubDate>
+      
+      <guid>http://www.example.com/contato/</guid>
+      <description>E-mail Protonmail:
+rafaelbeloduarte@protonmail.com (rafaelbeloduarte@pm.me)
+Linkedin https://br.linkedin.com/in/rafaelbeloduarte</description>
+    </item>
+    
+    <item>
+      <title>Instruções para utilização de Markdown</title>
+      <link>http://www.example.com/posts/mardown/</link>
+      <pubDate>Sat, 04 Jan 2020 17:10:06 -0300</pubDate>
+      
+      <guid>http://www.example.com/posts/mardown/</guid>
+      <description>Headers # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6  Alternativamente, para H1 e H2, em estilo sublinhado: Alt-H1 ====== Alt-H2 ------ H1 H2 H3 H4 H5 H6 Alternativamente, para H1 e H2, em estilo sublinhado:
+Alt-H1 Alt-H2 </description>
+    </item>
+    
+    <item>
+      <title>Meu primeiro post de teste</title>
+      <link>http://www.example.com/posts/primeiro-post/</link>
+      <pubDate>Sat, 04 Jan 2020 16:53:17 -0300</pubDate>
+      
+      <guid>http://www.example.com/posts/primeiro-post/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
