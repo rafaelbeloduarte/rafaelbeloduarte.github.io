@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rafael Belo Duarte</title>
-    <link>http://www.example.com/tags/</link>
+    <link>https://rafaelbeloduarte.github.io/tags/</link>
     <description>Recent content in Tags on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
     <lastBuildDate>Sat, 04 Jan 2020 19:04:44 -0300</lastBuildDate>
     
-	<atom:link href="http://www.example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rafaelbeloduarte.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>catalisador aerogel</title>
-      <link>http://www.example.com/tags/catalisador-aerogel/</link>
+      <link>https://rafaelbeloduarte.github.io/tags/catalisador-aerogel/</link>
       <pubDate>Sat, 04 Jan 2020 19:04:44 -0300</pubDate>
       
-      <guid>http://www.example.com/tags/catalisador-aerogel/</guid>
+      <guid>https://rafaelbeloduarte.github.io/tags/catalisador-aerogel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>combustíveis renováveis</title>
-      <link>http://www.example.com/tags/combust%C3%ADveis-renov%C3%A1veis/</link>
+      <link>https://rafaelbeloduarte.github.io/tags/combust%C3%ADveis-renov%C3%A1veis/</link>
       <pubDate>Sat, 04 Jan 2020 19:04:44 -0300</pubDate>
       
-      <guid>http://www.example.com/tags/combust%C3%ADveis-renov%C3%A1veis/</guid>
+      <guid>https://rafaelbeloduarte.github.io/tags/combust%C3%ADveis-renov%C3%A1veis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>destilação</title>
-      <link>http://www.example.com/tags/destila%C3%A7%C3%A3o/</link>
+      <link>https://rafaelbeloduarte.github.io/tags/destila%C3%A7%C3%A3o/</link>
       <pubDate>Sat, 04 Jan 2020 19:04:44 -0300</pubDate>
       
-      <guid>http://www.example.com/tags/destila%C3%A7%C3%A3o/</guid>
+      <guid>https://rafaelbeloduarte.github.io/tags/destila%C3%A7%C3%A3o/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>http://www.example.com/tags/markdown/</link>
+      <link>https://rafaelbeloduarte.github.io/tags/markdown/</link>
       <pubDate>Sat, 04 Jan 2020 17:10:06 -0300</pubDate>
       
-      <guid>http://www.example.com/tags/markdown/</guid>
+      <guid>https://rafaelbeloduarte.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>programação</title>
-      <link>http://www.example.com/tags/programa%C3%A7%C3%A3o/</link>
+      <link>https://rafaelbeloduarte.github.io/tags/programa%C3%A7%C3%A3o/</link>
       <pubDate>Sat, 04 Jan 2020 17:10:06 -0300</pubDate>
       
-      <guid>http://www.example.com/tags/programa%C3%A7%C3%A3o/</guid>
+      <guid>https://rafaelbeloduarte.github.io/tags/programa%C3%A7%C3%A3o/</guid>
       <description></description>
     </item>
     
