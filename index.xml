@@ -58,8 +58,7 @@ Linkedin https://br.linkedin.com/in/rafaelbeloduarte</description>
       <description>Fonte: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet Autor: Adam Pritchard
 Modificado por: Rafael
 Markdown é uma linguagem de marcação utilizada nas publicações deste site.
-Headers # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6  Alternatively, for H1 and H2, an underline-ish style: Alt-H1 ====== Alt-H2 ------ H1 H2 H3 H4 H5 H6 Alternatively, for H1 and H2, an underline-ish style:
-Alt-H1 Alt-H2 Emphasis Emphasis, aka italics, with *asterisks* or _underscores_. Strong emphasis, aka bold, with **asterisks** or __underscores__.</description>
+Headers # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6  Alternatively, for H1 and H2, an underline-ish style: Alt-H1 ====== Alt-H2 ------ Topo Emphasis Emphasis, aka italics, with *asterisks* or _underscores_. Strong emphasis, aka bold, with **asterisks** or __underscores__. Combined emphasis with **asterisks and _underscores_**. Strikethrough uses two tildes.</description>
     </item>
     
   </channel>
