@@ -23,5 +23,17 @@ Universidade Estadual de Maringá / Centro de Tecnologia / Maringá, PR.
 Resumo Óleos vegetais podem ser utilizados como fonte de biomassa para a produção de combustíveis renováveis, os produtos obtidos a partir destes óleos têm baixa concentração de contaminantes e são potenciais substitutos a combustíveis obtidos a partir do petróleo.</description>
     </item>
     
+    <item>
+      <title>Instructions for the usage of Markdown</title>
+      <link>https://rafaelbeloduarte.github.io/posts/instru%C3%A7%C3%B5es-para-utiliza%C3%A7%C3%A3o-de-markdown/</link>
+      <pubDate>Sat, 04 Jan 2020 17:10:06 -0300</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/posts/instru%C3%A7%C3%B5es-para-utiliza%C3%A7%C3%A3o-de-markdown/</guid>
+      <description>Fonte: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet Autor: Adam Pritchard
+Modificado por: Rafael
+Headers # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6  Alternatively, for H1 and H2, an underline-ish style: Alt-H1 ====== Alt-H2 ------ H1 H2 H3 H4 H5 H6 Alternatively, for H1 and H2, an underline-ish style:
+Alt-H1 Alt-H2 Emphasis Emphasis, aka italics, with *asterisks* or _underscores_. Strong emphasis, aka bold, with **asterisks** or __underscores__. Combined emphasis with **asterisks and _underscores_**.</description>
+    </item>
+    
   </channel>
 </rss>
