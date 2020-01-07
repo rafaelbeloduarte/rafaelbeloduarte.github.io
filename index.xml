@@ -6,10 +6,29 @@
     <description>Recent content on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
-    <lastBuildDate>Sat, 04 Jan 2020 19:04:44 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jan 2020 15:31:30 -0300</lastBuildDate>
     
 	<atom:link href="https://rafaelbeloduarte.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Glossário de Engenharia Bioquímica</title>
+      <link>https://rafaelbeloduarte.github.io/posts/glossario-de-engenharia-bioquimica/</link>
+      <pubDate>Tue, 07 Jan 2020 15:31:30 -0300</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/posts/glossario-de-engenharia-bioquimica/</guid>
+      <description>Organogramas Genética Energia e nutrientes Química Organismos vivos e substâncias de origem e/ou ação biológica Engenharia Química e Bioquímica Topo Genética Ácido Nucleico Os ácidos nucleicos, que incluem DNA (ácido desoxirribonucleico) e RNA (ácido ribonucleico), são constituídos de monômeros conhecidos como nucleotídeos. Ocorrem em todas as células vivas e são responsáveis pelo armazenamento e transmissão da informação genética e por sua tradução, que é expressa pela síntese precisa das proteínas. Nos eucariontes (possuem membrana nuclear individualizada e vários tipos de organelas) ficam armazenados no núcleo das células e nos procariontes dispersos no hialoplasma.</description>
+    </item>
+    
+    <item>
+      <title>Leitor de dados para arduino, em python</title>
+      <link>https://rafaelbeloduarte.github.io/posts/leitor-de-dados-para-arduino/</link>
+      <pubDate>Tue, 07 Jan 2020 15:21:04 -0300</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/posts/leitor-de-dados-para-arduino/</guid>
+      <description>Este programa capta dados de placas Arduino.
+Instruções O loop de seu controlador deve retornar os dados da seguinte forma:  a b c ... Ex: 1 2 3 4 5  Código #-*- coding: utf-8 -*-import tkinter import serial import serial.tools.list_ports import threading from tkinter.filedialog import asksaveasfilename from tkinter import * import sys import os from tkinter import messagebox from tkinter.scrolledtext import ScrolledText import matplotlib.pyplot as plt import matplotlib.animation as animation #funções------------------------------------------------------------------------------------- def sel(): #LISTA AS PORTAS DISPONÍVEIS comlist = serial.</description>
+    </item>
     
     <item>
       <title>Dimensionamento de coluna de destilação para separação de hidrocarbonetos obtidos a partir  da desoxigenação de Ácido oleico com catalisador aerogel</title>

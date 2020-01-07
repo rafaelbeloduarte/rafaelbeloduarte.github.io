@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>arduino on Rafael Belo Duarte</title>
+    <link>https://rafaelbeloduarte.github.io/tags/arduino/</link>
+    <description>Recent content in arduino on Rafael Belo Duarte</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Tue, 07 Jan 2020 15:21:04 -0300</lastBuildDate>
+    
+	<atom:link href="https://rafaelbeloduarte.github.io/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Leitor de dados para arduino, em python</title>
+      <link>https://rafaelbeloduarte.github.io/posts/leitor-de-dados-para-arduino/</link>
+      <pubDate>Tue, 07 Jan 2020 15:21:04 -0300</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/posts/leitor-de-dados-para-arduino/</guid>
+      <description>Este programa capta dados de placas Arduino.
+Instruções O loop de seu controlador deve retornar os dados da seguinte forma:  a b c ... Ex: 1 2 3 4 5  Código #-*- coding: utf-8 -*-import tkinter import serial import serial.tools.list_ports import threading from tkinter.filedialog import asksaveasfilename from tkinter import * import sys import os from tkinter import messagebox from tkinter.scrolledtext import ScrolledText import matplotlib.pyplot as plt import matplotlib.animation as animation #funções------------------------------------------------------------------------------------- def sel(): #LISTA AS PORTAS DISPONÍVEIS comlist = serial.</description>
+    </item>
+    
+  </channel>
+</rss>

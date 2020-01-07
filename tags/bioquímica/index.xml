@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bioquímica on Rafael Belo Duarte</title>
+    <link>https://rafaelbeloduarte.github.io/tags/bioqu%C3%ADmica/</link>
+    <description>Recent content in bioquímica on Rafael Belo Duarte</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Tue, 07 Jan 2020 15:31:30 -0300</lastBuildDate>
+    
+	<atom:link href="https://rafaelbeloduarte.github.io/tags/bioqu%C3%ADmica/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Glossário de Engenharia Bioquímica</title>
+      <link>https://rafaelbeloduarte.github.io/posts/glossario-de-engenharia-bioquimica/</link>
+      <pubDate>Tue, 07 Jan 2020 15:31:30 -0300</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/posts/glossario-de-engenharia-bioquimica/</guid>
+      <description>Organogramas Genética Energia e nutrientes Química Organismos vivos e substâncias de origem e/ou ação biológica Engenharia Química e Bioquímica Topo Genética Ácido Nucleico Os ácidos nucleicos, que incluem DNA (ácido desoxirribonucleico) e RNA (ácido ribonucleico), são constituídos de monômeros conhecidos como nucleotídeos. Ocorrem em todas as células vivas e são responsáveis pelo armazenamento e transmissão da informação genética e por sua tradução, que é expressa pela síntese precisa das proteínas. Nos eucariontes (possuem membrana nuclear individualizada e vários tipos de organelas) ficam armazenados no núcleo das células e nos procariontes dispersos no hialoplasma.</description>
+    </item>
+    
+  </channel>
+</rss>
