@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Rafael Belo Duarte">
+    <meta name="description" content="Aqui encontrarás meu currículo e projetos realizados.">
+    <meta name="keywords" content="blog,engenharia,engenharia química">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Modelagem e solução de um sistema com dois reatores contínuos de tanques agitados em série"/>
+<meta name="twitter:description" content="Introdução Um reator contínuo de tanque agitado, ou CSTR, do inglês continuous stirred-tank reactor, é um tanque com agitação mecânica suficiente para que a mistura de seu conteúdo possa ser considerada perfeita, ou seja, a concentração é uniforme e não depende de coordenadas espaciais, quando o tanque é operado em regime permanente não há também a dependência da concentração com o tempo.
+Neste trabalho deseja-se derivar o modelo e sua solução para dois CSTR em série, ilustrados na Figura 1."/>
+
+    <meta property="og:title" content="Modelagem e solução de um sistema com dois reatores contínuos de tanques agitados em série" />
+<meta property="og:description" content="Introdução Um reator contínuo de tanque agitado, ou CSTR, do inglês continuous stirred-tank reactor, é um tanque com agitação mecânica suficiente para que a mistura de seu conteúdo possa ser considerada perfeita, ou seja, a concentração é uniforme e não depende de coordenadas espaciais, quando o tanque é operado em regime permanente não há também a dependência da concentração com o tempo.
+Neste trabalho deseja-se derivar o modelo e sua solução para dois CSTR em série, ilustrados na Figura 1." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rafaelbeloduarte.github.io/posts/modelo-cstr/" />
+<meta property="article:published_time" content="2020-01-17T11:40:39-03:00" />
+<meta property="article:modified_time" content="2020-01-17T11:40:39-03:00" />
+
+
+    
+      <base href="https://rafaelbeloduarte.github.io/posts/modelo-cstr/">
+    
+    <title>
+  Modelagem e solução de um sistema com dois reatores contínuos de tanques agitados em série · Rafael Belo Duarte
+</title>
+
+    
+      <link rel="canonical" href="https://rafaelbeloduarte.github.io/posts/modelo-cstr/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/custom.css" />
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.62.2" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://rafaelbeloduarte.github.io/">
+      Rafael Belo Duarte
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/tags/">Tags</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/cv">Currículo</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/contato">Contato</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Modelagem e solução de um sistema com dois reatores contínuos de tanques agitados em série</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-01-17T11:40:39-03:00'>
+                January 17, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/">engenharia química</a>
+      <span class="separator">•</span>
+    <a href="https://rafaelbeloduarte.github.io/tags/modelagem/">modelagem</a>
+      <span class="separator">•</span>
+    <a href="https://rafaelbeloduarte.github.io/tags/simula%C3%A7%C3%A3o/">simulação</a></div>
+
+          
+			<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introdução">Introdução</a></li>
+    <li><a href="#resultados-e-discussão">Resultados e discussão</a>
+      <ul>
+        <li><a href="#solução-analítica">Solução analítica</a></li>
+        <li><a href="#solução-numérica">Solução Numérica</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+		  
+        </div>
+      </header>
+
+      <div>
+        <h2 id="introdução">Introdução</h2>
+<p>Um reator contínuo de tanque agitado, ou CSTR, do inglês <em>continuous stirred-tank reactor</em>, é
+um tanque com agitação mecânica suficiente para que a mistura de seu conteúdo possa ser
+considerada perfeita, ou seja, a concentração é uniforme e não depende de coordenadas espaciais,
+quando o tanque é operado em regime permanente não há também a dependência da concentração
+com o tempo.</p>
+<p>Neste trabalho deseja-se derivar o modelo e sua solução para dois CSTR em série, ilustrados na
+Figura 1. No tempo t = 0, os dois reatores estão carregados com solvente e catalisador, sem
+reagente. Ambos são operados a temperatura constante e as densidades são consideradas constantes
+ao longo dos tanques.</p>
+<p>A reação que ocorre é do tipo:</p>
+<p>A → B</p>
+<p>Com cinética de primeira ordem em relação a A.</p>
+<p>Os volumes dos reatores também são constantes pois no início já estão carregados e os produtos
+são removidos por transbordo. Pode-se assumir também que as vazões $F_0$, $F_1$, e $F_2$ são iguais pois a
+densidade foi tomada como sempre constante, as saídas ocorrem por transbordo e no momento em
+que se inicia a análise os tanques estão preenchidos.</p>
+<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/cstr_serie.jpg" alt="cstr_serie" title="Dois CSTR em série."></p>
+<p><strong>Figura 1: Dois CSTR em série.</strong></p>
+<h2 id="resultados-e-discussão">Resultados e discussão</h2>
+<h3 id="solução-analítica">Solução analítica</h3>
+<p>Considerações:</p>
+<ol>
+<li>
+<p>Os dois reatores são operados a temperatura constante, não serão realizados balanços de
+energia;</p>
+</li>
+<li>
+<p>As densidades são constantes e independentes das concentrações;</p>
+</li>
+<li>
+<p>Em t = 0 os reatores estão carregados com solvente e catalisador;</p>
+</li>
+<li>
+<p>A reação é: A →B, com cinética de primeira ordem em relação a A e k = 1h$^-$$^1$, de modo que a
+velocidade de reação é: -r $_A$$_i$ = kC$_A$$_i$;</p>
+</li>
+<li>
+<p>Os volumes dos reatores são constantes (saída por transbordo);</p>
+</li>
+<li>
+<p>Pelas considerações 2, 3 e 5, as vazões $F_0$, $F_1$, e $F_2$ são iguais.</p>
+</li>
+</ol>
+<p>No instante inicial começa-se alimentar o primeiro reator com uma vazão F 0 de 2 m3.h-1 e
+concentração constante $C$$_A$$_0$ igual a 300 mol.m$^-$$^3$. O volume do reator 1 é 10 m$^3$ e do reator 2, 5 m$^3$.</p>
+<p>Tomando um volume de controle envolvendo o primeiro reator da Figura 1, pode-se escrever o
+seguinte balanço material:</p>
+<p>$$
+\frac{d(C_{A1} V_1)}{dt} = F_0 C_{A0} - F_1 C_{A1} + V_1 r_{A1}
+\label{eq1} \tag{1}
+$$</p>
+<p>Como $-r{_A}{_1} = kC{_A}{_1}$, os volumes são constantes e as vazões são todas iguais a $F_0$:</p>
+<p>$$
+{V{_1}} \frac{d(C{_A}{_1})}{dt} = F_0 C{_A}{_0} - {F_0} C{_A}{_1} - {V_1} k C{_A}{_1}
+\label{eq2} \tag{2}
+$$</p>
+<p>Substituindo os valores conhecidos:</p>
+<p>$$
+10m{^3} \frac{d(C{_A}{_1})}{dt} = 2 \frac{m{^3}}{h} 300 \frac{mol}{m³} - 2 \frac{m{^3}}{h} C{_A}{_1} - 10m³ 1h{^-}{^1} C{_A}{_1}
+\label{eq3} \tag{3}
+$$</p>
+<p>Tendo em mente que as unidades utilizadas serão as apresentadas na Equação \ref{eq3}, de agora em diante elas serão omitidas por fins de simplicidade.</p>
+<p>Reorganizando a Equação \ref{eq3}:</p>
+<p>$$
+\frac{5}{ 6 } \frac{ dC{_A}{_1} }{ dt } + C{_A}{_1} = 50
+\label{eq4} \tag{4}
+$$</p>
+<p>A Equação \ref{eq4} descreve o comportamento dinâmico do primeiro reator.</p>
+<p>Realizando um balanço material em um volume de controle que envolve o segundo reator, temos:</p>
+<p>$$
+\frac{d(C{_A}{_2} V_2)}{dt} = F_1 C{_A}{_1} - F_2 C{_A}{_2} + V_2 r{_A}{_2}
+\label{eq5} \tag{5}
+$$</p>
+<p>Como $V_2$ é constante, as vazões são todas iguais (consideração 6) e $-r{_A}{_2} = kC{_A}{_2}$:</p>
+<p>$$
+V_2 \frac{d(C{_A}{_2})}{dt} = F_0 C{_A}{_1} - F_0 C{_A}{_2} - V_2 k C{_A}{_2}
+\label{eq6} \tag{6}
+$$</p>
+<p>Substituindo os valores conhecidos:</p>
+<p>$$
+5 \frac{d(C{_A}{_2})}{dt} = 2 C{_A}{_1} - 2 C{_A}{_2} - 5.1.C{_A}{_2}
+\label{eq7} \tag{7}
+$$</p>
+<p>Que pode ser reorganizada como:</p>
+<p>$$
+\frac{5}{7} \frac{d(C{_A}{_2})}{dt} + C{_A}{_2} = \frac{ 2 }{ 7 } C{_A}{_1}
+\label{eq8} \tag{8}
+$$</p>
+<p>A Equação \ref{eq8} descreve o comportamento dinâmico do reator dois.</p>
+<p>Pode-se partir agora para as soluções analíticas das Equações \ref{eq4} e \ref{eq8}. Começando pela Equação \ref{eq4}, uma EDO linear não-homogênea a coeficientes constantes que pode ser resolvida pelo método dos coeficientes a determinar. Sua equação característica é:</p>
+<p>$$
+\frac{5}{6} \lambda + 1 = 0
+\label{eq9} \tag{9}
+$$</p>
+<p>Que fornece $\lambda = -1,2$. Com solução homogênea:</p>
+<p>$$
+C{_A}{_1}{_H} ( t ) = Ce{^{ -1,2t }}
+\label{eq10} \tag{10}
+$$</p>
+<p>A solução particular é uma constante:</p>
+<p>$$
+C{_A}{_1}{_P} = B
+\label{eq11} \tag{11}
+$$</p>
+<p>Que leva a:</p>
+<p>$$
+\frac{dC{_A}{_1}{_P}}{ dt } = 0
+\label{eq12} \tag{12}
+$$</p>
+<p>Aplicando \ref{eq11} e \ref{eq12} em \ref{eq4} encontra-se $B = 50 mol.m{^-}{^3}$.</p>
+<p>Portanto,</p>
+<p>$$
+C{_A}{_1} ( t ) = C{_A}{_1}{_H} + C{_A}{_1}{_P} = Ce{^{ -1,2t }} + 50
+\label{eq13} \tag{13}
+$$</p>
+<p>Para encontrar $C$ utiliza-se a condição inicial. No tempo $t = 0$ não havia reagente nos tanques ($C{_A}{_1}(0) = 0$), e então $ C = -50 mol.m{^-}{^3}$. A solução da Equação \ref{eq4} é:</p>
+<p>$$
+C{_A}{_1} ( t ) = 50 ( 1 - e{^{ -1,2t }} )
+\label{eq14} \tag{14}
+$$</p>
+<p>A Equação \ref{eq4} pode ser resolvida também por Laplace, aplicando a transformada:</p>
+<p>$$
+s C&rsquo;{_A}{_1} (s) - C{_A}{_1} ( 0 ) + 1,2C&rsquo;{_A}{_1} ( s ) = \frac{60}{ s }
+\label{eq15} \tag{15}
+$$</p>
+<p>Onde o sinal $(‘)$ é apenas para fazer referência ao domínio de Laplace e diferenciá-lo do domínio do tempo.</p>
+<p>Sabendo que $C{_A}{_1}(0)$ é igual a $0$ e simplificando:</p>
+<p>$$
+C&rsquo;{_A}{_1} (s) = 50 \frac{ 1 }{ s(\frac{s}{1,2} + 1) }
+\label{eq16} \tag{16}
+$$</p>
+<p>A transformada inversa da Equação \ref{eq16} nos leva à Equação \ref{eq14} novamente, confirmando o resultado obtido pelo método dos coeficientes a determinar.</p>
+<p>Conhecendo $C{_A}{_1}(t)$ é possível resolver a Equação \ref{eq8} para o reator 2. Substituindo \ref{eq14} em \ref{eq8}:</p>
+<p>$$
+\frac{5}{7} \frac{d(C{_A}{_2})}{dt} + C{_A}{_2} = \frac{ 100 }{ 7 } - \frac{ 100 }{ 7 } e{^{ -1,2t }}
+\label{eq17} \tag{17}
+$$</p>
+<p>Novamente pelo método dos coeficientes a determinar, a equação característica para a solução homogênea é:</p>
+<p>$$
+\frac{ 5 }{ 7 } \lambda + 1 = 0
+\label{eq18} \tag{18}
+$$</p>
+<p>Que leva a $\lambda = -1,4$. E à solução homogênea:</p>
+<p>$$
+C{_A}{_2}{_H} ( t ) = C{_1} e{^{ -1,4t }}
+\label{eq19} \tag{19}
+$$</p>
+<p>A equação particular é da forma:</p>
+<p>$$
+C{_A}{_2}{_P} ( t ) = A -B e{^{ -1,2t }}
+\label{eq20} \tag{20}
+$$</p>
+<p>Derivando \ref{eq20}:</p>
+<p>$$
+\frac{ d(C{_A}{_2}{_P})}{ dt } = 1,2 B e{^{ -1,2t }}
+\label{eq21} \tag{21}
+$$</p>
+<p>Aplicando \ref{eq20} e \ref{eq21} em \ref{eq17} e agrupando os termos:</p>
+<p>$$
+A - \frac{ B }{ 7 } e{^{ -1,2t }} = \frac{ 100 }{ 7 } - \frac{ 100 }{ 7 } e{^{ -1,2t }}
+\label{eq22} \tag{22}
+$$</p>
+<p>Portanto, comparando os dois lados da Equação \ref{eq22} percebe-se que $A = \frac{100}{7} mol.m{^-}{^3}$  e $B = 100 mol.m{^-}{^3}$. Isso leva a:</p>
+<p>$$
+C{_A}{_2}{_P} ( t ) = \frac{100}{7} -100 e{^{ -1,2t }}
+\label{eq23} \tag{23}
+$$</p>
+<p>E a solução da Equação \ref{eq8} é, portanto:</p>
+<p>$$
+C{_A}{_2} ( t ) = C{_A}{_2}{_H} + C{_A}{_2}{_P} = C_1 e{^{ -1,4t }} - 100 e{^{ -1,2t }} + \frac{ 100 }{ 7 }
+\label{eq24} \tag{24}
+$$</p>
+<p>Como a condição inicial é $C{_A}{_2}(0) = 0$, encontra-se $C{_1} = \frac{600}{7} mol.m{^-}{^3}$. Substituindo $C{_1}$ na Equação \ref{eq24}:</p>
+<p>$$
+C{_A}{_2} ( t ) = \frac{600}{7} e{^{ -1,4t }} - 100 e{^{ -1,2t }} + \frac{ 100 }{ 7 }
+\label{eq25} \tag{25}
+$$</p>
+<p>A Equação \ref{eq25} é a solução analítica da Equação \ref{eq8}, que pode ser resolvida também aplicando as transformadas de Laplace termo a termo:</p>
+<p>$$
+0,71429 [ {sC&rsquo;{_A}{_2} (s) - C{_A}{_2} (0)} ] + C&rsquo;{_A}{_2} ( s ) = \frac{ 14,286 }{ s } - 14,286 \frac{ 1 }{ s+1,2 }
+\label{eq26} \tag{26}
+$$</p>
+<p>Rearranjando \ref{eq26}:</p>
+<p>$$
+C&rsquo;{_A}{_2} (s) = \frac{ 14,286 }{ s(0,71429s + 1) } - 11,905 \frac{ 1 }{ (\frac{s}{1,2} + 1) (0,71429s+1)}
+\label{eq27} \tag{27}
+$$</p>
+<p>A transformada inversa da Equação \ref{eq27} é:</p>
+<p>$$
+C{_A}{_2} ( t ) = 14,286 ( 1 - e{^{-1,4t}} ) - 11,905 \frac{1}{\frac{1}{1,2} - 0,71429} ( e{^{-1,2t}} - e{^{-1,4t}} )
+\label{eq28} \tag{28}
+$$</p>
+<p>Rearranjando:</p>
+<p>$$
+C{_A}{_2} ( t ) = 85,714 e{^{ -1,4t }} - 100 e{^{ -1,2t }} + 14,286
+\label{eq29} \tag{29}
+$$</p>
+<p>Observando que $\frac{600}{7} ≈ 85,714$ e $\frac{100}{7} ≈ 14,286$, chegamos novamente à Equação \ref{eq25}, confirmando nossa solução.</p>
+<p>Com as soluções prontas pode-se traçar um gráfico com os comportamentos das concentrações em cada reator, na Figura 2 pode-se observar que a concentração no CSTR 1 é sempre maior que no segundo, como é de se esperar, pois o reator 1 é alimentado primeiro e parte do reagente é consumido antes que se alimente o reator 2.</p>
+<p>Percebe-se também que ambos os CSTRs atingem o regime permanente aproximadamente no mesmo tempo, em torno de 5 horas, com concentrações $C{_A}{_1} = 50 mol.m{^-}{^3}$ e $C{_A}{_2} = 14,285 mol.m{^-}{^3}$.</p>
+<p>As conversões, o que reage pelo que é alimentado, podem ser calculadas como:</p>
+<p>$$
+X{_1} = \frac{V{_1}kC{_A}{_1}}{ F_0 C{_A}{_0} }
+\label{eq30} \tag{30}
+$$</p>
+<p>$$
+X{ _2 } = X{_1} + \frac{V{ _2 }kC{_A}{_2}}{ F_0 C{_A}{_0} }
+\label{eq31} \tag{31}
+$$</p>
+<p>Ambas definidas com relação à alimentação $F_0$.</p>
+<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig2.jpg" alt="Cxt" title="Dependência da concentração com o tempo."></p>
+<p><strong>Figura 2: Dependência da concentração com o tempo.</strong></p>
+<p>As Equações \ref{eq30} e \ref{eq31} nos levam, no estado estacionário, a um $X_1$ intermediário de $0,8333$ e uma conversão final $X_2$ igual a $0,9524$.</p>
+<p>Pode-se traçar também um gráfico relacionando o tempo com a conversão, como na Figura 3. Observa-se que no início as duas conversões são muito próximas, isto é consequência da definição adotada, que é sempre em relação à alimentação original. No primeiro instante o termo de consumo no reator dois é nulo e a conversão final é igual à intermediária. Conforme o tempo aumenta, reagente passa a entrar no segundo reator e o termo da conversão final começa a se distanciar da conversão intermediária.</p>
+<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig3.jpg" alt="Xxt" title="Relação entre a conversão e o tempo."></p>
+<p><strong>Figura 3: Relação entre a conversão e o tempo.</strong></p>
+<h3 id="solução-numérica">Solução Numérica</h3>
+<p>Utilizando-se do método de Runge-Kutta de quarta ordem (RK45) para resolução do <a href="https://github.com/rafaelbeloduarte/cstr_serie" title="Baixe o arquivo aqui" target="_blank">modelo criado no Xcos</a>
+ (Figura 6) foram obtidos perfis de concentração do componente A, e conversão intermediaria $X_1$ e final $X_2$ como segue.</p>
+<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig4.jpg" alt="Concentração do composto A em ambos os reatores" title="Concentração do composto A em ambos os reatores."></p>
+<p><strong>Figura 4: Concentração do composto A em ambos os reatores.</strong></p>
+<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig5.jpg" alt="Conversão em ambos os reatores" title="Conversão em ambos os reatores."></p>
+<p><strong>Figura 5: Conversão em ambos os reatores.</strong></p>
+<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig6.jpg" alt="Diagrama Xcos" title="Diagrama do modelo utilizado no Xcos."></p>
+<p><strong>Figura 6: Diagrama do modelo utilizado no Xcos.</strong></p>
+<p><a href="https://github.com/rafaelbeloduarte/cstr_serie" target="_blank">Baixe o arquivo da Figura 6 aqui</a>
+</p>
+<p>Qualitativamente observa-se que as curvas acima de concentração de A e de conversão em função do tempo obtidas na solução numérica apresentam as mesmas características das curvas obtidas analiticamente (apresentadas nas Figuras 2 e 3).</p>
+<p>Em estado estacionário a solução numérica resulta em $C{_A}{_1} = 50 mol.m{^-}{^3}$ $C{_A}{_2} = 14,286 mol.m{^-}{^3}$.</p>
+<p>Para comparação dos dados obtidos numericamente partimos da analise de estado estacionário do modelo desenvolvido como segue:</p>
+<p>Da Equação \ref{eq4}: $\frac{5}{ 6 } \frac{ dC{_A}{_1} }{ dt } + C{_A}{_1} = 50$, em estado estacionário temos:</p>
+<p>$$
+\frac{ dC{_A}{_1} }{ dt }  = 0
+$$</p>
+<p>Então: $\frac{5}{ 6 } 0 + {\bar C}{_A}{_1} = 50$, que leva a ${\bar C}{_A}{_1} = 50$.</p>
+<p>Da equação \ref{eq8}: $\frac{5}{7}\frac{d(C{_A}{_2})}{dt} + C{_A}{_2} = \frac{ 2 }{ 7 } C{_A}{_1}$ e da consideração de estado estacionário:</p>
+<p>$$
+\frac{d(C{_A}{_2})}{dt} = 0
+$$</p>
+<p>Portanto:</p>
+<p>$$
+{\bar C}{_A}{_2} = \frac{ 2 }{ 7 } 50 = \frac{100}{7}
+$$</p>
+<p>Temos portanto ${\bar C}{_A}{_2} \approx 14.286 { mol }{ m{^-}{^3} }$ valor que difere em $0.001$ do valor obtido numericamente, enquanto o valor de ${\bar C}{_A}{_1} = 50{ mol }.m{^-}{^3}$ é exatamente o mesmo obtido numericamente.</p>
+<p>O esquema numérico utilizado se mostra como uma boa alternativa aos métodos analíticos, apresentando valores muito próximos destes com reduzida complexidade na obtenção dos resultados.</p>
+<p>Alterando os volumes dos reatores da simulação observou-se que dois reatores de igual volume resultam numa conversão ligeiramente maior, como pode ser observado na Tabela 1. Isso se deve ao fato de que a utilização de  CSTRs de mesmo volume arranjados em série aproxima o comportamento de um PFR, o qual apresenta conversão mais alta para um mesmo volume em reações de primeira ordem.</p>
+<p>Observa-se ainda que não há efeito na conversão final ao se inverter a ordem do reator maior e o menor de forma que do ponto de vista da obtenção do produto não faz diferença a ordem dos reatores.</p>
+<p><em>Tabela 1 - Concentrações e conversões em diferentes volumes.</em></p>
+<table>
+<thead>
+<tr>
+<th>V1 e V2</th>
+<th>Conversão Intermediária</th>
+<th>Concentração no Primeiro Reator</th>
+<th>Conversão Final</th>
+<th>Concentração no Segundo Reator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5 e 10 m³</td>
+<td>0.7143</td>
+<td>85.714 mol/m³</td>
+<td>0.9524</td>
+<td>14,285 mol/m³</td>
+</tr>
+<tr>
+<td>10 e 5 m³</td>
+<td>0.8333</td>
+<td>50 mol/m³</td>
+<td>0.9524</td>
+<td>14.285 mol/m³</td>
+</tr>
+<tr>
+<td>7.5 e 7.5 m³</td>
+<td>0.7895</td>
+<td>63 mol/m³</td>
+<td>0.9557</td>
+<td>13.296 mol/m³</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#top">Topo</a>
+</p>
+
+      </div>
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "httpsrafaelbeloduartegithubio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>E-mail: rafaelbeloduarte@pm.me</p>
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
