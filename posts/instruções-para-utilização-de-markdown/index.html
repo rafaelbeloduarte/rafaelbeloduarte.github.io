@@ -126,6 +126,7 @@
           
 			<nav id="TableOfContents">
   <ul>
+    <li><a href="#table-of-contents">Table of contents</a></li>
     <li><a href="#headers">Headers</a></li>
     <li><a href="#emphasis">Emphasis</a></li>
     <li><a href="#lists">Lists</a></li>
@@ -133,6 +134,7 @@
     <li><a href="#images">Images</a></li>
     <li><a href="#code-and-syntax-highlighting">Code and Syntax Highlighting</a></li>
     <li><a href="#tables">Tables</a></li>
+    <li><a href="#math">Math</a></li>
     <li><a href="#blockquotes">Blockquotes</a></li>
     <li><a href="#inline-html">Inline HTML</a></li>
     <li><a href="#horizontal-rule">Horizontal Rule</a></li>
@@ -150,7 +152,21 @@
 <p>Autor: Adam Pritchard</p>
 <p>Modificado por: Rafael</p>
 <p>Markdown é uma linguagem de marcação utilizada nas publicações deste site.</p>
-<h2 id="headers">Headers</h2>
+<h2 id="table-of-contents">Table of contents</h2>
+<p>Use <code>toc = true</code> on the header. Exemple:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">+++ 
+draft = false
+date = 2020-01-04T17:10:06-03:00
+title = &#34;Instructions for the usage of Markdown&#34;
+description = &#34;Markdown é uma linguagem de marcação utilizadas nas publicações deste site.&#34;
+slug = &#34;instruções-para-utilização-de-markdown&#34; 
+tags = [&#39;markdown&#39;, &#39;programação&#39;]
+categories = []
+externalLink = &#34;&#34;
+series = []
+toc = true
++++
+</code></pre></div><h2 id="headers">Headers</h2>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md"><span style="color:#030;font-weight:bold"># H1
 </span><span style="color:#030;font-weight:bold"></span><span style="color:#030;font-weight:bold">## H2
 </span><span style="color:#030;font-weight:bold"></span><span style="color:#030;font-weight:bold">### H3
@@ -392,6 +408,67 @@ raw Markdown line up prettily. You can also use inline Markdown.</p>
 </table>
 <p><a href="https://www.tablesgenerator.com/markdown_tables" target="_blank">Markdown Tables Generator</a>
 </p>
+<p><a href="#top">Topo</a>
+</p>
+<h2 id="math">Math</h2>
+<p>To display math equations this page uses <a href="https://www.mathjax.org/" target="_blank">MathJax</a>
+, a JavaScript display engine for mathematics.</p>
+<p>Usage:</p>
+<p>Math expressions must be typed between <code>$</code>.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#c30">$</span><span style="color:#366">
+</span><span style="color:#366">e</span><span style="color:#366">^</span><span style="color:#366">{</span><span style="color:#366">i</span><span style="color:#033">\pi</span><span style="color:#366">}</span><span style="color:#366"> </span><span style="color:#555">=</span><span style="color:#366"> </span><span style="color:#555">-</span><span style="color:#f60">1</span><span style="color:#366">
+</span><span style="color:#366"></span><span style="color:#c30">$</span>
+</code></pre></div><p>$
+e^{i\pi} = -1
+$</p>
+<p>For centralized text use two dolar signs <code>$$</code>.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#c30">$$</span><span style="color:#366">
+</span><span style="color:#366">e</span><span style="color:#366">^</span><span style="color:#366">{</span><span style="color:#366">i</span><span style="color:#033">\pi</span><span style="color:#366">}</span><span style="color:#366"> </span><span style="color:#555">+</span><span style="color:#366"> </span><span style="color:#f60">1</span><span style="color:#366"> </span><span style="color:#555">=</span><span style="color:#366"> </span><span style="color:#f60">0</span><span style="color:#366">
+</span><span style="color:#366"></span><span style="color:#c30">$$</span>
+</code></pre></div><p>$$
+e^{i\pi} + 1 = 0
+$$</p>
+<p>For special characters use backslashes and the name of the character. Examples:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#c30">$$</span><span style="color:#366">
+</span><span style="color:#366"></span><span style="color:#033">\pi</span><span style="color:#366"> </span><span style="color:#033">\lambda</span><span style="color:#366"> </span><span style="color:#033">\gamma</span><span style="color:#366"> </span><span style="color:#033">\theta</span><span style="color:#366"> </span><span style="color:#033">\alpha</span><span style="color:#366"> </span><span style="color:#033">\beta</span><span style="color:#366"> </span><span style="color:#033">\sigma</span><span style="color:#366"> </span><span style="color:#033">\mu</span><span style="color:#366"> </span><span style="color:#033">\kappa</span><span style="color:#366"> </span><span style="color:#033">\zeta</span><span style="color:#366"> </span><span style="color:#033">\psi</span><span style="color:#366"> </span><span style="color:#033">\tau</span><span style="color:#366"> </span><span style="color:#033">\rho</span><span style="color:#366"> </span><span style="color:#033">\nu</span><span style="color:#366"> </span><span style="color:#033">\eta</span><span style="color:#366"> </span><span style="color:#033">\epsilon</span><span style="color:#366"> </span><span style="color:#033">\delta</span><span style="color:#366"> </span><span style="color:#033">\phi</span><span style="color:#366"> </span><span style="color:#033">\omega</span><span style="color:#366">
+</span><span style="color:#366"></span><span style="color:#c30">$$</span>
+</code></pre></div><p>$$
+\pi \lambda \gamma \theta \alpha \beta \sigma \mu \kappa \zeta \psi \tau \rho \nu \eta \epsilon \delta \phi \omega
+$$</p>
+<p>To write uppercase letters make the fisrt one uppercase.</p>
+<blockquote>
+<p>On the Greek alphabet some uppercase letters are the same as in the Latin alphabet, for those just use your keyboard, their names won't work.</p>
+</blockquote>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#c30">$$</span><span style="color:#366">
+</span><span style="color:#366"></span><span style="color:#033">\Pi</span><span style="color:#366"> </span><span style="color:#033">\Lambda</span><span style="color:#366"> </span><span style="color:#033">\Gamma</span><span style="color:#366"> </span><span style="color:#033">\Theta</span><span style="color:#366"> A B </span><span style="color:#033">\Sigma</span><span style="color:#366"> M K Z </span><span style="color:#033">\Psi</span><span style="color:#366"> T P N H E </span><span style="color:#033">\Delta</span><span style="color:#366"> </span><span style="color:#033">\Phi</span><span style="color:#366"> </span><span style="color:#033">\Omega</span><span style="color:#366">
+</span><span style="color:#366"></span><span style="color:#c30">$$</span>
+</code></pre></div><p>$$
+\Pi \Lambda \Gamma \Theta A B \Sigma M K Z \Psi T P N H E \Delta \Phi \Omega
+$$</p>
+<p>You can check the Greek alphabet <a href="https://www.rapidtables.com/math/symbols/greek_alphabet.html" target="_blank">here</a>
+.</p>
+<p>To number equations I use <code>\label{eqi} \tag{i}</code> right after the equation.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#c30">$$</span><span style="color:#366">
+</span><span style="color:#366">e</span><span style="color:#366">^</span><span style="color:#366">{</span><span style="color:#366">i</span><span style="color:#033">\pi</span><span style="color:#366">}</span><span style="color:#366"> </span><span style="color:#555">+</span><span style="color:#366"> </span><span style="color:#f60">1</span><span style="color:#366"> </span><span style="color:#555">=</span><span style="color:#366"> </span><span style="color:#f60">0</span><span style="color:#366">
+</span><span style="color:#366"></span><span style="color:#033">\label</span><span style="color:#366">{</span><span style="color:#366">eq</span><span style="color:#f60">1</span><span style="color:#366">}</span><span style="color:#366"> </span><span style="color:#033">\tag</span><span style="color:#366">{</span><span style="color:#f60">1</span><span style="color:#366">}</span><span style="color:#366">
+</span><span style="color:#366"></span><span style="color:#c30">$$</span>
+</code></pre></div><p>$$
+e^{i\pi} + 1 = 0
+\label{eq1} \tag{1}
+$$</p>
+<p>You can then reference the equation using:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">\ref{eq1}
+</code></pre></div><p>Like this: Equation \ref{eq1} is Euler's identity.</p>
+<p>For fractions we have <code>\frac</code>.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#c30">$$</span><span style="color:#366">
+</span><span style="color:#366"></span><span style="color:#033">\frac</span><span style="color:#366">{</span><span style="color:#366">df</span><span style="color:#366">}</span><span style="color:#366">{</span><span style="color:#366">dt</span><span style="color:#366">}</span><span style="color:#366"> </span><span style="color:#555">=</span><span style="color:#366"> </span><span style="color:#033">\displaystyle</span><span style="color:#366"> </span><span style="color:#033">\lim</span><span style="color:#366">_</span><span style="color:#366">{</span><span style="color:#366">h </span><span style="color:#033">\to</span><span style="color:#366"> </span><span style="color:#f60">0</span><span style="color:#366">}</span><span style="color:#366"> </span><span style="color:#033">\frac</span><span style="color:#366">{</span><span style="color:#366">f</span><span style="color:#555">(</span><span style="color:#366">t</span><span style="color:#555">+</span><span style="color:#366">h</span><span style="color:#555">)</span><span style="color:#366"> </span><span style="color:#555">-</span><span style="color:#366"> f</span><span style="color:#555">(</span><span style="color:#366">t</span><span style="color:#555">)</span><span style="color:#366">}</span><span style="color:#366">{</span><span style="color:#366">h</span><span style="color:#366">}</span><span style="color:#366">
+</span><span style="color:#366"></span><span style="color:#c30">$$</span>
+</code></pre></div><p>$$
+\frac{df}{dt} = \displaystyle \lim_{h \to 0} \frac{f(t+h) - f(t)}{h}
+$$</p>
+<p>For more, here are some great guides: <a href="http://csrgxtu.github.io/2015/03/20/Writing-Mathematic-Fomulars-in-Markdown/" target="_blank">Writing Mathematic Fomulars in Markdown</a>
+ by Archer Reilly and <a href="https://www.calvin.edu/~rpruim/courses/s341/S17/from-class/MathinRmd.html" target="_blank">Mathematics in R Markdown</a>
+ by R Pruim.</p>
 <p><a href="#top">Topo</a>
 </p>
 <h2 id="blockquotes">Blockquotes</h2>
