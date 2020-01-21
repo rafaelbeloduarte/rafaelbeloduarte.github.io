@@ -12,11 +12,13 @@
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Projeto Sensorino"/>
 <meta name="twitter:description" content="Software com interface gráfica escrito em Python com o intuito de captar sinais de sensores, como transdutores de pressão e termopares, acoplados a placas Arduino.
-Instruções O loop de seu controlador deve retornar os dados da seguinte forma:  a b c ... Ex: 1 2 3 4 5  Código #-*- coding: utf-8 -*-import tkinter import serial import serial.tools.list_ports import threading from tkinter.filedialog import asksaveasfilename from tkinter import * import sys import os from tkinter import messagebox from tkinter."/>
+Instruções O loop de seu controlador deve retornar os dados da seguinte forma:  a b c ... Ex: 1 2 3 4 5  Você pode encontrar no Github uma versão executável para windows , como também o repositório do projeto .
+Se você possui ambiente python configurado, inicie o programa com: python3 projeto_sensorino."/>
 
     <meta property="og:title" content="Projeto Sensorino" />
 <meta property="og:description" content="Software com interface gráfica escrito em Python com o intuito de captar sinais de sensores, como transdutores de pressão e termopares, acoplados a placas Arduino.
-Instruções O loop de seu controlador deve retornar os dados da seguinte forma:  a b c ... Ex: 1 2 3 4 5  Código #-*- coding: utf-8 -*-import tkinter import serial import serial.tools.list_ports import threading from tkinter.filedialog import asksaveasfilename from tkinter import * import sys import os from tkinter import messagebox from tkinter." />
+Instruções O loop de seu controlador deve retornar os dados da seguinte forma:  a b c ... Ex: 1 2 3 4 5  Você pode encontrar no Github uma versão executável para windows , como também o repositório do projeto .
+Se você possui ambiente python configurado, inicie o programa com: python3 projeto_sensorino." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://rafaelbeloduarte.github.io/posts/projeto-sensorino/" />
 <meta property="article:published_time" content="2020-01-07T15:21:04-03:00" />
@@ -140,6 +142,16 @@ Instruções O loop de seu controlador deve retornar os dados da seguinte forma:
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">a b c ...
 </code></pre></div><pre><code>Ex:     1 2 3 4 5
 </code></pre>
+<p>Você pode encontrar no Github uma <a href="https://github.com/rafaelbeloduarte/projeto_sensorino/blob/master/sensorino_win64.zip" target="_blank">versão executável para windows</a>
+, como também o <a href="https://github.com/rafaelbeloduarte/projeto_sensorino" target="_blank">repositório do projeto</a>
+.</p>
+<p>Se você possui ambiente python configurado, inicie o programa com: <code>python3 projeto_sensorino.py</code>.</p>
+<p>Bibliotecas requeridas se não for utilizar o executável: <code>tkinter</code>, <code>pyserial</code> e <code>matplotlib</code>. Todas podem ser instaladas via <a href="https://pypi.org/project/pip/" target="_blank">pip</a>
+.</p>
+<p>Instruções para instalação do <a href="https://www.python.org/" target="_blank">interpretador</a>
+ podem ser encontradas facilmente em mecanismos de busca. Muitas distribuições Linux já o possuem por padrão.</p>
+<p>Se deseja gerar sua própria versão executável, clone ou baixe o repositório do Github e use o <a href="https://www.pyinstaller.org/" target="_blank">Pyinstaller</a>
+.</p>
 <h2 id="código">Código</h2>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ino" data-lang="ino"><span style="color:#099">#</span><span style="color:#099"> -*- coding: utf-8 -*-</span><span style="color:#099">
 </span><span style="color:#099"></span>import tkinter

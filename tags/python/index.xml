@@ -18,7 +18,8 @@
       
       <guid>https://rafaelbeloduarte.github.io/posts/projeto-sensorino/</guid>
       <description>Software com interface gráfica escrito em Python com o intuito de captar sinais de sensores, como transdutores de pressão e termopares, acoplados a placas Arduino.
-Instruções O loop de seu controlador deve retornar os dados da seguinte forma:  a b c ... Ex: 1 2 3 4 5  Código #-*- coding: utf-8 -*-import tkinter import serial import serial.tools.list_ports import threading from tkinter.filedialog import asksaveasfilename from tkinter import * import sys import os from tkinter import messagebox from tkinter.</description>
+Instruções O loop de seu controlador deve retornar os dados da seguinte forma:  a b c ... Ex: 1 2 3 4 5  Você pode encontrar no Github uma versão executável para windows , como também o repositório do projeto .
+Se você possui ambiente python configurado, inicie o programa com: python3 projeto_sensorino.</description>
     </item>
     
   </channel>
