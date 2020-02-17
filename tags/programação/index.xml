@@ -31,8 +31,8 @@ Se você possui ambiente python configurado, inicie o programa com: python3 proj
       <description>Fonte: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet Autor: Adam Pritchard
 Modificado por: Rafael
 Markdown é uma linguagem de marcação utilizada nas publicações deste site.
-Table of contents Use toc = true on the header. Exemple:
-+++ draft = false date = 2020-01-04T17:10:06-03:00 title = &amp;#34;Instructions for the usage of Markdown&amp;#34; description = &amp;#34;Markdown é uma linguagem de marcação utilizadas nas publicações deste site.&amp;#34; slug = &amp;#34;instruções-para-utilização-de-markdown&amp;#34; tags = [&amp;#39;markdown&amp;#39;, &amp;#39;programação&amp;#39;] categories = [] externalLink = &amp;#34;&amp;#34; series = [] toc = true +++ Headers # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6  Alternatively, for H1 and H2, an underline-ish style: Alt-H1 ====== Alt-H2 ------ Topo Emphasis Emphasis, aka italics, with *asterisks* or _underscores_.</description>
+Table of contents To include table of contents conditionally, edit the file single.html in the directory /themes/hugo-coder/layouts/posts:
+ Locate the line:  {{ partial &amp;#34;post_meta.html&amp;#34; . }} Below it, add the following:  {{ if .Params.toc }} {{ .TableOfContents }} {{ end }} To enable Table of Contents set toc = true on the header.</description>
     </item>
     
   </channel>
