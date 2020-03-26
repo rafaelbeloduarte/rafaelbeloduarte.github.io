@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Rafael Belo Duarte">
+    <meta name="description" content="Aqui encontrarás meu currículo e projetos realizados.">
+    <meta name="keywords" content="blog,engenharia,engenharia química">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dimensionamento de coluna de destilação para separação de hidrocarbonetos obtidos a partir  da desoxigenação de Ácido oleico com catalisador aerogel"/>
+<meta name="twitter:description" content="Rafael Belo Duarte (PIBIC/CNPq/FA/Uem), J. L. C. W. Pimenta, O. A. A. Santos (Coorientadora), L. M. M. Jorge (Orientador).
+Universidade Estadual de Maringá / Centro de Tecnologia / Maringá, PR.
+Área: Engenharia Química. Subárea: Operações industriais e equipamentos para Engenharia Química.
+Resumo Óleos vegetais podem ser utilizados como fonte de biomassa para a produção de combustíveis renováveis, os produtos obtidos a partir destes óleos têm baixa concentração de contaminantes e são potenciais substitutos a combustíveis obtidos a partir do petróleo."/>
+
+    <meta property="og:title" content="Dimensionamento de coluna de destilação para separação de hidrocarbonetos obtidos a partir  da desoxigenação de Ácido oleico com catalisador aerogel" />
+<meta property="og:description" content="Rafael Belo Duarte (PIBIC/CNPq/FA/Uem), J. L. C. W. Pimenta, O. A. A. Santos (Coorientadora), L. M. M. Jorge (Orientador).
+Universidade Estadual de Maringá / Centro de Tecnologia / Maringá, PR.
+Área: Engenharia Química. Subárea: Operações industriais e equipamentos para Engenharia Química.
+Resumo Óleos vegetais podem ser utilizados como fonte de biomassa para a produção de combustíveis renováveis, os produtos obtidos a partir destes óleos têm baixa concentração de contaminantes e são potenciais substitutos a combustíveis obtidos a partir do petróleo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rafaelbeloduarte.github.io/posts/torre-de-destilacao/" />
+<meta property="article:published_time" content="2020-01-04T19:04:44-03:00" />
+<meta property="article:modified_time" content="2020-01-04T19:04:44-03:00" />
+
+
+    
+      <base href="https://rafaelbeloduarte.github.io/posts/torre-de-destilacao/">
+    
+    <title>
+  Dimensionamento de coluna de destilação para separação de hidrocarbonetos obtidos a partir  da desoxigenação de Ácido oleico com catalisador aerogel · Rafael Belo Duarte
+</title>
+
+    
+      <link rel="canonical" href="https://rafaelbeloduarte.github.io/posts/torre-de-destilacao/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/custom.css" />
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.59.1" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://rafaelbeloduarte.github.io/">
+      Rafael Belo Duarte
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/tags/">Tags</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/cv">Currículo</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/contato">Contato</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Dimensionamento de coluna de destilação para separação de hidrocarbonetos obtidos a partir  da desoxigenação de Ácido oleico com catalisador aerogel</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-01-04T19:04:44-03:00'>
+                04/01/2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+               6 min
+            </span>
+            <span class="word-count">
+              <i class="fas fa-file-alt"></i>
+              1217 palavras
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/">engenharia química</a>
+      <span class="separator">•</span>
+    <a href="https://rafaelbeloduarte.github.io/tags/combust%C3%ADveis-renov%C3%A1veis/">combustíveis renováveis</a>
+      <span class="separator">•</span>
+    <a href="https://rafaelbeloduarte.github.io/tags/cat%C3%A1lise/">catálise</a>
+      <span class="separator">•</span>
+    <a href="https://rafaelbeloduarte.github.io/tags/destila%C3%A7%C3%A3o/">destilação</a></div>
+
+          
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#resumo">Resumo</a></li>
+<li><a href="#introdução">Introdução</a></li>
+<li><a href="#materiais-e-métodos">Materiais e métodos</a>
+<ul>
+<li><a href="#preparação-da-mistura-de-hidrocarbonetos-a-partir-de-óleo-de-soja">Preparação da mistura de hidrocarbonetos a partir de óleo de soja</a></li>
+<li><a href="#análise-da-amostra">Análise da amostra</a></li>
+<li><a href="#dimensionamento-da-coluna-de-destilação">Dimensionamento da coluna de destilação</a></li>
+</ul></li>
+<li><a href="#resultados-e-discussão">Resultados e Discussão</a></li>
+<li><a href="#conclusões">Conclusões</a></li>
+<li><a href="#agradecimentos">Agradecimentos</a></li>
+<li><a href="#referências">Referências</a></li>
+</ul>
+</nav>
+          
+        </div>
+      </header>
+
+      <div>
+        
+
+<p>Rafael Belo Duarte (PIBIC/CNPq/FA/Uem), J. L. C. W. Pimenta, O. A. A. Santos (Coorientadora), L. M. M. Jorge (Orientador).</p>
+
+<p>Universidade Estadual de Maringá / Centro de Tecnologia / Maringá, PR.</p>
+
+<p>Área: Engenharia Química. Subárea: Operações industriais e equipamentos para Engenharia Química.</p>
+
+<h1 id="resumo">Resumo</h1>
+
+<p>Óleos vegetais podem ser utilizados como fonte de biomassa para a produção de combustíveis renováveis, os produtos obtidos a partir destes óleos têm baixa concentração de contaminantes e são potenciais substitutos a combustíveis obtidos a partir do petróleo. Neste trabalho, um catalisador aerogel, impregnado com carbetos de níquel e molibdênio, foi utilizado na produção de hidrocarbonetos a partir de óleo de soja, em um reator batelada. Os produtos da reação foram analisados, quantificados e, a partir dos resultados, dimensionou-se uma coluna de destilação para realizar a separação das várias frações de hidrocarbonetos parafínicos de acordo com suas temperaturas de ebulição.</p>
+
+<p><a href="#top">Topo</a></p>
+
+<h1 id="introdução">Introdução</h1>
+
+<p>A substituição de combustíveis fósseis por alternativas renováveis é uma área que vem recebendo muita atenção nos últimos anos. Tais combustíveis alternativos, vêm de plantas, animais e microrganismos, que capturam seu carbono diretamente da atmosfera, devolvendo-o ao fim de seu ciclo de vida. Seu impacto ambiental é menor comparado aos combustíveis fósseis que, ao serem extraídos e utilizados, liberam uma carga de carbono que estava armazenada na crosta terrestre há milhões de anos.
+As fontes de combustíveis renováveis, como o óleo de soja, por possuírem pequenas concentrações de enxofre, nitrogênio e metais pesados, são interresantes para a produção, por exemplo, de querosene de aviação, gasolina e diesel (Wang, 2012)<sup class="footnote-ref" id="fnref:fn"><a href="#fn:fn">1</a></sup>.</p>
+
+<p>Uma das restrições ao uso de combustíveis obtidos a partir de óleos vegetais, na forma de ésteres monoalquílicos é que, conforme a temperatura ambiente se aproxima do ponto de fusão, pequenos cristais de grandes moléculas saturadas começam a aparecer, o que pode causar o entupimento de componentes, como válvulas e tubulações (Pimenta, 2018)<sup class="footnote-ref" id="fnref:fn1"><a href="#fn:fn1">2</a></sup>.</p>
+
+<p>Conforme o exposto, os objetivos deste trabalho são descrever como e em que condições foi realizada a reação de desoxigenação e, a partir da análise dos produtos, dimensionar uma coluna de destilação para separar os compostos de interesse.</p>
+
+<p><a href="#top">Topo</a></p>
+
+<h1 id="materiais-e-métodos">Materiais e métodos</h1>
+
+<h2 id="preparação-da-mistura-de-hidrocarbonetos-a-partir-de-óleo-de-soja">Preparação da mistura de hidrocarbonetos a partir de óleo de soja</h2>
+
+<p>A reação foi realizada em batelada com um reator Parr, de aço inoxidável 316L, que possui volume de 300 mL, agitador mecânico do tipo turbina de pás retas inclinadas e válvulas para a retirada de amostras líquidas e gasosas.   Ao reator adicionou-se 25 g de óleo de soja e 0,5 g de catalisador sol-gel impregnado com carbetos de níquel e molibdênio. Selou-se o reator e foi feita uma purga com H2, mantendo a pressão atmosférica. Iniciou-se uma rampa de aquecimento até 380 ºC, com agitação constante de 800 rpm, atingida a temperatura de operação pressurizou-se o reator com hidrogênio até 50 bar, aqui considera-se o início da reação. Após 40 minutos foi retirada amostra líquida.</p>
+
+<h2 id="análise-da-amostra">Análise da amostra</h2>
+
+<p>Como desejava-se analisar a amostra em uma coluna cromatográfica, realizou-se uma metilação, para converter ácidos graxos livres, danosos à coluna de separação, em seus respectivos ésteres metílicos.
+A amostra líquida foi analisada em um cromatógrafo da Agilent Technologies modelo 7890B, com coluna DB5-ms, com hélio como eluente. A corrida cromatográfica inicia-se em 50 ºC, com rampa de aquecimento de 8 ºC/min até 260 ºC. Os compostos foram identificados por um espectrômetro de massas e quantificados com um detector de ionização de chama.</p>
+
+<h2 id="dimensionamento-da-coluna-de-destilação">Dimensionamento da coluna de destilação</h2>
+
+<p>Utilizando-se o software ChemSep (versão 8) para a realização dos balanços de massa e energia, partiu-se de uma coluna com 16 estágios, vazão de produto de fundo de 415,86 Kmol/dia, razão de refluxo igual a 8, condensador parcial com retirada de produto na forma de vapor, um refervedor parcial com saída de produto líquido e saídas de 50% de vapor nos estágios 5 e 11, a alimentação entra no estágio 9 a 240,56 ºC. Defininiu-se um espassamento de 0,5 m entre os pratos. Não avaliou-se queda de pressão, portanto utilizou-se  pressão constante a 1 atm.
+Os produtos foram denominados de acordo com suas temperaturas de ebulição. Segundo Zandonai (2016)<sup class="footnote-ref" id="fnref:fn2"><a href="#fn:fn2">3</a></sup>, tem-se como gasolina o que está entre 36,85 e 176,85 ºC, querosene entre 176,85 e 245,85 ºC e diesel na faixa de 245,85 a 344,85 ºC, a uma pressão de 1 atm.</p>
+
+<p><a href="#top">Topo</a></p>
+
+<h1 id="resultados-e-discussão">Resultados e Discussão</h1>
+
+<p>A análise da amostra revelou que a fração mais significativa do produto é composta por moléculas que possuem de 15 a 18 carbonos, com pequenas quantidades na faixa do C8 ao C10 e frações ainda menores do C11 ao C14. Tomou-se a composição desta amostra como alimentação, que pode ser observada na Tabela 1, para o dimensionamento de uma  coluna de destilação.</p>
+
+<p>Os produtos retirados da coluna foram classificados de acordo com a faixa de temperatura, como na <a href="#fig1">Figura 1</a>. No topo temos uma mistura com temperatura de ebulição de 137,54 ºC, que foi classificada como gasolina leve, nos estágios 5 (Gasolina) e 11 (Querosene) retira-se vapor saturado a 157,47 ºC e 243,10 ºC, respectivamente.</p>
+
+<p><a name="fig1"></a></p>
+
+<p><img src="https://rafaelbeloduarte.github.io/images/coluna.png" alt="coluna" title="Coluna de destilação" /></p>
+
+<p><strong>Figura 1 –  Coluna de destilação.</strong></p>
+
+<p>A eficiência dos pratos é estimada utilizando-se a correlação de O’Connell, de maneira iterativa, que fornece uma eficiência média de 0,3961. As cargas térmica no condensador e refervedor são -19 490,3 J/s e 203 205 J/s, nesta ordem.</p>
+
+<p>Como o espassamento entre os pratos é de 0,5 m, a altura da coluna é 7,5 m. O diâmetro depende das vazões utilizadas e foi calculado baseado na velocidade de inundação para o vapor, obteve-se 21 cm para a seção de retificação (estágios 2 ao 8) e 44 cm para a seção de exaustão (estágios 9 ao 15).</p>
+
+<p>Os resultados da <a href="#tab1">Tabela 1</a>, abaixo, sugerem que a partir da coluna descrita acima é possível obter gasolina, querosene e óleo diesel.</p>
+
+<p><a name="tab1"></a></p>
+
+<p><em>Tabela 1 – Composições das correntes na coluna de destilação em frações molares.</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Alimentação</th>
+<th>Gasolina            Leve</th>
+<th>Gasolina</th>
+<th>Querosene</th>
+<th>Diesel</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>C8</td>
+<td>0,0350</td>
+<td>0,7310</td>
+<td>0,3307</td>
+<td>0,1930</td>
+<td>0,0005</td>
+</tr>
+
+<tr>
+<td>C9</td>
+<td>0,0350</td>
+<td>0,2284</td>
+<td>0,3607</td>
+<td>0,2366</td>
+<td>0,0030</td>
+</tr>
+
+<tr>
+<td>C10</td>
+<td>0,0250</td>
+<td>0,0368</td>
+<td>0,1896</td>
+<td>0,1609</td>
+<td>0,0080</td>
+</tr>
+
+<tr>
+<td>C11</td>
+<td>0,0090</td>
+<td>0,0025</td>
+<td>0,0349</td>
+<td>0,0424</td>
+<td>0,0057</td>
+</tr>
+
+<tr>
+<td>C12</td>
+<td>0,0200</td>
+<td>0,0010</td>
+<td>0,0315</td>
+<td>0,0592</td>
+<td>0,0174</td>
+</tr>
+
+<tr>
+<td>C13</td>
+<td>0,0200</td>
+<td>0,0002</td>
+<td>0,0128</td>
+<td>0,0367</td>
+<td>0,0197</td>
+</tr>
+
+<tr>
+<td>C14</td>
+<td>0,0090</td>
+<td>0,0000</td>
+<td>0,0024</td>
+<td>0,0100</td>
+<td>0,0094</td>
+</tr>
+
+<tr>
+<td>C15</td>
+<td>0,0490</td>
+<td>0,0000</td>
+<td>0,0066</td>
+<td>0,0353</td>
+<td>0,0527</td>
+</tr>
+
+<tr>
+<td>C16</td>
+<td>0,1190</td>
+<td>0,0000</td>
+<td>0,0087</td>
+<td>0,0559</td>
+<td>0,1302</td>
+</tr>
+
+<tr>
+<td>C17</td>
+<td>0,2390</td>
+<td>0,0000</td>
+<td>0,0102</td>
+<td>0,0746</td>
+<td>0,2642</td>
+</tr>
+
+<tr>
+<td>C18</td>
+<td>0,4400</td>
+<td>0,0000</td>
+<td>0,0120</td>
+<td>0,0953</td>
+<td>0,4891</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="#top">Topo</a></p>
+
+<h1 id="conclusões">Conclusões</h1>
+
+<p>Os produtos obtidos a partir da reação descrita são semelhantes aos hidrocarbonetos encontrados no petróleo, portanto, o processo se demonstra como uma alternatíva viável.  A separação dos produtos na coluna de destilação se mostra simples, o que diminui os custos de separação.</p>
+
+<h1 id="agradecimentos">Agradecimentos</h1>
+
+<p>Agradecemos ao CNPq e Fundação Araucária pelo apoio financeiro ao desenvolvimento da pesquisa e ao COMCAP UEM pelo suporte técnico nas análises.</p>
+
+<p><a href="#top">Topo</a></p>
+
+<h1 id="referências">Referências</h1>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:fn">WANG, H. <strong>Biofuels production from hydrotreating of vegetable oil using supported noble metals, and transition metal carbide and nitride.</strong> 2012. 134f. Tese (Doutorado) – Programa de Pós-Graduação em Engenharia Química, Wayne State University, Detroit, Michigan, 2012.
+ <a class="footnote-return" href="#fnref:fn"><sup>[return]</sup></a></li>
+<li id="fn:fn1">PIMENTA, J. <strong>Síntese e avaliação de catalisador não convencional na produção de hidrocarbonetos a partir do óleo de soja.</strong> 2018. 130f. Dissertação (Mestrado) – Programa de Pós-Graduação em Engenharia Química, Universidade Estadual de Maringá, Maringá, Paraná, 2018.
+ <a class="footnote-return" href="#fnref:fn1"><sup>[return]</sup></a></li>
+<li id="fn:fn2">CASTELLÃ-PERGHER, S. FERNANDES-MACHADO, N.   SCALIANTE, M. YASSUE-CORDEIRO, P. ZANDONAI, C. <strong>Production of petroleum-like synthetic fuel by hydrocracking of crude soybean oil over ZSM5 zeolite – Improvement of catalyst lifetime by ion exchange.</strong> Fuel. v. 172, p. 228-237, 2016.
+ <a class="footnote-return" href="#fnref:fn2"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+      </div>
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "httpsrafaelbeloduartegithubio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>E-mail: rafaelbeloduarte@pm.me</p>
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
