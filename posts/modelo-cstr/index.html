@@ -158,7 +158,7 @@ quando o tanque é operado em regime permanente não há também a dependência 
 com o tempo.</p>
 
 <p>Neste trabalho deseja-se derivar o modelo e sua solução para dois CSTR em série, ilustrados na
-Figura 1. No tempo t = 0, os dois reatores estão carregados com solvente e catalisador, sem
+<a href="#fig1">Figura 1</a>. No tempo t = 0, os dois reatores estão carregados com solvente e catalisador, sem
 reagente. Ambos são operados a temperatura constante e as densidades são consideradas constantes
 ao longo dos tanques.</p>
 
@@ -172,6 +172,8 @@ ao longo dos tanques.</p>
 são removidos por transbordo. Pode-se assumir também que as vazões $F_0$, $F_1$, e $F_2$ são iguais pois a
 densidade foi tomada como sempre constante, as saídas ocorrem por transbordo e no momento em
 que se inicia a análise os tanques estão preenchidos.</p>
+
+<p><a name="fig1"></a></p>
 
 <p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/cstr_serie.jpg" alt="cstr_serie" title="Dois CSTR em série." /></p>
 
@@ -202,7 +204,7 @@ velocidade de reação é: -r $_A$$_i$ = kC$_A$$_i$;</p></li>
 <p>No instante inicial começa-se alimentar o primeiro reator com uma vazão $F_0$ de 2 $m{^3}.h{^-}{^1}$ e
 concentração constante $C{_A}{_0}$ igual a $300 mol.m{^-}{^3}$. O volume do reator 1 é $10 m{^3}$ e do reator 2, $5 m{^3}$.</p>
 
-<p>Tomando um volume de controle envolvendo o primeiro reator da Figura 1, pode-se escrever o
+<p>Tomando um volume de controle envolvendo o primeiro reator da <a href="#fig1">Figura 1</a>, pode-se escrever o
 seguinte balanço material:</p>
 
 <p>$$
@@ -420,7 +422,7 @@ $$</p>
 
 <p>Observando que $\frac{600}{7} ≈ 85,714$ e $\frac{100}{7} ≈ 14,286$, chegamos novamente à Equação \ref{eq25}, confirmando nossa solução.</p>
 
-<p>Com as soluções prontas pode-se traçar um gráfico com os comportamentos das concentrações em cada reator, na Figura 2 pode-se observar que a concentração no CSTR 1 é sempre maior que no segundo, como é de se esperar, pois o reator 1 é alimentado primeiro e parte do reagente é consumido antes que se alimente o reator 2.</p>
+<p>Com as soluções prontas pode-se traçar um gráfico com os comportamentos das concentrações em cada reator, na <a href="#fig2">Figura 2</a> pode-se observar que a concentração no CSTR 1 é sempre maior que no segundo, como é de se esperar, pois o reator 1 é alimentado primeiro e parte do reagente é consumido antes que se alimente o reator 2.</p>
 
 <p>Percebe-se também que ambos os CSTRs atingem o regime permanente aproximadamente no mesmo tempo, em torno de 5 horas, com concentrações $C{_A}{_1} = 50 mol.m{^-}{^3}$ e $C{_A}{_2} = 14,285 mol.m{^-}{^3}$.</p>
 
@@ -438,13 +440,17 @@ $$</p>
 
 <p>Ambas definidas com relação à alimentação $F_0$.</p>
 
+<p><a name="fig2"></a></p>
+
 <p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig2.jpg" alt="Cxt" title="Dependência da concentração com o tempo." /></p>
 
 <p><strong>Figura 2: Dependência da concentração com o tempo.</strong></p>
 
 <p>As Equações \ref{eq30} e \ref{eq31} nos levam, no estado estacionário, a um $X_1$ intermediário de $0,8333$ e uma conversão final $X_2$ igual a $0,9524$.</p>
 
-<p>Pode-se traçar também um gráfico relacionando o tempo com a conversão, como na Figura 3. Observa-se que no início as duas conversões são muito próximas, isto é consequência da definição adotada, que é sempre em relação à alimentação original. No primeiro instante o termo de consumo no reator dois é nulo e a conversão final é igual à intermediária. Conforme o tempo aumenta, reagente passa a entrar no segundo reator e o termo da conversão final começa a se distanciar da conversão intermediária.</p>
+<p>Pode-se traçar também um gráfico relacionando o tempo com a conversão, como na <a href="#fig3">Figura 3</a>. Observa-se que no início as duas conversões são muito próximas, isto é consequência da definição adotada, que é sempre em relação à alimentação original. No primeiro instante o termo de consumo no reator dois é nulo e a conversão final é igual à intermediária. Conforme o tempo aumenta, reagente passa a entrar no segundo reator e o termo da conversão final começa a se distanciar da conversão intermediária.</p>
+
+<p><a name="fig3"></a></p>
 
 <p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig3.jpg" alt="Xxt" title="Relação entre a conversão e o tempo." /></p>
 
@@ -452,15 +458,21 @@ $$</p>
 
 <h2 id="solução-numérica">Solução Numérica</h2>
 
-<p>Utilizando-se do método de Runge-Kutta de quarta ordem (RK45) para resolução do <a href="https://github.com/rafaelbeloduarte/cstr_serie" title="Baixe o arquivo aqui">modelo criado no Xcos</a> (Figura 6) foram obtidos perfis de concentração do componente A, e conversão intermediaria $X_1$ e final $X_2$ como segue.</p>
+<p>Utilizando-se do método de Runge-Kutta de quarta ordem (RK45) para resolução do <a href="https://github.com/rafaelbeloduarte/cstr_serie" title="Baixe o arquivo aqui">modelo criado no Xcos</a> (<a href="#fig6">Figura 6</a>) foram obtidos perfis de concentração do componente A, e conversão intermediaria $X_1$ e final $X_2$ como segue.</p>
+
+<p><a name="fig4"></a></p>
 
 <p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig4.jpg" alt="Concentração do composto A em ambos os reatores" title="Concentração do composto A em ambos os reatores." /></p>
 
 <p><strong>Figura 4: Concentração do composto A em ambos os reatores.</strong></p>
 
+<p><a name="fig5"></a></p>
+
 <p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig5.jpg" alt="Conversão em ambos os reatores" title="Conversão em ambos os reatores." /></p>
 
 <p><strong>Figura 5: Conversão em ambos os reatores.</strong></p>
+
+<p><a name="fig6"></a></p>
 
 <p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig6.jpg" alt="Diagrama Xcos" title="Diagrama do modelo utilizado no Xcos." /></p>
 
@@ -468,7 +480,7 @@ $$</p>
 
 <p><a href="https://github.com/rafaelbeloduarte/cstr_serie">Baixe o arquivo da Figura 6 aqui</a></p>
 
-<p>Qualitativamente observa-se que as curvas acima de concentração de A e de conversão em função do tempo obtidas na solução numérica apresentam as mesmas características das curvas obtidas analiticamente (apresentadas nas Figuras 2 e 3).</p>
+<p>Qualitativamente observa-se que as curvas acima de concentração de A e de conversão em função do tempo obtidas na solução numérica apresentam as mesmas características das curvas obtidas analiticamente (apresentadas nas Figuras <a href="#fig2">2</a> e <a href="#fig3">3</a>).</p>
 
 <p>Em estado estacionário a solução numérica resulta em $C{_A}{_1} = 50 mol.m{^-}{^3}$ $C{_A}{_2} = 14,286 mol.m{^-}{^3}$.</p>
 
@@ -498,9 +510,11 @@ $$</p>
 
 <p>O esquema numérico utilizado se mostra como uma boa alternativa aos métodos analíticos, apresentando valores muito próximos destes com reduzida complexidade na obtenção dos resultados.</p>
 
-<p>Alterando os volumes dos reatores da simulação observou-se que dois reatores de igual volume resultam numa conversão ligeiramente maior, como pode ser observado na Tabela 1. Isso se deve ao fato de que a utilização de  CSTRs de mesmo volume arranjados em série aproxima o comportamento de um PFR, o qual apresenta conversão mais alta para um mesmo volume em reações de primeira ordem.</p>
+<p>Alterando os volumes dos reatores da simulação observou-se que dois reatores de igual volume resultam numa conversão ligeiramente maior, como pode ser observado na <a href="#tab1">Tabela 1</a>. Isso se deve ao fato de que a utilização de  CSTRs de mesmo volume arranjados em série aproxima o comportamento de um PFR, o qual apresenta conversão mais alta para um mesmo volume em reações de primeira ordem.</p>
 
 <p>Observa-se ainda que não há efeito na conversão final ao se inverter a ordem do reator maior e o menor de forma que do ponto de vista da obtenção do produto não faz diferença a ordem dos reatores.</p>
+
+<p><a name="tab1"></a></p>
 
 <p><em>Tabela 1 - Concentrações e conversões em diferentes volumes.</em></p>
 
