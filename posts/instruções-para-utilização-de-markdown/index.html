@@ -130,8 +130,6 @@
           
           <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
 <li><a href="#table-of-contents">Table of contents</a></li>
 <li><a href="#headers">Headers</a></li>
 <li><a href="#emphasis">Emphasis</a></li>
@@ -151,7 +149,6 @@
 <li><a href="#horizontal-rule">Horizontal Rule</a></li>
 <li><a href="#line-breaks">Line Breaks</a></li>
 <li><a href="#youtube-videos">YouTube Videos</a></li>
-</ul></li>
 </ul>
 </nav>
           
@@ -169,7 +166,7 @@
 
 <p>Markdown é uma linguagem de marcação utilizada nas publicações deste site.</p>
 
-<h2 id="table-of-contents">Table of contents</h2>
+<h1 id="table-of-contents">Table of contents</h1>
 
 <p>To include table of contents conditionally, edit the file <code>single.html</code> in the directory <code>/themes/hugo-coder/layouts/posts</code>:</p>
 
@@ -199,7 +196,7 @@ toc = true
 
 <p>Source: <a href="https://www.codeooze.com/webdesign/hugo-toc/">https://www.codeooze.com/webdesign/hugo-toc/</a></p>
 
-<h2 id="headers">Headers</h2>
+<h1 id="headers">Headers</h1>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md"><span style="color:#030;font-weight:bold"># H1
 </span><span style="color:#030;font-weight:bold"></span><span style="color:#030;font-weight:bold">## H2
 </span><span style="color:#030;font-weight:bold">### H3
@@ -216,7 +213,7 @@ Alt-H2
 ------</code></pre></div>
 <p><a href="#top">Topo</a></p>
 
-<h2 id="emphasis">Emphasis</h2>
+<h1 id="emphasis">Emphasis</h1>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Emphasis, aka italics, with *asterisks* or _underscores_.
 
 Strong emphasis, aka bold, with **asterisks** or __underscores__.
@@ -234,7 +231,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~</pre></div>
 
 <p><a href="#top">Topo</a></p>
 
-<h2 id="lists">Lists</h2>
+<h1 id="lists">Lists</h1>
 
 <p>(In this example, leading and trailing spaces are shown with with dots: ⋅)</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">1. First ordered list item
@@ -277,7 +274,7 @@ Note that this line is separate, but within the same paragraph.
 
 <p><a href="#top">Topo</a></p>
 
-<h2 id="links">Links</h2>
+<h1 id="links">Links</h1>
 
 <p>There are two ways to create links.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">[I&#39;m an inline-style link](https://www.google.com)
@@ -324,7 +321,7 @@ example.com (but not on Github, for example).</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;a href=&#34;{{ .Destination | safeURL }}&#34;{{ with .Title}} title=&#34;{{ . }}&#34;{{ end }}{{ if strings.HasPrefix .Destination &#34;http&#34; }} target=&#34;_blank&#34;{{ end }}&gt;{{ .Text }}&lt;/a&gt;</pre></div>
 <p><a href="#top">Topo</a></p>
 
-<h2 id="images">Images</h2>
+<h1 id="images">Images</h1>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Here&#39;s our logo (hover to see the title text):
 
 Inline-style: 
@@ -344,7 +341,7 @@ Reference-style:
 
 <p><a href="#top">Topo</a></p>
 
-<h2 id="code-and-syntax-highlighting">Code and Syntax Highlighting</h2>
+<h1 id="code-and-syntax-highlighting">Code and Syntax Highlighting</h1>
 
 <p>Code blocks are part of the Markdown spec, but syntax highlighting isn&rsquo;t. However, many renderers &ndash; like Github&rsquo;s and Markdown Here &ndash; support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. Markdown Here supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the highlight.js demo page.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Inline `code` has `back-ticks around` it.</pre></div>
@@ -371,7 +368,7 @@ alert(s);
 But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.</pre></div>
 <p><a href="#top">Topo</a></p>
 
-<h2 id="tables">Tables</h2>
+<h1 id="tables">Tables</h1>
 
 <p>Tables aren&rsquo;t part of the core Markdown spec, but they are part of GFM and Markdown Here supports them. They are an easy way of adding tables to your email &ndash; a task that would otherwise require copy-pasting from another application.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Colons can be used to align columns.
@@ -454,7 +451,7 @@ raw Markdown line up prettily. You can also use inline Markdown.</p>
 
 <p><a href="#top">Topo</a></p>
 
-<h2 id="math">Math</h2>
+<h1 id="math">Math</h1>
 
 <p>To display math equations this page uses <a href="https://www.mathjax.org/">MathJax</a>, a JavaScript display engine for mathematics.</p>
 
@@ -524,9 +521,9 @@ $$</p>
 
 <p><a href="#top">Topo</a></p>
 
-<h2 id="citations">Citations</h2>
+<h1 id="citations">Citations</h1>
 
-<h3 id="text">Text</h3>
+<h2 id="text">Text</h2>
 
 <p>References or citations are shown at the botton of the page. They are donne in the following manner.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Lorem ipsum dolor sit amet[^fn], consectetur adipiscing elit[^fn1].
@@ -536,7 +533,7 @@ $$</p>
 [^fn1]: Reference 2.</pre></div>
 <p>Lorem ipsum dolor sit amet<sup class="footnote-ref" id="fnref:fn"><a href="#fn:fn">1</a></sup>, consectetur adipiscing elit<sup class="footnote-ref" id="fnref:fn1"><a href="#fn:fn1">2</a></sup>.</p>
 
-<h3 id="images-and-tables">Images and Tables</h3>
+<h2 id="images-and-tables">Images and Tables</h2>
 
 <p>Before the element, put the following html code:</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#309;font-weight:bold">a</span> <span style="color:#309">name</span><span style="color:#555">=</span><span style="color:#c30">&#34;fig1&#34;</span>&gt;&lt;/<span style="color:#309;font-weight:bold">a</span>&gt;</code></pre></div>
@@ -550,7 +547,7 @@ $$</p>
 
 <p>Veja a <a href="#fig1">Figura 1</a></p>
 
-<h2 id="blockquotes">Blockquotes</h2>
+<h1 id="blockquotes">Blockquotes</h1>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&gt; Blockquotes are very handy in email to emulate reply text.
 &gt; This line is part of the same quote.
 
@@ -570,7 +567,7 @@ This line is part of the same quote.</p>
 
 <p><a href="#top">Topo</a></p>
 
-<h2 id="inline-html">Inline HTML</h2>
+<h1 id="inline-html">Inline HTML</h1>
 
 <p>You can also use raw HTML in your Markdown, and it&rsquo;ll mostly work pretty well.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;dl&gt;
@@ -592,7 +589,7 @@ This line is part of the same quote.</p>
 
 <p><a href="#top">Topo</a></p>
 
-<h2 id="horizontal-rule">Horizontal Rule</h2>
+<h1 id="horizontal-rule">Horizontal Rule</h1>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Three or more...
 
 ---
@@ -622,7 +619,7 @@ Underscores</pre></div>
 
 <p><a href="#top">Topo</a></p>
 
-<h2 id="line-breaks">Line Breaks</h2>
+<h1 id="line-breaks">Line Breaks</h1>
 
 <p>My basic recommendation for learning how line breaks work is to experiment and discover &ndash; hit <code>&lt;Enter&gt;</code> once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You&rsquo;ll soon learn to get what you want. &ldquo;Markdown Toggle&rdquo; is your friend.</p>
 
@@ -644,7 +641,7 @@ This line is only separated by a single newline, so it&rsquo;s a separate line i
 
 <p><a href="#top">Topo</a></p>
 
-<h2 id="youtube-videos">YouTube Videos</h2>
+<h1 id="youtube-videos">YouTube Videos</h1>
 
 <p>They can&rsquo;t be added directly but you can add an image with a link to the video like this:</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;a href=&#34;http://www.youtube.com/watch?feature=player_embedded&amp;v=YOUTUBE_VIDEO_ID_HERE
