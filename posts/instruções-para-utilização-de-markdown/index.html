@@ -117,7 +117,7 @@
             </span>
             <span class="word-count">
               <i class="fas fa-file-alt"></i>
-              1808 palavras
+              1888 palavras
             </span>
           </div>
           
@@ -141,6 +141,11 @@
 <li><a href="#code-and-syntax-highlighting">Code and Syntax Highlighting</a></li>
 <li><a href="#tables">Tables</a></li>
 <li><a href="#math">Math</a></li>
+<li><a href="#citations">Citations</a>
+<ul>
+<li><a href="#text">Text</a></li>
+<li><a href="#images-and-tables">Images and Tables</a></li>
+</ul></li>
 <li><a href="#blockquotes">Blockquotes</a></li>
 <li><a href="#inline-html">Inline HTML</a></li>
 <li><a href="#horizontal-rule">Horizontal Rule</a></li>
@@ -519,6 +524,32 @@ $$</p>
 
 <p><a href="#top">Topo</a></p>
 
+<h2 id="citations">Citations</h2>
+
+<h3 id="text">Text</h3>
+
+<p>References or citations are shown at the botton of the page. They are donne in the following manner.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Lorem ipsum dolor sit amet[^fn], consectetur adipiscing elit[^fn1].
+
+[^fn]: Reference 1.
+
+[^fn1]: Reference 2.</pre></div>
+<p>Lorem ipsum dolor sit amet<sup class="footnote-ref" id="fnref:fn"><a href="#fn:fn">1</a></sup>, consectetur adipiscing elit<sup class="footnote-ref" id="fnref:fn1"><a href="#fn:fn1">2</a></sup>.</p>
+
+<h3 id="images-and-tables">Images and Tables</h3>
+
+<p>Before the element, put the following html code:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#309;font-weight:bold">a</span> <span style="color:#309">name</span><span style="color:#555">=</span><span style="color:#c30">&#34;fig1&#34;</span>&gt;&lt;/<span style="color:#309;font-weight:bold">a</span>&gt;</code></pre></div>
+<p>That can be referenced with <code>[Figura](#fig1)</code>, as shown bellow.</p>
+
+<p><a name="fig1"></a></p>
+
+<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/cstr_serie.jpg" alt="cstr_serie" title="Dois CSTR em série." /></p>
+
+<p><strong>Figura 1: Dois CSTR em série.</strong></p>
+
+<p>Veja a <a href="#fig1">Figura 1</a></p>
+
 <h2 id="blockquotes">Blockquotes</h2>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&gt; Blockquotes are very handy in email to emulate reply text.
 &gt; This line is part of the same quote.
@@ -628,6 +659,17 @@ alt=&#34;IMAGE ALT TEXT HERE&#34; width=&#34;240&#34; height=&#34;180&#34; borde
 <hr />
 
 <p>License: <a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a></p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:fn">Reference 1.
+ <a class="footnote-return" href="#fnref:fn"><sup>[return]</sup></a></li>
+<li id="fn:fn1">Reference 2.
+ <a class="footnote-return" href="#fnref:fn1"><sup>[return]</sup></a></li>
+</ol>
+</div>
 
       </div>
 
