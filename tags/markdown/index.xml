@@ -17,11 +17,14 @@
       <pubDate>Sat, 04 Jan 2020 17:10:06 -0300</pubDate>
       
       <guid>https://rafaelbeloduarte.github.io/posts/instru%C3%A7%C3%B5es-para-utiliza%C3%A7%C3%A3o-de-markdown/</guid>
-      <description>Fonte: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet Autor: Adam Pritchard
+      <description>Fonte: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+Autor: Adam Pritchard
 Modificado por: Rafael
 Markdown é uma linguagem de marcação utilizada nas publicações deste site.
 Table of contents To include table of contents conditionally, edit the file single.html in the directory /themes/hugo-coder/layouts/posts:
- Locate the line:  {{ partial &amp;#34;post_meta.html&amp;#34; . }} Below it, add the following:  {{ if .Params.toc }} {{ .TableOfContents }} {{ end }} To enable Table of Contents set toc = true on the header.</description>
+ Locate the line:
+{{ partial &amp;#34;post_meta.html&amp;#34; . }} Below it, add the following:
+{{ if .Params.toc }} {{ .TableOfContents }} {{ end }} To enable Table of Contents set toc = true on the header.</description>
     </item>
     
   </channel>
