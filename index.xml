@@ -6,7 +6,7 @@
     <description>Recent content on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
-    <lastBuildDate>Thu, 26 Mar 2020 18:32:38 -0300</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jan 2020 18:06:21 -0300</lastBuildDate>
     
 	<atom:link href="https://rafaelbeloduarte.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -45,8 +45,7 @@ Neste trabalho deseja-se derivar o modelo e sua solução para dois CSTR em sér
       <pubDate>Tue, 07 Jan 2020 15:31:30 -0300</pubDate>
       
       <guid>https://rafaelbeloduarte.github.io/posts/glossario-bioquimica/</guid>
-      <description>Organogramas Genética Energia e nutrientes Química Organismos vivos e substâncias de origem e/ou ação biológica Engenharia Química e Bioquímica Topo
-Genética Ácido Nucleico Os ácidos nucleicos, que incluem DNA (ácido desoxirribonucleico) e RNA (ácido ribonucleico), são constituídos de monômeros conhecidos como nucleotídeos. Ocorrem em todas as células vivas e são responsáveis pelo armazenamento e transmissão da informação genética e por sua tradução, que é expressa pela síntese precisa das proteínas.</description>
+      <description>Organogramas Genética Energia e nutrientes Química Organismos vivos e substâncias de origem e/ou ação biológica Engenharia Química e Bioquímica Topo Genética Ácido Nucleico Os ácidos nucleicos, que incluem DNA (ácido desoxirribonucleico) e RNA (ácido ribonucleico), são constituídos de monômeros conhecidos como nucleotídeos. Ocorrem em todas as células vivas e são responsáveis pelo armazenamento e transmissão da informação genética e por sua tradução, que é expressa pela síntese precisa das proteínas. Nos eucariontes (possuem membrana nuclear individualizada e vários tipos de organelas) ficam armazenados no núcleo das células e nos procariontes dispersos no hialoplasma.</description>
     </item>
     
     <item>
@@ -56,7 +55,7 @@ Genética Ácido Nucleico Os ácidos nucleicos, que incluem DNA (ácido desoxirr
       
       <guid>https://rafaelbeloduarte.github.io/posts/projeto-sensorino/</guid>
       <description>Software com interface gráfica escrito em Python com o intuito de captar sinais de sensores, como transdutores de pressão e termopares, acoplados a placas Arduino.
-Instruções O loop de seu controlador deve retornar os dados da seguinte forma:a b c ...Ex: 1 2 3 4 5 Você pode encontrar no Github uma versão executável para windows, como também o repositório do projeto.
+Instruções O loop de seu controlador deve retornar os dados da seguinte forma:  a b c ... Ex: 1 2 3 4 5  Você pode encontrar no Github uma versão executável para windows , como também o repositório do projeto .
 Se você possui ambiente python configurado, inicie o programa com: python3 projeto_sensorino.</description>
     </item>
     
@@ -78,16 +77,14 @@ Resumo Óleos vegetais podem ser utilizados como fonte de biomassa para a produ�
       <pubDate>Sat, 04 Jan 2020 18:06:21 -0300</pubDate>
       
       <guid>https://rafaelbeloduarte.github.io/cv/</guid>
-      <description>Rafael Belo Duarte Brasileiro, solteiro, 25 anos
+      <description>Rafael Belo Duarte  Brasileiro, solteiro, 25 anos
 rafaelbeloduarte@pm.me
-https://br.linkedin.com/in/rafaelbeloduarte
-Experiência  F.A. Colchões Maringá - PR
+https://br.linkedin.com/in/rafaelbeloduarte  Experiência  F.A. Colchões  Maringá - PR
 Mar 2020 - Presente
 Estágio curricular realizado na área de produção de espumas de poliuretano.
- Iniciação científica Universidade Estadual de Maringá
+ Iniciação científica  Universidade Estadual de Maringá
 Jun 2018 – Out 2019
-Participei de projeto de iniciação científica na produção de hidrocarbonetos a partir de óleo de soja, concluído na área de catálise e equipamentos industriais.
- Intercâmbio China</description>
+Participei de projeto de iniciação científica na produção de hidrocarbonetos a partir de óleo de soja, concluído na área de catálise e equipamentos industriais.</description>
     </item>
     
     <item>
@@ -98,7 +95,7 @@ Participei de projeto de iniciação científica na produção de hidrocarboneto
       <guid>https://rafaelbeloduarte.github.io/contato/</guid>
       <description>E-mail Protonmail:
 rafaelbeloduarte@protonmail.com (rafaelbeloduarte@pm.me)
-Linkedin https://br.linkedin.com/in/rafaelbeloduarte</description>
+Linkedin https://br.linkedin.com/in/rafaelbeloduarte </description>
     </item>
     
     <item>
@@ -107,14 +104,11 @@ Linkedin https://br.linkedin.com/in/rafaelbeloduarte</description>
       <pubDate>Sat, 04 Jan 2020 17:10:06 -0300</pubDate>
       
       <guid>https://rafaelbeloduarte.github.io/posts/markdown/</guid>
-      <description>Fonte: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-Autor: Adam Pritchard
+      <description>Fonte: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet Autor: Adam Pritchard
 Modificado por: Rafael
 Markdown é uma linguagem de marcação utilizada nas publicações deste site.
 Table of contents To include table of contents conditionally, edit the file single.html in the directory /themes/hugo-coder/layouts/posts:
- Locate the line:
-{{ partial &amp;#34;post_meta.html&amp;#34; . }} Below it, add the following:
-{{ if .Params.toc }} {{ .TableOfContents }} {{ end }} To enable Table of Contents set toc = true on the header.</description>
+ Locate the line:  {{ partial &amp;#34;post_meta.html&amp;#34; . }} Below it, add the following:  {{ if .Params.toc }} {{ .TableOfContents }} {{ end }} To enable Table of Contents set toc = true on the header.</description>
     </item>
     
   </channel>
