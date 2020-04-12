@@ -154,7 +154,7 @@ Se você possui ambiente python configurado, inicie o programa com: python3 proj
 <p><img src="https://rafaelbeloduarte.github.io/images/sensorino.png" alt="gui" title="Sensorino."></p>
 <h2 id="instruções">Instruções</h2>
 <p>O loop de seu controlador deve retornar os dados separados por espaços simples:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">a b c ...
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">a b c ...
 </code></pre></div><p>Ex:     <code>1 2 3 4 5</code></p>
 <p>Você pode encontrar no Github uma <a href="https://github.com/rafaelbeloduarte/projeto_sensorino/blob/master/sensorino_win64.zip">versão executável para windows</a>, como também o <a href="https://github.com/rafaelbeloduarte/projeto_sensorino">repositório do projeto</a>.</p>
 <p>Se você possui ambiente python configurado, inicie o programa com: <code>python3 projeto_sensorino.py</code>.</p>
@@ -162,13 +162,13 @@ Se você possui ambiente python configurado, inicie o programa com: python3 proj
 <p>Instruções para instalação do <a href="https://www.python.org/">interpretador</a> podem ser encontradas facilmente em mecanismos de busca. Muitas distribuições Linux já o possuem por padrão.</p>
 <p>Se deseja gerar sua própria versão executável, clone ou baixe o repositório do Github e use o <a href="https://www.pyinstaller.org/">Pyinstaller</a>.</p>
 <h2 id="código">Código</h2>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ino" data-lang="ino"><span style="color:#1e889b"># -*- coding: utf-8 -*-
-</span><span style="color:#1e889b"></span>import tkinter
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ino" data-lang="ino"><span style="color:#75715e"># -*- coding: utf-8 -*-
+</span><span style="color:#75715e"></span>import tkinter
 import serial
 import serial.tools.list_ports
 import threading
 from tkinter.filedialog import asksaveasfilename
-from tkinter import *
+from tkinter import <span style="color:#f92672">*</span>
 import sys
 import os
 from tkinter import messagebox
@@ -176,420 +176,420 @@ from tkinter.scrolledtext import ScrolledText
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-<span style="color:#1e889b"># funções-------------------------------------------------------------------------------------
-</span><span style="color:#1e889b"></span>
-def sel():
-    <span style="color:#1e889b"># LISTA AS PORTAS DISPONÍVEIS
-</span><span style="color:#1e889b"></span>    comlist = serial.tools.list_ports.comports()
-    <span style="color:#008b45">connected</span> = []
-    <span style="color:#8b008b;font-weight:bold">for</span> element in comlist:
-        <span style="color:#008b45">connected</span>.append(element.device)
+<span style="color:#75715e"># funções-------------------------------------------------------------------------------------
+</span><span style="color:#75715e"></span>
+def sel()<span style="color:#f92672">:</span>
+    <span style="color:#75715e"># LISTA AS PORTAS DISPONÍVEIS
+</span><span style="color:#75715e"></span>    comlist <span style="color:#f92672">=</span> serial.tools.list_ports.comports()
+    <span style="color:#a6e22e">connected</span> <span style="color:#f92672">=</span> []
+    <span style="color:#66d9ef">for</span> element in comlist:
+        <span style="color:#a6e22e">connected</span>.append(element.device)
 
-def graficoinst():
-    plt.<span style="color:#008b45">close</span>()
-    fig = plt.figure()
-    grafico = <span style="color:#008b45">open</span>(<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>grafico.dat<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, <span style="color:#cd5555">&#39;r&#39;</span>).<span style="color:#008b45">read</span>()
-    vetores = grafico.split(<span style="color:#cd5555">&#39;\n&#39;</span>)
-    vetores = filter(None, vetores)
-    vetores = list(vetores)
-    <span style="color:#8b008b;font-weight:bold">for</span> i in range(len(vetores)):
-        aux = vetores[i].split(<span style="color:#cd5555">&#34;,&#34;</span>)
-        <span style="color:#8b008b;font-weight:bold">for</span> j in range(len(aux)):
-            aux[j] = <span style="color:#00688b;font-weight:bold">float</span>(aux[j])
-        vetores[i] = aux
-    matriz_graf = vetores
+def graficoinst()<span style="color:#f92672">:</span>
+    plt.<span style="color:#a6e22e">close</span>()
+    fig <span style="color:#f92672">=</span> plt.figure()
+    grafico <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(<span style="color:#960050;background-color:#1e0010">&#39;</span>grafico.dat<span style="color:#960050;background-color:#1e0010">&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>).<span style="color:#a6e22e">read</span>()
+    vetores <span style="color:#f92672">=</span> grafico.split(<span style="color:#e6db74">&#39;\n&#39;</span>)
+    vetores <span style="color:#f92672">=</span> filter(None, vetores)
+    vetores <span style="color:#f92672">=</span> list(vetores)
+    <span style="color:#66d9ef">for</span> i in range(len(vetores))<span style="color:#f92672">:</span>
+        aux <span style="color:#f92672">=</span> vetores[i].split(<span style="color:#e6db74">&#34;,&#34;</span>)
+        <span style="color:#66d9ef">for</span> j in range(len(aux))<span style="color:#f92672">:</span>
+            aux[j] <span style="color:#f92672">=</span> <span style="color:#66d9ef">float</span>(aux[j])
+        vetores[i] <span style="color:#f92672">=</span> aux
+    matriz_graf <span style="color:#f92672">=</span> vetores
     plt.clf()
-    eixo = fig.add_subplot(<span style="color:#b452cd">1</span>, <span style="color:#b452cd">1</span>, <span style="color:#b452cd">1</span>)
+    eixo <span style="color:#f92672">=</span> fig.add_subplot(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>)
     eixo.plot(matriz_graf)
-   <span style="color:#1e889b"># eixo.legend()
-</span><span style="color:#1e889b"></span>    plt.show()
+   <span style="color:#75715e"># eixo.legend()
+</span><span style="color:#75715e"></span>    plt.show()
 
-def grafico():
-    plt.<span style="color:#008b45">close</span>()
-    fig = plt.figure()
-    def animar(i):
-        grafico = <span style="color:#008b45">open</span>(<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>grafico.dat<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, <span style="color:#cd5555">&#39;r&#39;</span>).<span style="color:#008b45">read</span>()
-        vetores = grafico.split(<span style="color:#cd5555">&#39;\n&#39;</span>)
-        vetores = filter(None, vetores)
-        vetores = list(vetores)
-        <span style="color:#8b008b;font-weight:bold">for</span> i in range(len(vetores)):
-            aux = vetores[i].split(<span style="color:#cd5555">&#34;,&#34;</span>)
-            <span style="color:#8b008b;font-weight:bold">for</span> j in range(len(aux)):
-                aux[j] = <span style="color:#00688b;font-weight:bold">float</span>(aux[j])
-            vetores[i] = aux
-        matriz_graf = vetores
+def grafico()<span style="color:#f92672">:</span>
+    plt.<span style="color:#a6e22e">close</span>()
+    fig <span style="color:#f92672">=</span> plt.figure()
+    def animar(i)<span style="color:#f92672">:</span>
+        grafico <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(<span style="color:#960050;background-color:#1e0010">&#39;</span>grafico.dat<span style="color:#960050;background-color:#1e0010">&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>).<span style="color:#a6e22e">read</span>()
+        vetores <span style="color:#f92672">=</span> grafico.split(<span style="color:#e6db74">&#39;\n&#39;</span>)
+        vetores <span style="color:#f92672">=</span> filter(None, vetores)
+        vetores <span style="color:#f92672">=</span> list(vetores)
+        <span style="color:#66d9ef">for</span> i in range(len(vetores))<span style="color:#f92672">:</span>
+            aux <span style="color:#f92672">=</span> vetores[i].split(<span style="color:#e6db74">&#34;,&#34;</span>)
+            <span style="color:#66d9ef">for</span> j in range(len(aux))<span style="color:#f92672">:</span>
+                aux[j] <span style="color:#f92672">=</span> <span style="color:#66d9ef">float</span>(aux[j])
+            vetores[i] <span style="color:#f92672">=</span> aux
+        matriz_graf <span style="color:#f92672">=</span> vetores
         plt.clf()
-        eixo = fig.add_subplot(<span style="color:#b452cd">1</span>, <span style="color:#b452cd">1</span>, <span style="color:#b452cd">1</span>)
+        eixo <span style="color:#f92672">=</span> fig.add_subplot(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>)
         eixo.plot(matriz_graf)
-       <span style="color:#1e889b"># eixo.legend()
-</span><span style="color:#1e889b"></span>    ani = animation.FuncAnimation(fig, animar, interval=<span style="color:#b452cd">1000</span>)
+       <span style="color:#75715e"># eixo.legend()
+</span><span style="color:#75715e"></span>    ani <span style="color:#f92672">=</span> animation.FuncAnimation(fig, animar, interval<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>)
     plt.show()
 
-def selbaud():
-    <span style="color:#008b45">text</span>.insert(END, <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">Baudrate: &#34;</span> + str(varbaud.<span style="color:#008b45">get</span>()) + <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-    <span style="color:#008b45">text</span>.see(END)
+def selbaud()<span style="color:#f92672">:</span>
+    <span style="color:#a6e22e">text</span>.insert(END, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Baudrate: &#34;</span> <span style="color:#f92672">+</span> str(varbaud.<span style="color:#a6e22e">get</span>()) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+    <span style="color:#a6e22e">text</span>.see(END)
 
-def handle_leitura():
-    <span style="color:#8b008b;font-weight:bold">try</span>:
-        ser = serial.<span style="color:#008b45;font-weight:bold">Serial</span>(var.<span style="color:#008b45">get</span>(), baudrate=varbaud.<span style="color:#008b45">get</span>(), timeout=<span style="color:#b452cd">1</span>, parity=serial.PARITY_NONE,
-                            stopbits=serial.STOPBITS_ONE,
-                            bytesize=serial.EIGHTBITS)
-        ser.<span style="color:#008b45">close</span>()
+def handle_leitura()<span style="color:#f92672">:</span>
+    <span style="color:#66d9ef">try</span><span style="color:#f92672">:</span>
+        ser <span style="color:#f92672">=</span> serial.<span style="color:#a6e22e">Serial</span>(var.<span style="color:#a6e22e">get</span>(), baudrate<span style="color:#f92672">=</span>varbaud.<span style="color:#a6e22e">get</span>(), timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, parity<span style="color:#f92672">=</span>serial.PARITY_NONE,
+                            stopbits<span style="color:#f92672">=</span>serial.STOPBITS_ONE,
+                            bytesize<span style="color:#f92672">=</span>serial.EIGHTBITS)
+        ser.<span style="color:#a6e22e">close</span>()
     except Exception as e:
-        messagebox.showinfo(<span style="color:#cd5555">&#34;Eita!&#34;</span>, <span style="color:#cd5555">&#34;Erro: &#34;</span> + str(e) + <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">Provável causa: a porta já está sendo utilizada.&#34;</span>,
-                            icon=<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>error<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)
-        <span style="color:#8b008b;font-weight:bold">return</span> None
+        messagebox.showinfo(<span style="color:#e6db74">&#34;Eita!&#34;</span>, <span style="color:#e6db74">&#34;Erro: &#34;</span> <span style="color:#f92672">+</span> str(e) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Provável causa: a porta já está sendo utilizada.&#34;</span>,
+                            icon<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;</span>error<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+        <span style="color:#66d9ef">return</span> None
 
-    <span style="color:#8b008b;font-weight:bold">if</span> <span style="color:#8b008b;font-weight:bold">not</span> var.<span style="color:#008b45">get</span>() <span style="color:#8b008b;font-weight:bold">or</span> <span style="color:#8b008b;font-weight:bold">not</span> varbaud.<span style="color:#008b45">get</span>():
-        messagebox.showinfo(<span style="color:#cd5555">&#34;Aviso!&#34;</span>, <span style="color:#cd5555">&#34;Selecione uma porta/baudrate.&#34;</span>)
-        <span style="color:#8b008b;font-weight:bold">return</span> None
+    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">not</span> var.<span style="color:#a6e22e">get</span>() <span style="color:#66d9ef">or</span> <span style="color:#66d9ef">not</span> varbaud.<span style="color:#a6e22e">get</span>()<span style="color:#f92672">:</span>
+        messagebox.showinfo(<span style="color:#e6db74">&#34;Aviso!&#34;</span>, <span style="color:#e6db74">&#34;Selecione uma porta/baudrate.&#34;</span>)
+        <span style="color:#66d9ef">return</span> None
 
-    <span style="color:#8b008b;font-weight:bold">if</span> <span style="color:#8b008b;font-weight:bold">not</span> n_texto.<span style="color:#008b45">get</span>():
-        messagebox.showinfo(<span style="color:#cd5555">&#34;Aviso!&#34;</span>, <span style="color:#cd5555">&#34;Por favor, informe o número de entradas.&#34;</span>)
-        <span style="color:#8b008b;font-weight:bold">return</span> None
+    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">not</span> n_texto.<span style="color:#a6e22e">get</span>()<span style="color:#f92672">:</span>
+        messagebox.showinfo(<span style="color:#e6db74">&#34;Aviso!&#34;</span>, <span style="color:#e6db74">&#34;Por favor, informe o número de entradas.&#34;</span>)
+        <span style="color:#66d9ef">return</span> None
 
-    <span style="color:#8b008b;font-weight:bold">try</span>:
-        salvararquivo = asksaveasfilename(defaultextension=<span style="color:#cd5555">&#34;.txt&#34;</span>, initialfile=<span style="color:#cd5555">&#34;dados&#34;</span>)
-        arquivousuario = <span style="color:#008b45">open</span>(salvararquivo, <span style="color:#cd5555">&#39;w&#39;</span>)
-        arquivousuario.<span style="color:#008b45">close</span>()
-        arquivo_sinal = <span style="color:#008b45">open</span>(salvararquivo.<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#34;.txt&#34;</span>, <span style="color:#cd5555">&#34;&#34;</span>) + <span style="color:#cd5555">&#34;_sinal.txt&#34;</span>, <span style="color:#cd5555">&#34;w&#34;</span>)
-        arquivo_sinal.<span style="color:#008b45">close</span>()
+    <span style="color:#66d9ef">try</span><span style="color:#f92672">:</span>
+        salvararquivo <span style="color:#f92672">=</span> asksaveasfilename(defaultextension<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.txt&#34;</span>, initialfile<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dados&#34;</span>)
+        arquivousuario <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(salvararquivo, <span style="color:#e6db74">&#39;w&#39;</span>)
+        arquivousuario.<span style="color:#a6e22e">close</span>()
+        arquivo_sinal <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(salvararquivo.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;.txt&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;_sinal.txt&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>)
+        arquivo_sinal.<span style="color:#a6e22e">close</span>()
     except Exception as e:
         messagebox.showinfo(e)
-        <span style="color:#8b008b;font-weight:bold">return</span> None
-    ser = serial.<span style="color:#008b45;font-weight:bold">Serial</span>(var.<span style="color:#008b45">get</span>(), baudrate=varbaud.<span style="color:#008b45">get</span>(), timeout=<span style="color:#b452cd">1</span>, parity=serial.PARITY_NONE,
-                        stopbits=serial.STOPBITS_ONE, bytesize=serial.EIGHTBITS)
+        <span style="color:#66d9ef">return</span> None
+    ser <span style="color:#f92672">=</span> serial.<span style="color:#a6e22e">Serial</span>(var.<span style="color:#a6e22e">get</span>(), baudrate<span style="color:#f92672">=</span>varbaud.<span style="color:#a6e22e">get</span>(), timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, parity<span style="color:#f92672">=</span>serial.PARITY_NONE,
+                        stopbits<span style="color:#f92672">=</span>serial.STOPBITS_ONE, bytesize<span style="color:#f92672">=</span>serial.EIGHTBITS)
 
-    instr_arquivo = Label(top, <span style="color:#008b45">text</span>=<span style="color:#cd5555">&#34;Para finalizar a leitura apenas feche o programa, seus dados são salvos automaticamente.&#34;</span>)
-    instr_arquivo.grid(row = <span style="color:#b452cd">1</span>, column=<span style="color:#b452cd">1</span>, columnspan=<span style="color:#b452cd">5</span>)
-    instr_arquivo.configure(<span style="color:#008b45">background</span>=<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>blue<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, foreground=<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>white<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, borderwidth=<span style="color:#b452cd">3</span>, relief=<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>groove<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)
+    instr_arquivo <span style="color:#f92672">=</span> Label(top, <span style="color:#a6e22e">text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Para finalizar a leitura apenas feche o programa, seus dados são salvos automaticamente.&#34;</span>)
+    instr_arquivo.grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, columnspan<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)
+    instr_arquivo.configure(<span style="color:#a6e22e">background</span><span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;</span>blue<span style="color:#960050;background-color:#1e0010">&#39;</span>, foreground<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;</span>white<span style="color:#960050;background-color:#1e0010">&#39;</span>, borderwidth<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, relief<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;</span>groove<span style="color:#960050;background-color:#1e0010">&#39;</span>)
 
-    def iniciar():  <span style="color:#a61717;background-color:#e3d2d2">#</span> Esta função lê o inpu
-        <span style="color:#1e889b"># t da porta selecionada
-</span><span style="color:#1e889b"></span>        i_limpa_texto = <span style="color:#b452cd">0</span>
+    def iniciar()<span style="color:#f92672">:</span>  <span style="color:#960050;background-color:#1e0010">#</span> Esta função lê o inpu
+        <span style="color:#75715e"># t da porta selecionada
+</span><span style="color:#75715e"></span>        i_limpa_texto <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
 
-        arquivousuario = <span style="color:#008b45">open</span>(salvararquivo, <span style="color:#cd5555">&#39;a&#39;</span>)
-        arquivo_sinal = <span style="color:#008b45">open</span>(salvararquivo.<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#34;.txt&#34;</span>, <span style="color:#cd5555">&#34;&#34;</span>) + <span style="color:#cd5555">&#34;_sinal.txt&#34;</span>, <span style="color:#cd5555">&#39;a&#39;</span>)
-        rol = IntVar()
+        arquivousuario <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(salvararquivo, <span style="color:#e6db74">&#39;a&#39;</span>)
+        arquivo_sinal <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(salvararquivo.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;.txt&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;_sinal.txt&#34;</span>, <span style="color:#e6db74">&#39;a&#39;</span>)
+        rol <span style="color:#f92672">=</span> IntVar()
 
-        rol_parar = Radiobutton(top, <span style="color:#008b45">text</span>=<span style="color:#cd5555">&#34;Parar rolagem&#34;</span>, variable=rol, value=<span style="color:#b452cd">0</span>)
-        rol_parar.grid(row=<span style="color:#b452cd">20</span>, column=<span style="color:#b452cd">2</span>, columnspan = <span style="color:#b452cd">1</span>)
-        rol_parar.configure(<span style="color:#008b45">background</span>=<span style="color:#a61717;background-color:#e3d2d2">&#39;#</span>F2F2F2<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, indicatoron=<span style="color:#b452cd">0</span>, <span style="color:#008b45">width</span>=<span style="color:#b452cd">15</span>)
+        rol_parar <span style="color:#f92672">=</span> Radiobutton(top, <span style="color:#a6e22e">text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Parar rolagem&#34;</span>, variable<span style="color:#f92672">=</span>rol, value<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+        rol_parar.grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, columnspan <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+        rol_parar.configure(<span style="color:#a6e22e">background</span><span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;#</span>F2F2F2<span style="color:#960050;background-color:#1e0010">&#39;</span>, indicatoron<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#ae81ff">15</span>)
 
-        rol_iniciar = Radiobutton(top, <span style="color:#008b45">text</span>=<span style="color:#cd5555">&#34;Auto rolagem&#34;</span>, variable=rol, value=<span style="color:#b452cd">1</span>)
-        rol_iniciar.grid(row=<span style="color:#b452cd">20</span>, column=<span style="color:#b452cd">3</span>, columnspan=<span style="color:#b452cd">1</span>)
-        rol_iniciar.configure(<span style="color:#008b45">background</span>=<span style="color:#a61717;background-color:#e3d2d2">&#39;#</span>F2F2F2<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, indicatoron=<span style="color:#b452cd">0</span>, <span style="color:#008b45">width</span>=<span style="color:#b452cd">15</span>)
+        rol_iniciar <span style="color:#f92672">=</span> Radiobutton(top, <span style="color:#a6e22e">text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Auto rolagem&#34;</span>, variable<span style="color:#f92672">=</span>rol, value<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+        rol_iniciar.grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, columnspan<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+        rol_iniciar.configure(<span style="color:#a6e22e">background</span><span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;#</span>F2F2F2<span style="color:#960050;background-color:#1e0010">&#39;</span>, indicatoron<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#ae81ff">15</span>)
         rol_iniciar.select()
 
-        graf = <span style="color:#008b45">open</span>(<span style="color:#cd5555">&#34;grafico.dat&#34;</span>, <span style="color:#cd5555">&#39;w&#39;</span>)
-        graf.<span style="color:#008b45">close</span>()
+        graf <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;grafico.dat&#34;</span>, <span style="color:#e6db74">&#39;w&#39;</span>)
+        graf.<span style="color:#a6e22e">close</span>()
 
-        <span style="color:#8b008b;font-weight:bold">if</span> os.path.isfile(abre_poli.<span style="color:#008b45">get</span>()) == False <span style="color:#8b008b;font-weight:bold">and</span> os.path.isfile(<span style="color:#cd5555">&#34;polinomios.txt&#34;</span>) == False:
-            messagebox.showinfo(<span style="color:#cd5555">&#34;Atenção!&#34;</span>, <span style="color:#cd5555">&#34;Arquivo não encontrado, o sinal será apresentado nu.&#34;</span>)
-            poli = <span style="color:#008b45">open</span>(<span style="color:#cd5555">&#34;polinomios.txt&#34;</span>, <span style="color:#cd5555">&#39;w&#39;</span>)
-            n_entradas = <span style="color:#00688b;font-weight:bold">int</span>(n_texto.<span style="color:#008b45">get</span>())
-            <span style="color:#8b008b;font-weight:bold">for</span> i in range(n_entradas):
-                poli.<span style="color:#008b45">write</span>(<span style="color:#cd5555">&#34;1 0</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-        <span style="color:#8b008b;font-weight:bold">if</span> abre_poli.<span style="color:#008b45">get</span>():
-            <span style="color:#8b008b;font-weight:bold">if</span> os.stat(abre_poli.<span style="color:#008b45">get</span>()).st_size == <span style="color:#b452cd">0</span>:
-                messagebox.showinfo(<span style="color:#cd5555">&#34;Atenção!&#34;</span>, <span style="color:#cd5555">&#34;Arquivo vazio, será preenchido com y=x.&#34;</span>)
-                poli = <span style="color:#008b45">open</span>(abre_poli.<span style="color:#008b45">get</span>(), <span style="color:#cd5555">&#39;w&#39;</span>)
-                n_entradas = <span style="color:#00688b;font-weight:bold">int</span>(n_texto.<span style="color:#008b45">get</span>())
-                <span style="color:#8b008b;font-weight:bold">for</span> i in range(n_entradas):
-                    poli.<span style="color:#008b45">write</span>(<span style="color:#cd5555">&#34;1 0</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-                poli.<span style="color:#008b45">close</span>()
-            poli = <span style="color:#008b45">open</span>(abre_poli.<span style="color:#008b45">get</span>()).readlines()
-            i = <span style="color:#b452cd">0</span>
-            linhas = i + <span style="color:#b452cd">1</span>
-            <span style="color:#8b008b;font-weight:bold">if</span> linhas &lt; <span style="color:#00688b;font-weight:bold">int</span>(n_texto.<span style="color:#008b45">get</span>()):
-                messagebox.showinfo(<span style="color:#cd5555">&#34;Atenção!&#34;</span>, <span style="color:#cd5555">&#34;Número de equações menor que o número de entradas. Os sinais das entradas restantes serão exibidos inalterados.&#34;</span>)
-                escrever_polinomios = <span style="color:#008b45">open</span>(abre_poli.<span style="color:#008b45">get</span>(), <span style="color:#cd5555">&#39;a&#39;</span>)
-                restantes = <span style="color:#00688b;font-weight:bold">int</span>(n_texto.<span style="color:#008b45">get</span>()) - len(poli)
-                <span style="color:#8b008b;font-weight:bold">for</span> i in range(restantes):
-                    escrever_polinomios.<span style="color:#008b45">write</span>(<span style="color:#cd5555">&#34;1 0</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-                escrever_polinomios.<span style="color:#008b45">close</span>()
-        <span style="color:#8b008b;font-weight:bold">else</span>:
-            poli = <span style="color:#008b45">open</span>(<span style="color:#cd5555">&#34;polinomios.txt&#34;</span>).readlines()
-            i = <span style="color:#b452cd">0</span>
-            with <span style="color:#008b45">open</span>(<span style="color:#cd5555">&#34;polinomios.txt&#34;</span>) as arquivo:
-                <span style="color:#8b008b;font-weight:bold">for</span> i, arquivo in enumerate(arquivo):
+        <span style="color:#66d9ef">if</span> os.path.isfile(abre_poli.<span style="color:#a6e22e">get</span>()) <span style="color:#f92672">==</span> False <span style="color:#66d9ef">and</span> os.path.isfile(<span style="color:#e6db74">&#34;polinomios.txt&#34;</span>) <span style="color:#f92672">==</span> False:
+            messagebox.showinfo(<span style="color:#e6db74">&#34;Atenção!&#34;</span>, <span style="color:#e6db74">&#34;Arquivo não encontrado, o sinal será apresentado nu.&#34;</span>)
+            poli <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;polinomios.txt&#34;</span>, <span style="color:#e6db74">&#39;w&#39;</span>)
+            n_entradas <span style="color:#f92672">=</span> <span style="color:#66d9ef">int</span>(n_texto.<span style="color:#a6e22e">get</span>())
+            <span style="color:#66d9ef">for</span> i in range(n_entradas)<span style="color:#f92672">:</span>
+                poli.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#34;1 0</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+        <span style="color:#66d9ef">if</span> abre_poli.<span style="color:#a6e22e">get</span>()<span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">if</span> os.stat(abre_poli.<span style="color:#a6e22e">get</span>()).st_size <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span>
+                messagebox.showinfo(<span style="color:#e6db74">&#34;Atenção!&#34;</span>, <span style="color:#e6db74">&#34;Arquivo vazio, será preenchido com y=x.&#34;</span>)
+                poli <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(abre_poli.<span style="color:#a6e22e">get</span>(), <span style="color:#e6db74">&#39;w&#39;</span>)
+                n_entradas <span style="color:#f92672">=</span> <span style="color:#66d9ef">int</span>(n_texto.<span style="color:#a6e22e">get</span>())
+                <span style="color:#66d9ef">for</span> i in range(n_entradas)<span style="color:#f92672">:</span>
+                    poli.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#34;1 0</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+                poli.<span style="color:#a6e22e">close</span>()
+            poli <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(abre_poli.<span style="color:#a6e22e">get</span>()).readlines()
+            i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+            linhas <span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+            <span style="color:#66d9ef">if</span> linhas <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">int</span>(n_texto.<span style="color:#a6e22e">get</span>())<span style="color:#f92672">:</span>
+                messagebox.showinfo(<span style="color:#e6db74">&#34;Atenção!&#34;</span>, <span style="color:#e6db74">&#34;Número de equações menor que o número de entradas. Os sinais das entradas restantes serão exibidos inalterados.&#34;</span>)
+                escrever_polinomios <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(abre_poli.<span style="color:#a6e22e">get</span>(), <span style="color:#e6db74">&#39;a&#39;</span>)
+                restantes <span style="color:#f92672">=</span> <span style="color:#66d9ef">int</span>(n_texto.<span style="color:#a6e22e">get</span>()) <span style="color:#f92672">-</span> len(poli)
+                <span style="color:#66d9ef">for</span> i in range(restantes)<span style="color:#f92672">:</span>
+                    escrever_polinomios.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#34;1 0</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+                escrever_polinomios.<span style="color:#a6e22e">close</span>()
+        <span style="color:#66d9ef">else</span><span style="color:#f92672">:</span>
+            poli <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;polinomios.txt&#34;</span>).readlines()
+            i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+            with <span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;polinomios.txt&#34;</span>) as arquivo:
+                <span style="color:#66d9ef">for</span> i, arquivo in enumerate(arquivo)<span style="color:#f92672">:</span>
                     pass
-            linhas = i + <span style="color:#b452cd">1</span>
-            <span style="color:#8b008b;font-weight:bold">if</span> linhas &lt; <span style="color:#00688b;font-weight:bold">int</span>(n_texto.<span style="color:#008b45">get</span>()):
-                messagebox.showinfo(<span style="color:#cd5555">&#34;Atenção!&#34;</span>, <span style="color:#cd5555">&#34;Número de equações menor que o número de entradas. Os sinais das entradas restantes serão exibidos inalterados.&#34;</span>)
-                escrever_polinomios = <span style="color:#008b45">open</span>(<span style="color:#cd5555">&#34;polinomios.txt&#34;</span>, <span style="color:#cd5555">&#39;a&#39;</span>)
-                restantes = <span style="color:#00688b;font-weight:bold">int</span>(n_texto.<span style="color:#008b45">get</span>()) - len(poli)
-                <span style="color:#8b008b;font-weight:bold">for</span> i in range(restantes):
-                    escrever_polinomios.<span style="color:#008b45">write</span>(<span style="color:#cd5555">&#34;1 0</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-                escrever_polinomios.<span style="color:#008b45">close</span>()
+            linhas <span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+            <span style="color:#66d9ef">if</span> linhas <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">int</span>(n_texto.<span style="color:#a6e22e">get</span>())<span style="color:#f92672">:</span>
+                messagebox.showinfo(<span style="color:#e6db74">&#34;Atenção!&#34;</span>, <span style="color:#e6db74">&#34;Número de equações menor que o número de entradas. Os sinais das entradas restantes serão exibidos inalterados.&#34;</span>)
+                escrever_polinomios <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;polinomios.txt&#34;</span>, <span style="color:#e6db74">&#39;a&#39;</span>)
+                restantes <span style="color:#f92672">=</span> <span style="color:#66d9ef">int</span>(n_texto.<span style="color:#a6e22e">get</span>()) <span style="color:#f92672">-</span> len(poli)
+                <span style="color:#66d9ef">for</span> i in range(restantes)<span style="color:#f92672">:</span>
+                    escrever_polinomios.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#34;1 0</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+                escrever_polinomios.<span style="color:#a6e22e">close</span>()
 
-        <span style="color:#8b008b;font-weight:bold">for</span> i in range(len(poli)):
-            poli[i] = poli[i].<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>, <span style="color:#cd5555">&#34;&#34;</span>).split(<span style="color:#cd5555">&#34; &#34;</span>)
-        <span style="color:#8b008b;font-weight:bold">for</span> i in range(len(poli)):
-            <span style="color:#8b008b;font-weight:bold">for</span> j in range(len(poli[i])):
-                poli[i][j] = <span style="color:#00688b;font-weight:bold">float</span>(poli[i][j])
-        <span style="color:#008b45">text</span>.insert(END, <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span> + str(poli) + <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n\n</span><span style="color:#cd5555">&#34;</span>)
-        <span style="color:#008b45">text</span>.see(END)
+        <span style="color:#66d9ef">for</span> i in range(len(poli))<span style="color:#f92672">:</span>
+            poli[i] <span style="color:#f92672">=</span> poli[i].<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>).split(<span style="color:#e6db74">&#34; &#34;</span>)
+        <span style="color:#66d9ef">for</span> i in range(len(poli))<span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">for</span> j in range(len(poli[i]))<span style="color:#f92672">:</span>
+                poli[i][j] <span style="color:#f92672">=</span> <span style="color:#66d9ef">float</span>(poli[i][j])
+        <span style="color:#a6e22e">text</span>.insert(END, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> str(poli) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">&#34;</span>)
+        <span style="color:#a6e22e">text</span>.see(END)
 
-        <span style="color:#8b008b;font-weight:bold">try</span>:
-            <span style="color:#1e889b"># LOOP DE LEITURA
-</span><span style="color:#1e889b"></span>            <span style="color:#8b008b;font-weight:bold">while</span> True:
-                serial_bytes = ser.readline()
-                serial_texto = serial_bytes.decode(<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>utf-<span style="color:#b452cd">8</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)
-                a = serial_texto.split(<span style="color:#cd5555">&#39; &#39;</span>)
-                graf = <span style="color:#008b45">open</span>(<span style="color:#cd5555">&#34;grafico.dat&#34;</span>, <span style="color:#cd5555">&#39;a&#39;</span>)
-                dados = []
-                lista_dados = []
-                <span style="color:#8b008b;font-weight:bold">if</span> a:
-                    dados = <span style="color:#a61717;background-color:#e3d2d2">&#39;</span>[%s]<span style="color:#a61717;background-color:#e3d2d2">&#39;</span> % <span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;</span>.join(<span style="color:#008b45">map</span>(str, a))
-                    <span style="color:#1e889b"># map serve para aplicarmos uma função a cada elemento de uma lista,
-</span><span style="color:#1e889b"></span>                    <span style="color:#1e889b"># retornando uma nova lista contendo os elementos resultantes da aplicação da função.
-</span><span style="color:#1e889b"></span>                    <span style="color:#1e889b"># The %s token allows to insert (and potentially format) a string.
-</span><span style="color:#1e889b"></span>                    <span style="color:#1e889b"># Notice that the %s token is replaced by whatever I pass to the string after the % symbol.
-</span><span style="color:#1e889b"></span>                    dados = dados.<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#39;\n&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span>).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#39;\r&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span>).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#39;[&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span>).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#39;]&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span>).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#34; &#34;</span>, <span style="color:#cd5555">&#34;&#34;</span>).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#34;&#39;&#34;</span>, <span style="color:#cd5555">&#34;&#34;</span>)
-                    lista_dados = dados.split(<span style="color:#cd5555">&#34;,&#34;</span>)
-                    lista_dados = filter(None, lista_dados)
-                    lista_dados = list(lista_dados)
-                    <span style="color:#8b008b;font-weight:bold">for</span> i in range(len(lista_dados)):
-                        lista_dados[i] = <span style="color:#00688b;font-weight:bold">float</span>(lista_dados[i])
-                <span style="color:#8b008b;font-weight:bold">if</span> lista_dados:
-                    <span style="color:#8b008b;font-weight:bold">for</span> i in range(len(poli)):
-                        lista_dados[i] = poli[i][<span style="color:#b452cd">0</span>]*lista_dados[i] + poli[i][<span style="color:#b452cd">1</span>]
-                    arquivousuario.<span style="color:#008b45">write</span>(str(lista_dados).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#39;[&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span>).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#39;]&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span>) + <span style="color:#cd5555">&#39;\n&#39;</span>)
-                    arquivousuario.<span style="color:#008b45">flush</span>()
-                    arquivo_sinal.<span style="color:#008b45">write</span>(dados + <span style="color:#cd5555">&#39;\n&#39;</span>)
-                    arquivo_sinal.<span style="color:#008b45">flush</span>()
-                    graf.<span style="color:#008b45">write</span>(str(lista_dados).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#39;[&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span>).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#39;]&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span>) + <span style="color:#cd5555">&#39;\n&#39;</span>)
-                    graf.<span style="color:#008b45">flush</span>()
-                    <span style="color:#008b45">text</span>.insert(END, str(lista_dados).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#39;[&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span>).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#39;]&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span>) + <span style="color:#cd5555">&#39;\n&#39;</span>)
-                    <span style="color:#8b008b;font-weight:bold">if</span> rol.<span style="color:#008b45">get</span>() == <span style="color:#b452cd">1</span>:
-                        <span style="color:#008b45">text</span>.see(END)
-                    i_limpa_texto += <span style="color:#b452cd">1</span>
-                <span style="color:#8b008b;font-weight:bold">if</span> i_limpa_texto &gt; <span style="color:#b452cd">1000</span>:
-                    <span style="color:#008b45">text</span>.<span style="color:#8b008b;font-weight:bold">delete</span>(<span style="color:#b452cd">1.0</span>, END)
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">:</span>
+            <span style="color:#75715e"># LOOP DE LEITURA
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">while</span> True:
+                serial_bytes <span style="color:#f92672">=</span> ser.readline()
+                serial_texto <span style="color:#f92672">=</span> serial_bytes.decode(<span style="color:#960050;background-color:#1e0010">&#39;</span>utf<span style="color:#f92672">-</span><span style="color:#ae81ff">8</span><span style="color:#960050;background-color:#1e0010">&#39;</span>)
+                a <span style="color:#f92672">=</span> serial_texto.split(<span style="color:#e6db74">&#39; &#39;</span>)
+                graf <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;grafico.dat&#34;</span>, <span style="color:#e6db74">&#39;a&#39;</span>)
+                dados <span style="color:#f92672">=</span> []
+                lista_dados <span style="color:#f92672">=</span> []
+                <span style="color:#66d9ef">if</span> a:
+                    dados <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>[<span style="color:#f92672">%</span>s]<span style="color:#960050;background-color:#1e0010">&#39;</span> <span style="color:#f92672">%</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;</span>.join(<span style="color:#a6e22e">map</span>(str, a))
+                    <span style="color:#75715e"># map serve para aplicarmos uma função a cada elemento de uma lista,
+</span><span style="color:#75715e"></span>                    <span style="color:#75715e"># retornando uma nova lista contendo os elementos resultantes da aplicação da função.
+</span><span style="color:#75715e"></span>                    <span style="color:#75715e"># The %s token allows to insert (and potentially format) a string.
+</span><span style="color:#75715e"></span>                    <span style="color:#75715e"># Notice that the %s token is replaced by whatever I pass to the string after the % symbol.
+</span><span style="color:#75715e"></span>                    dados <span style="color:#f92672">=</span> dados.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;\n&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;\r&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;[&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;]&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34; &#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;&#39;&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>)
+                    lista_dados <span style="color:#f92672">=</span> dados.split(<span style="color:#e6db74">&#34;,&#34;</span>)
+                    lista_dados <span style="color:#f92672">=</span> filter(None, lista_dados)
+                    lista_dados <span style="color:#f92672">=</span> list(lista_dados)
+                    <span style="color:#66d9ef">for</span> i in range(len(lista_dados))<span style="color:#f92672">:</span>
+                        lista_dados[i] <span style="color:#f92672">=</span> <span style="color:#66d9ef">float</span>(lista_dados[i])
+                <span style="color:#66d9ef">if</span> lista_dados:
+                    <span style="color:#66d9ef">for</span> i in range(len(poli))<span style="color:#f92672">:</span>
+                        lista_dados[i] <span style="color:#f92672">=</span> poli[i][<span style="color:#ae81ff">0</span>]<span style="color:#f92672">*</span>lista_dados[i] <span style="color:#f92672">+</span> poli[i][<span style="color:#ae81ff">1</span>]
+                    arquivousuario.<span style="color:#a6e22e">write</span>(str(lista_dados).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;[&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;]&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;\n&#39;</span>)
+                    arquivousuario.<span style="color:#a6e22e">flush</span>()
+                    arquivo_sinal.<span style="color:#a6e22e">write</span>(dados <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;\n&#39;</span>)
+                    arquivo_sinal.<span style="color:#a6e22e">flush</span>()
+                    graf.<span style="color:#a6e22e">write</span>(str(lista_dados).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;[&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;]&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;\n&#39;</span>)
+                    graf.<span style="color:#a6e22e">flush</span>()
+                    <span style="color:#a6e22e">text</span>.insert(END, str(lista_dados).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;[&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;]&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;\n&#39;</span>)
+                    <span style="color:#66d9ef">if</span> rol.<span style="color:#a6e22e">get</span>() <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>
+                        <span style="color:#a6e22e">text</span>.see(END)
+                    i_limpa_texto <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+                <span style="color:#66d9ef">if</span> i_limpa_texto <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1000</span><span style="color:#f92672">:</span>
+                    <span style="color:#a6e22e">text</span>.<span style="color:#66d9ef">delete</span>(<span style="color:#ae81ff">1.0</span>, END)
 
-                    graf = <span style="color:#008b45">open</span>(<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>grafico.dat<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;</span>r+<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)
-                    graf.truncate(<span style="color:#b452cd">0</span>)
+                    graf <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(<span style="color:#960050;background-color:#1e0010">&#39;</span>grafico.dat<span style="color:#960050;background-color:#1e0010">&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;</span>r<span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">&#39;</span>)
+                    graf.truncate(<span style="color:#ae81ff">0</span>)
 
-                    i_limpa_texto = <span style="color:#b452cd">0</span>
-                <span style="color:#8b008b;font-weight:bold">if</span> limpar_graf.<span style="color:#008b45">get</span>() == <span style="color:#b452cd">1</span>:
-                    graf = <span style="color:#008b45">open</span>(<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>grafico.dat<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, <span style="color:#cd5555">&#39;w&#39;</span>)
-                    graf.truncate(<span style="color:#b452cd">0</span>)
+                    i_limpa_texto <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+                <span style="color:#66d9ef">if</span> limpar_graf.<span style="color:#a6e22e">get</span>() <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>
+                    graf <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(<span style="color:#960050;background-color:#1e0010">&#39;</span>grafico.dat<span style="color:#960050;background-color:#1e0010">&#39;</span>, <span style="color:#e6db74">&#39;w&#39;</span>)
+                    graf.truncate(<span style="color:#ae81ff">0</span>)
 
-                    limpar_graf.set(<span style="color:#b452cd">0</span>)
+                    limpar_graf.set(<span style="color:#ae81ff">0</span>)
 
-                <span style="color:#1e889b"># time.sleep(1)
-</span><span style="color:#1e889b"></span>        except Exception as e:
-            messagebox.showinfo(<span style="color:#cd5555">&#34;Erro!&#34;</span>, <span style="color:#cd5555">&#34;Erro: &#34;</span> + str(e), icon=<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>error<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)
+                <span style="color:#75715e"># time.sleep(1)
+</span><span style="color:#75715e"></span>        except Exception as e:
+            messagebox.showinfo(<span style="color:#e6db74">&#34;Erro!&#34;</span>, <span style="color:#e6db74">&#34;Erro: &#34;</span> <span style="color:#f92672">+</span> str(e), icon<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;</span>error<span style="color:#960050;background-color:#1e0010">&#39;</span>)
             pass
-        ser.<span style="color:#008b45">close</span>()
-        graf.<span style="color:#008b45">close</span>()
-        arquivousuario.<span style="color:#008b45">close</span>()
-        arquivo_sinal.<span style="color:#008b45">close</span>()
-        poli.<span style="color:#008b45">close</span>()
+        ser.<span style="color:#a6e22e">close</span>()
+        graf.<span style="color:#a6e22e">close</span>()
+        arquivousuario.<span style="color:#a6e22e">close</span>()
+        arquivo_sinal.<span style="color:#a6e22e">close</span>()
+        poli.<span style="color:#a6e22e">close</span>()
 
-    t = threading.Thread(target=iniciar)
-    t.daemon = True
+    t <span style="color:#f92672">=</span> threading.Thread(target<span style="color:#f92672">=</span>iniciar)
+    t.daemon <span style="color:#f92672">=</span> True
     t.start()
 
-def atualizarporta():
-    portas_sub_menu.<span style="color:#8b008b;font-weight:bold">delete</span>(<span style="color:#b452cd">0</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#008b45">end</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)
-    var.set(<span style="color:#cd5555">&#34;&#34;</span>)
-    ports = list(serial.tools.list_ports.comports())
-    comlist = serial.tools.list_ports.comports()
-    <span style="color:#008b45">connected</span> = []
-    <span style="color:#8b008b;font-weight:bold">for</span> element in comlist:
-        <span style="color:#008b45">connected</span>.append(element.device)
-    <span style="color:#8b008b;font-weight:bold">for</span> i in range(len(ports)):
-        ports[i] = str(ports[i])
-    <span style="color:#8b008b;font-weight:bold">for</span> k in range(len(<span style="color:#008b45">connected</span>)):
-        portas_sub_menu.add_radiobutton(label = <span style="color:#008b45">connected</span>[k], variable=var, value=str(<span style="color:#008b45">connected</span>[k]), command=sel)
-        <span style="color:#8b008b;font-weight:bold">if</span> <span style="color:#cd5555">&#34;Arduino&#34;</span> <span style="color:#8b008b;font-weight:bold">or</span> <span style="color:#cd5555">&#34;Serial USB&#34;</span> in ports[k]:
-            var.set(str(<span style="color:#008b45">connected</span>[k]))
+def atualizarporta()<span style="color:#f92672">:</span>
+    portas_sub_menu.<span style="color:#66d9ef">delete</span>(<span style="color:#ae81ff">0</span>, <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">end</span><span style="color:#960050;background-color:#1e0010">&#39;</span>)
+    var.set(<span style="color:#e6db74">&#34;&#34;</span>)
+    ports <span style="color:#f92672">=</span> list(serial.tools.list_ports.comports())
+    comlist <span style="color:#f92672">=</span> serial.tools.list_ports.comports()
+    <span style="color:#a6e22e">connected</span> <span style="color:#f92672">=</span> []
+    <span style="color:#66d9ef">for</span> element in comlist:
+        <span style="color:#a6e22e">connected</span>.append(element.device)
+    <span style="color:#66d9ef">for</span> i in range(len(ports))<span style="color:#f92672">:</span>
+        ports[i] <span style="color:#f92672">=</span> str(ports[i])
+    <span style="color:#66d9ef">for</span> k in range(len(<span style="color:#a6e22e">connected</span>))<span style="color:#f92672">:</span>
+        portas_sub_menu.add_radiobutton(label <span style="color:#f92672">=</span> <span style="color:#a6e22e">connected</span>[k], variable<span style="color:#f92672">=</span>var, value<span style="color:#f92672">=</span>str(<span style="color:#a6e22e">connected</span>[k]), command<span style="color:#f92672">=</span>sel)
+        <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;Arduino&#34;</span> <span style="color:#66d9ef">or</span> <span style="color:#e6db74">&#34;Serial USB&#34;</span> in ports[k]<span style="color:#f92672">:</span>
+            var.set(str(<span style="color:#a6e22e">connected</span>[k]))
             portas_sub_menu.activate(k)
-    <span style="color:#008b45">text</span>.insert(END, <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">Porta selecionada: &#34;</span> + str(var.<span style="color:#008b45">get</span>()) + <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-    <span style="color:#008b45">text</span>.see(END)
+    <span style="color:#a6e22e">text</span>.insert(END, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Porta selecionada: &#34;</span> <span style="color:#f92672">+</span> str(var.<span style="color:#a6e22e">get</span>()) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+    <span style="color:#a6e22e">text</span>.see(END)
 
-def reiniciar():
-    <span style="color:#8b008b;font-weight:bold">if</span> messagebox.askokcancel(<span style="color:#cd5555">&#34;Reiniciando...&#34;</span>, <span style="color:#cd5555">&#34;Tem certeza?&#34;</span>):
-        python = sys.executable
-        os.execl(python, python, *sys.argv)
-    <span style="color:#8b008b;font-weight:bold">else</span>:
-        <span style="color:#8b008b;font-weight:bold">return</span> None
+def reiniciar()<span style="color:#f92672">:</span>
+    <span style="color:#66d9ef">if</span> messagebox.askokcancel(<span style="color:#e6db74">&#34;Reiniciando...&#34;</span>, <span style="color:#e6db74">&#34;Tem certeza?&#34;</span>)<span style="color:#f92672">:</span>
+        python <span style="color:#f92672">=</span> sys.executable
+        os.execl(python, python, <span style="color:#f92672">*</span>sys.argv)
+    <span style="color:#66d9ef">else</span><span style="color:#f92672">:</span>
+        <span style="color:#66d9ef">return</span> None
 
-def fechando():
-    <span style="color:#8b008b;font-weight:bold">if</span> messagebox.askokcancel(<span style="color:#cd5555">&#34;Fechando...&#34;</span>, <span style="color:#cd5555">&#34;Tem certeza?&#34;</span>):
-        plt.<span style="color:#008b45">close</span>(<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>all<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)
+def fechando()<span style="color:#f92672">:</span>
+    <span style="color:#66d9ef">if</span> messagebox.askokcancel(<span style="color:#e6db74">&#34;Fechando...&#34;</span>, <span style="color:#e6db74">&#34;Tem certeza?&#34;</span>)<span style="color:#f92672">:</span>
+        plt.<span style="color:#a6e22e">close</span>(<span style="color:#960050;background-color:#1e0010">&#39;</span>all<span style="color:#960050;background-color:#1e0010">&#39;</span>)
         top.destroy()
 
-<span style="color:#1e889b"># fim das funções-----------------------------------------------------------------------------
-</span><span style="color:#1e889b"></span>
-<span style="color:#1e889b"># Código para os widgets vai aqui.------------------------------------------------------------
-</span><span style="color:#1e889b"></span>
-<span style="color:#1e889b"># define a janela principal----------------------------------
-</span><span style="color:#1e889b"></span>top = tkinter.Tk()
-top.wm_title(<span style="color:#cd5555">&#34;Sensorino Salva!&#34;</span>)
-top.minsize(<span style="color:#b452cd">500</span>, <span style="color:#b452cd">500</span>)
-top.geometry(<span style="color:#cd5555">&#34;950x600&#34;</span>)
-top.configure(<span style="color:#008b45">background</span>=<span style="color:#a61717;background-color:#e3d2d2">&#39;#</span><span style="color:#b452cd">000000</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)
-<span style="color:#1e889b"># -----------------------------------------------------------
-</span><span style="color:#1e889b"></span>
-comlist = serial.tools.list_ports.comports()
-<span style="color:#008b45">connected</span> = []
-<span style="color:#8b008b;font-weight:bold">for</span> element in comlist:
-    <span style="color:#008b45">connected</span>.append(element.device)
-<span style="color:#8b008b;font-weight:bold">if</span> <span style="color:#8b008b;font-weight:bold">not</span> <span style="color:#008b45">connected</span>:
-    messagebox.showinfo(<span style="color:#cd5555">&#34;Aviso!&#34;</span>, <span style="color:#cd5555">&#34;Nenhuma porta disponível, verifique se seu dispositivo está conectado.&#34;</span>)
+<span style="color:#75715e"># fim das funções-----------------------------------------------------------------------------
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># Código para os widgets vai aqui.------------------------------------------------------------
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># define a janela principal----------------------------------
+</span><span style="color:#75715e"></span>top <span style="color:#f92672">=</span> tkinter.Tk()
+top.wm_title(<span style="color:#e6db74">&#34;Sensorino Salva!&#34;</span>)
+top.minsize(<span style="color:#ae81ff">500</span>, <span style="color:#ae81ff">500</span>)
+top.geometry(<span style="color:#e6db74">&#34;950x600&#34;</span>)
+top.configure(<span style="color:#a6e22e">background</span><span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;#</span><span style="color:#ae81ff">000000</span><span style="color:#960050;background-color:#1e0010">&#39;</span>)
+<span style="color:#75715e"># -----------------------------------------------------------
+</span><span style="color:#75715e"></span>
+comlist <span style="color:#f92672">=</span> serial.tools.list_ports.comports()
+<span style="color:#a6e22e">connected</span> <span style="color:#f92672">=</span> []
+<span style="color:#66d9ef">for</span> element in comlist:
+    <span style="color:#a6e22e">connected</span>.append(element.device)
+<span style="color:#66d9ef">if</span> <span style="color:#66d9ef">not</span> <span style="color:#a6e22e">connected</span><span style="color:#f92672">:</span>
+    messagebox.showinfo(<span style="color:#e6db74">&#34;Aviso!&#34;</span>, <span style="color:#e6db74">&#34;Nenhuma porta disponível, verifique se seu dispositivo está conectado.&#34;</span>)
 
-label_n = Label(top, <span style="color:#008b45">text</span> = <span style="color:#cd5555">&#34;Número de entradas:&#34;</span>)
-label_n.grid(row = <span style="color:#b452cd">2</span>, column = <span style="color:#b452cd">1</span>, columnspan = <span style="color:#b452cd">2</span>, padx = <span style="color:#b452cd">10</span>, pady = <span style="color:#b452cd">10</span>)
-label_n.configure(<span style="color:#008b45">background</span>=<span style="color:#a61717;background-color:#e3d2d2">&#39;#</span><span style="color:#b452cd">000000</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, foreground=<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>white<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, <span style="color:#008b45">width</span> = <span style="color:#b452cd">20</span>)
+label_n <span style="color:#f92672">=</span> Label(top, <span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Número de entradas:&#34;</span>)
+label_n.grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, column <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, columnspan <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, padx <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, pady <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>)
+label_n.configure(<span style="color:#a6e22e">background</span><span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;#</span><span style="color:#ae81ff">000000</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, foreground<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;</span>white<span style="color:#960050;background-color:#1e0010">&#39;</span>, <span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>)
 
-n_texto = StringVar()
-n = Entry(top, textvariable = n_texto)
-n.grid(row = <span style="color:#b452cd">2</span>, column=<span style="color:#b452cd">3</span>, padx = <span style="color:#b452cd">10</span>, pady = <span style="color:#b452cd">10</span>)
-n.configure(<span style="color:#008b45">width</span> = <span style="color:#b452cd">10</span>)
+n_texto <span style="color:#f92672">=</span> StringVar()
+n <span style="color:#f92672">=</span> Entry(top, textvariable <span style="color:#f92672">=</span> n_texto)
+n.grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, padx <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, pady <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>)
+n.configure(<span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>)
 
-label_eqs = Label(top, <span style="color:#008b45">text</span> = <span style="color:#cd5555">&#34;Equação da reta: y = a*x+b, padrão: y=x&#34;</span>)
-label_eqs.grid(row = <span style="color:#b452cd">2</span>, column = <span style="color:#b452cd">6</span>, columnspan = <span style="color:#b452cd">3</span>)
-label_eqs.configure(<span style="color:#008b45">background</span>=<span style="color:#a61717;background-color:#e3d2d2">&#39;#</span><span style="color:#b452cd">000000</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, foreground=<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>white<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)
+label_eqs <span style="color:#f92672">=</span> Label(top, <span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Equação da reta: y = a*x+b, padrão: y=x&#34;</span>)
+label_eqs.grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, column <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>, columnspan <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>)
+label_eqs.configure(<span style="color:#a6e22e">background</span><span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;#</span><span style="color:#ae81ff">000000</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, foreground<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;</span>white<span style="color:#960050;background-color:#1e0010">&#39;</span>)
 
-label_a = Label(top, <span style="color:#008b45">text</span> = <span style="color:#cd5555">&#34;a:&#34;</span>)
-label_a.grid(row = <span style="color:#b452cd">3</span>, column = <span style="color:#b452cd">6</span>)
-label_a.configure(<span style="color:#008b45">background</span>=<span style="color:#a61717;background-color:#e3d2d2">&#39;#</span><span style="color:#b452cd">000000</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, foreground=<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>white<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)
+label_a <span style="color:#f92672">=</span> Label(top, <span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a:&#34;</span>)
+label_a.grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, column <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>)
+label_a.configure(<span style="color:#a6e22e">background</span><span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;#</span><span style="color:#ae81ff">000000</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, foreground<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;</span>white<span style="color:#960050;background-color:#1e0010">&#39;</span>)
 
-arquivo_coef = <span style="color:#008b45">open</span>(<span style="color:#cd5555">&#34;polinomios.txt&#34;</span>, <span style="color:#cd5555">&#39;w&#39;</span>)
-arquivo_coef.<span style="color:#008b45">close</span>()
+arquivo_coef <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;polinomios.txt&#34;</span>, <span style="color:#e6db74">&#39;w&#39;</span>)
+arquivo_coef.<span style="color:#a6e22e">close</span>()
 
-abre_poli = StringVar()
+abre_poli <span style="color:#f92672">=</span> StringVar()
 
-def abre_polinomio():
-    <span style="color:#8b008b;font-weight:bold">try</span>:
-        abre_poli.set(filedialog.askopenfilename(initialdir = <span style="color:#cd5555">&#34;/&#34;</span>,title = <span style="color:#cd5555">&#34;Selecione seu arquivo&#34;</span>,filetypes = ((<span style="color:#cd5555">&#34;Arquivo de texto&#34;</span>,<span style="color:#cd5555">&#34;*.txt&#34;</span>),(<span style="color:#cd5555">&#34;Todos os arquivos&#34;</span>,<span style="color:#cd5555">&#34;*.*&#34;</span>))))
-        <span style="color:#8b008b;font-weight:bold">if</span> abre_poli.<span style="color:#008b45">get</span>():
-            <span style="color:#008b45">text</span>.insert(END, <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">Carregado com sucesso.</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-            <span style="color:#008b45">text</span>.see(END)
+def abre_polinomio()<span style="color:#f92672">:</span>
+    <span style="color:#66d9ef">try</span><span style="color:#f92672">:</span>
+        abre_poli.set(filedialog.askopenfilename(initialdir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/&#34;</span>,title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Selecione seu arquivo&#34;</span>,filetypes <span style="color:#f92672">=</span> ((<span style="color:#e6db74">&#34;Arquivo de texto&#34;</span>,<span style="color:#e6db74">&#34;*.txt&#34;</span>),(<span style="color:#e6db74">&#34;Todos os arquivos&#34;</span>,<span style="color:#e6db74">&#34;*.*&#34;</span>))))
+        <span style="color:#66d9ef">if</span> abre_poli.<span style="color:#a6e22e">get</span>()<span style="color:#f92672">:</span>
+            <span style="color:#a6e22e">text</span>.insert(END, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Carregado com sucesso.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+            <span style="color:#a6e22e">text</span>.see(END)
     except Exception as e:
         messagebox.showinfo(e)
-        <span style="color:#8b008b;font-weight:bold">return</span> None
+        <span style="color:#66d9ef">return</span> None
 
-button_abre_poli = Button(top, <span style="color:#008b45">text</span> = <span style="color:#cd5555">&#34;Carregar equações&#34;</span>, command = abre_polinomio)
-button_abre_poli.grid(row=<span style="color:#b452cd">6</span>, column=<span style="color:#b452cd">7</span>)
-button_abre_poli.configure(activebackground=<span style="color:#a61717;background-color:#e3d2d2">&#39;#</span><span style="color:#b452cd">000000</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, activeforeground=<span style="color:#a61717;background-color:#e3d2d2">&#39;#</span>FFFFFF<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)
+button_abre_poli <span style="color:#f92672">=</span> Button(top, <span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Carregar equações&#34;</span>, command <span style="color:#f92672">=</span> abre_polinomio)
+button_abre_poli.grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">6</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">7</span>)
+button_abre_poli.configure(activebackground<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;#</span><span style="color:#ae81ff">000000</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, activeforeground<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;#</span>FFFFFF<span style="color:#960050;background-color:#1e0010">&#39;</span>)
 
-def pega_coef():
-    <span style="color:#8b008b;font-weight:bold">if</span> <span style="color:#8b008b;font-weight:bold">not</span> n_texto.<span style="color:#008b45">get</span>():
-        messagebox.showinfo(<span style="color:#cd5555">&#34;Aviso!&#34;</span>, <span style="color:#cd5555">&#34;Por favor, informe o número de entradas.&#34;</span>)
-        <span style="color:#8b008b;font-weight:bold">return</span> None
-    coef_a = a.<span style="color:#008b45">get</span>()
-    coef_b = b.<span style="color:#008b45">get</span>()
-    <span style="color:#008b45">text</span>.insert(END, <span style="color:#cd5555">&#34;y = &#34;</span> + coef_a + <span style="color:#cd5555">&#34;*x&#34;</span> + <span style="color:#cd5555">&#34; + &#34;</span> + coef_b + <span style="color:#cd5555">&#39;\n&#39;</span>)
-    <span style="color:#008b45">text</span>.see(END)
-    arquivo_coef = <span style="color:#008b45">open</span>(<span style="color:#cd5555">&#34;polinomios.txt&#34;</span>, <span style="color:#cd5555">&#39;a&#39;</span>)
-    arquivo_coef.<span style="color:#008b45">write</span>(coef_a + <span style="color:#cd5555">&#34; &#34;</span>)
-    arquivo_coef.<span style="color:#008b45">write</span>(coef_b + <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-    arquivo_coef.<span style="color:#008b45">close</span>()
-    a.<span style="color:#8b008b;font-weight:bold">delete</span>(<span style="color:#b452cd">0</span>, END)
-    b.<span style="color:#8b008b;font-weight:bold">delete</span>(<span style="color:#b452cd">0</span>, END)
-    arquivo_coef.<span style="color:#008b45">close</span>()
+def pega_coef()<span style="color:#f92672">:</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">not</span> n_texto.<span style="color:#a6e22e">get</span>()<span style="color:#f92672">:</span>
+        messagebox.showinfo(<span style="color:#e6db74">&#34;Aviso!&#34;</span>, <span style="color:#e6db74">&#34;Por favor, informe o número de entradas.&#34;</span>)
+        <span style="color:#66d9ef">return</span> None
+    coef_a <span style="color:#f92672">=</span> a.<span style="color:#a6e22e">get</span>()
+    coef_b <span style="color:#f92672">=</span> b.<span style="color:#a6e22e">get</span>()
+    <span style="color:#a6e22e">text</span>.insert(END, <span style="color:#e6db74">&#34;y = &#34;</span> <span style="color:#f92672">+</span> coef_a <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;*x&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; + &#34;</span> <span style="color:#f92672">+</span> coef_b <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;\n&#39;</span>)
+    <span style="color:#a6e22e">text</span>.see(END)
+    arquivo_coef <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;polinomios.txt&#34;</span>, <span style="color:#e6db74">&#39;a&#39;</span>)
+    arquivo_coef.<span style="color:#a6e22e">write</span>(coef_a <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span>)
+    arquivo_coef.<span style="color:#a6e22e">write</span>(coef_b <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+    arquivo_coef.<span style="color:#a6e22e">close</span>()
+    a.<span style="color:#66d9ef">delete</span>(<span style="color:#ae81ff">0</span>, END)
+    b.<span style="color:#66d9ef">delete</span>(<span style="color:#ae81ff">0</span>, END)
+    arquivo_coef.<span style="color:#a6e22e">close</span>()
 
-def salva_polinomio():
-    <span style="color:#8b008b;font-weight:bold">try</span>:
-        salvar_poli = asksaveasfilename(defaultextension=<span style="color:#cd5555">&#34;.txt&#34;</span>, initialfile=<span style="color:#cd5555">&#34;meus_polinomios&#34;</span>)
-        arquivo_poli = <span style="color:#008b45">open</span>(salvar_poli, <span style="color:#cd5555">&#39;w&#39;</span>)
-        texto = <span style="color:#008b45">open</span>(<span style="color:#cd5555">&#34;polinomios.txt&#34;</span>).<span style="color:#008b45">read</span>()
-        texto = texto.<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#39;\r&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span>).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#39;[&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span>).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#39;]&#39;</span>, <span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span>).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#34;,&#34;</span>, <span style="color:#cd5555">&#34;&#34;</span>).<span style="color:#008b45">replace</span>(<span style="color:#cd5555">&#34;&#39;&#34;</span>, <span style="color:#cd5555">&#34;&#34;</span>)
-        arquivo_poli.<span style="color:#008b45">write</span>(texto)
-        arquivo_poli.<span style="color:#008b45">close</span>()
+def salva_polinomio()<span style="color:#f92672">:</span>
+    <span style="color:#66d9ef">try</span><span style="color:#f92672">:</span>
+        salvar_poli <span style="color:#f92672">=</span> asksaveasfilename(defaultextension<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.txt&#34;</span>, initialfile<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;meus_polinomios&#34;</span>)
+        arquivo_poli <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(salvar_poli, <span style="color:#e6db74">&#39;w&#39;</span>)
+        texto <span style="color:#f92672">=</span> <span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;polinomios.txt&#34;</span>).<span style="color:#a6e22e">read</span>()
+        texto <span style="color:#f92672">=</span> texto.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;\r&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;[&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;]&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;,&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;&#39;&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>)
+        arquivo_poli.<span style="color:#a6e22e">write</span>(texto)
+        arquivo_poli.<span style="color:#a6e22e">close</span>()
     except Exception as e:
         messagebox.showinfo(e)
-        <span style="color:#8b008b;font-weight:bold">return</span> None
+        <span style="color:#66d9ef">return</span> None
 
-limpar_graf = IntVar()
+limpar_graf <span style="color:#f92672">=</span> IntVar()
 
-def limpar_graf_estado():
-    limpar_graf.set(<span style="color:#b452cd">1</span>)
+def limpar_graf_estado()<span style="color:#f92672">:</span>
+    limpar_graf.set(<span style="color:#ae81ff">1</span>)
 
-button_salva_poli = Button(top, <span style="color:#008b45">text</span> = <span style="color:#cd5555">&#34;Salvar equações&#34;</span>, command = salva_polinomio)
-button_salva_poli.grid(row=<span style="color:#b452cd">5</span>, column=<span style="color:#b452cd">7</span>)
-button_salva_poli.configure(activebackground=<span style="color:#a61717;background-color:#e3d2d2">&#39;#</span><span style="color:#b452cd">000000</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, activeforeground=<span style="color:#a61717;background-color:#e3d2d2">&#39;#</span>FFFFFF<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)
+button_salva_poli <span style="color:#f92672">=</span> Button(top, <span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Salvar equações&#34;</span>, command <span style="color:#f92672">=</span> salva_polinomio)
+button_salva_poli.grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">7</span>)
+button_salva_poli.configure(activebackground<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;#</span><span style="color:#ae81ff">000000</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, activeforeground<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;#</span>FFFFFF<span style="color:#960050;background-color:#1e0010">&#39;</span>)
 
-a_texto = StringVar()
-a = Entry(top, textvariable = a_texto)
-a.grid(row=<span style="color:#b452cd">3</span>, column=<span style="color:#b452cd">7</span>)
+a_texto <span style="color:#f92672">=</span> StringVar()
+a <span style="color:#f92672">=</span> Entry(top, textvariable <span style="color:#f92672">=</span> a_texto)
+a.grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">7</span>)
 
-label_b = Label(top, <span style="color:#008b45">text</span> = <span style="color:#cd5555">&#34;b:&#34;</span>)
-label_b.grid(row = <span style="color:#b452cd">4</span>, column = <span style="color:#b452cd">6</span>)
-label_b.configure(<span style="color:#008b45">background</span>=<span style="color:#a61717;background-color:#e3d2d2">&#39;#</span><span style="color:#b452cd">000000</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, foreground=<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>white<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)
+label_b <span style="color:#f92672">=</span> Label(top, <span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;b:&#34;</span>)
+label_b.grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>, column <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>)
+label_b.configure(<span style="color:#a6e22e">background</span><span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;#</span><span style="color:#ae81ff">000000</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, foreground<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;</span>white<span style="color:#960050;background-color:#1e0010">&#39;</span>)
 
-b_texto = StringVar()
-b = Entry(top, textvariable = b_texto)
-b.grid(row=<span style="color:#b452cd">4</span>, column=<span style="color:#b452cd">7</span>)
+b_texto <span style="color:#f92672">=</span> StringVar()
+b <span style="color:#f92672">=</span> Entry(top, textvariable <span style="color:#f92672">=</span> b_texto)
+b.grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">7</span>)
 
-button_entrar = Button(top, <span style="color:#008b45">text</span> = <span style="color:#cd5555">&#34;Inserir&#34;</span>, command = pega_coef)
-button_entrar.grid(row=<span style="color:#b452cd">3</span>, column=<span style="color:#b452cd">8</span>, rowspan = <span style="color:#b452cd">2</span>, padx = <span style="color:#b452cd">15</span>)
-button_entrar.configure(activebackground=<span style="color:#a61717;background-color:#e3d2d2">&#39;#</span><span style="color:#b452cd">000000</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>, activeforeground=<span style="color:#a61717;background-color:#e3d2d2">&#39;#</span>FFFFFF<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)
+button_entrar <span style="color:#f92672">=</span> Button(top, <span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Inserir&#34;</span>, command <span style="color:#f92672">=</span> pega_coef)
+button_entrar.grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>, rowspan <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, padx <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span>)
+button_entrar.configure(activebackground<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;#</span><span style="color:#ae81ff">000000</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, activeforeground<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;#</span>FFFFFF<span style="color:#960050;background-color:#1e0010">&#39;</span>)
 
-<span style="color:#008b45">text</span> = ScrolledText(top, <span style="color:#008b45">width</span>=<span style="color:#b452cd">50</span>, <span style="color:#008b45">height</span>=<span style="color:#b452cd">20</span>)
-<span style="color:#008b45">text</span>.grid(row=<span style="color:#b452cd">3</span>, column=<span style="color:#b452cd">1</span>, columnspan=<span style="color:#b452cd">5</span>, rowspan=<span style="color:#b452cd">10</span>, padx = <span style="color:#b452cd">10</span>, pady = <span style="color:#b452cd">10</span>)
+<span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> ScrolledText(top, <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>, <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>)
+<span style="color:#a6e22e">text</span>.grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, columnspan<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, rowspan<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, padx <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, pady <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>)
 
-<span style="color:#008b45">text</span>.insert(END, <span style="color:#cd5555">&#34;          INSTRUÇÕES</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-<span style="color:#008b45">text</span>.insert(END, <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-<span style="color:#008b45">text</span>.insert(END, <span style="color:#cd5555">&#34;&gt;O loop de seu controlador deve</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">retornar os dados da seguinte forma:</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-<span style="color:#008b45">text</span>.insert(END, <span style="color:#cd5555">&#34;a b c ...</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-<span style="color:#008b45">text</span>.insert(END, <span style="color:#cd5555">&#34;Ex: 1 2 3 4 5</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-<span style="color:#008b45">text</span>.insert(END, <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&gt;Declare o número de entradas</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">antes de iniciar a leitura.</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-<span style="color:#008b45">text</span>.insert(END, <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>)
-<span style="color:#008b45">text</span>.see(END)
+<span style="color:#a6e22e">text</span>.insert(END, <span style="color:#e6db74">&#34;          INSTRUÇÕES</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+<span style="color:#a6e22e">text</span>.insert(END, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+<span style="color:#a6e22e">text</span>.insert(END, <span style="color:#e6db74">&#34;&gt;O loop de seu controlador deve</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">retornar os dados da seguinte forma:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+<span style="color:#a6e22e">text</span>.insert(END, <span style="color:#e6db74">&#34;a b c ...</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+<span style="color:#a6e22e">text</span>.insert(END, <span style="color:#e6db74">&#34;Ex: 1 2 3 4 5</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+<span style="color:#a6e22e">text</span>.insert(END, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&gt;Declare o número de entradas</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">antes de iniciar a leitura.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+<span style="color:#a6e22e">text</span>.insert(END, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+<span style="color:#a6e22e">text</span>.see(END)
 
-<span style="color:#1e889b"># criar menu
-</span><span style="color:#1e889b"></span>menubar = Menu(top)
+<span style="color:#75715e"># criar menu
+</span><span style="color:#75715e"></span>menubar <span style="color:#f92672">=</span> Menu(top)
 
-menubar.add_command(label=<span style="color:#cd5555">&#34;Iniciar leitura&#34;</span>, command=handle_leitura)
+menubar.add_command(label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Iniciar leitura&#34;</span>, command<span style="color:#f92672">=</span>handle_leitura)
 
-graf_menu = Menu(menubar, tearoff=<span style="color:#b452cd">0</span>)
-menubar.add_cascade(label=<span style="color:#cd5555">&#34;Gráficos&#34;</span>, menu=graf_menu)
-graf_menu.add_command(label=<span style="color:#cd5555">&#34;Exibir gráfico em tempo real&#34;</span>, command=grafico)
-graf_menu.add_command(label=<span style="color:#cd5555">&#34;Exibir gráfico&#34;</span>, command=graficoinst)
+graf_menu <span style="color:#f92672">=</span> Menu(menubar, tearoff<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+menubar.add_cascade(label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Gráficos&#34;</span>, menu<span style="color:#f92672">=</span>graf_menu)
+graf_menu.add_command(label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Exibir gráfico em tempo real&#34;</span>, command<span style="color:#f92672">=</span>grafico)
+graf_menu.add_command(label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Exibir gráfico&#34;</span>, command<span style="color:#f92672">=</span>graficoinst)
 graf_menu.add_separator()
-graf_menu.add_command(label=<span style="color:#cd5555">&#34;Limpar gráfico&#34;</span>, command=limpar_graf_estado)
+graf_menu.add_command(label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Limpar gráfico&#34;</span>, command<span style="color:#f92672">=</span>limpar_graf_estado)
 
-controlador_menu = Menu(menubar, tearoff=<span style="color:#b452cd">0</span>)
-menubar.add_cascade(label=<span style="color:#cd5555">&#34;Controlador&#34;</span>, menu=controlador_menu)
-portas_sub_menu = Menu(controlador_menu, tearoff = <span style="color:#b452cd">0</span>)
-controlador_menu.add_cascade(label=<span style="color:#cd5555">&#34;Portas&#34;</span>, menu=portas_sub_menu)
+controlador_menu <span style="color:#f92672">=</span> Menu(menubar, tearoff<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+menubar.add_cascade(label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Controlador&#34;</span>, menu<span style="color:#f92672">=</span>controlador_menu)
+portas_sub_menu <span style="color:#f92672">=</span> Menu(controlador_menu, tearoff <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+controlador_menu.add_cascade(label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Portas&#34;</span>, menu<span style="color:#f92672">=</span>portas_sub_menu)
 
-var = StringVar()
+var <span style="color:#f92672">=</span> StringVar()
 atualizarporta()
 
-baud_sub_menu = Menu(controlador_menu, tearoff = <span style="color:#b452cd">0</span>)
-controlador_menu.add_cascade(label = <span style="color:#cd5555">&#34;Baudrate&#34;</span>, menu = baud_sub_menu)
+baud_sub_menu <span style="color:#f92672">=</span> Menu(controlador_menu, tearoff <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+controlador_menu.add_cascade(label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Baudrate&#34;</span>, menu <span style="color:#f92672">=</span> baud_sub_menu)
 
-<span style="color:#1e889b"># pega o baud rate, varbaud é o baudrate===============================================
-</span><span style="color:#1e889b">#4800, 9600, 38400, 57600, 115200, 230400
-</span><span style="color:#1e889b"></span>varbaud = IntVar()
-baud_sub_menu.add_radiobutton(label = <span style="color:#cd5555">&#34;4800&#34;</span>, variable = varbaud, value = <span style="color:#b452cd">4800</span>, command = selbaud)
-baud_sub_menu.add_radiobutton(label = <span style="color:#cd5555">&#34;9600&#34;</span>, variable = varbaud, value = <span style="color:#b452cd">9600</span>, command = selbaud)
-baud_sub_menu.add_radiobutton(label = <span style="color:#cd5555">&#34;38400&#34;</span>, variable = varbaud, value = <span style="color:#b452cd">38400</span>, command = selbaud)
-baud_sub_menu.add_radiobutton(label = <span style="color:#cd5555">&#34;57600&#34;</span>, variable = varbaud, value = <span style="color:#b452cd">57600</span>, command = selbaud)
-baud_sub_menu.add_radiobutton(label = <span style="color:#cd5555">&#34;115200&#34;</span>, variable = varbaud, value = <span style="color:#b452cd">115200</span>, command = selbaud)
-baud_sub_menu.add_radiobutton(label = <span style="color:#cd5555">&#34;230400&#34;</span>, variable = varbaud, value = <span style="color:#b452cd">230400</span>, command = selbaud)
-baud_sub_menu.invoke(<span style="color:#b452cd">1</span>)
-<span style="color:#1e889b"># =====================================================================================
-</span><span style="color:#1e889b"></span>
+<span style="color:#75715e"># pega o baud rate, varbaud é o baudrate===============================================
+</span><span style="color:#75715e">#4800, 9600, 38400, 57600, 115200, 230400
+</span><span style="color:#75715e"></span>varbaud <span style="color:#f92672">=</span> IntVar()
+baud_sub_menu.add_radiobutton(label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;4800&#34;</span>, variable <span style="color:#f92672">=</span> varbaud, value <span style="color:#f92672">=</span> <span style="color:#ae81ff">4800</span>, command <span style="color:#f92672">=</span> selbaud)
+baud_sub_menu.add_radiobutton(label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;9600&#34;</span>, variable <span style="color:#f92672">=</span> varbaud, value <span style="color:#f92672">=</span> <span style="color:#ae81ff">9600</span>, command <span style="color:#f92672">=</span> selbaud)
+baud_sub_menu.add_radiobutton(label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;38400&#34;</span>, variable <span style="color:#f92672">=</span> varbaud, value <span style="color:#f92672">=</span> <span style="color:#ae81ff">38400</span>, command <span style="color:#f92672">=</span> selbaud)
+baud_sub_menu.add_radiobutton(label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;57600&#34;</span>, variable <span style="color:#f92672">=</span> varbaud, value <span style="color:#f92672">=</span> <span style="color:#ae81ff">57600</span>, command <span style="color:#f92672">=</span> selbaud)
+baud_sub_menu.add_radiobutton(label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;115200&#34;</span>, variable <span style="color:#f92672">=</span> varbaud, value <span style="color:#f92672">=</span> <span style="color:#ae81ff">115200</span>, command <span style="color:#f92672">=</span> selbaud)
+baud_sub_menu.add_radiobutton(label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;230400&#34;</span>, variable <span style="color:#f92672">=</span> varbaud, value <span style="color:#f92672">=</span> <span style="color:#ae81ff">230400</span>, command <span style="color:#f92672">=</span> selbaud)
+baud_sub_menu.invoke(<span style="color:#ae81ff">1</span>)
+<span style="color:#75715e"># =====================================================================================
+</span><span style="color:#75715e"></span>
 controlador_menu.add_separator()
-controlador_menu.add_command(label = <span style="color:#cd5555">&#34;Atualizar portas&#34;</span>, command = atualizarporta)
+controlador_menu.add_command(label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Atualizar portas&#34;</span>, command <span style="color:#f92672">=</span> atualizarporta)
 
-sair_menu = Menu(menubar, tearoff=<span style="color:#b452cd">0</span>)
-menubar.add_cascade(label=<span style="color:#cd5555">&#34;Sair/Reiniciar&#34;</span>, menu=sair_menu)
-sair_menu.add_command(label = <span style="color:#cd5555">&#34;Reiniciar&#34;</span>, command = reiniciar)
-sair_menu.add_command(label=<span style="color:#cd5555">&#34;Sair&#34;</span>, command=fechando)
+sair_menu <span style="color:#f92672">=</span> Menu(menubar, tearoff<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+menubar.add_cascade(label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sair/Reiniciar&#34;</span>, menu<span style="color:#f92672">=</span>sair_menu)
+sair_menu.add_command(label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Reiniciar&#34;</span>, command <span style="color:#f92672">=</span> reiniciar)
+sair_menu.add_command(label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sair&#34;</span>, command<span style="color:#f92672">=</span>fechando)
 
-<span style="color:#1e889b"># mostrar o menu
-</span><span style="color:#1e889b"></span>top.<span style="color:#008b45">config</span>(menu=menubar)
+<span style="color:#75715e"># mostrar o menu
+</span><span style="color:#75715e"></span>top.<span style="color:#a6e22e">config</span>(menu<span style="color:#f92672">=</span>menubar)
 
-<span style="color:#1e889b"># chama o mainloop -&gt; abre a janela com os itens anteriores
-</span><span style="color:#1e889b"></span>top.protocol(<span style="color:#cd5555">&#34;WM_DELETE_WINDOW&#34;</span>, fechando)
+<span style="color:#75715e"># chama o mainloop -&gt; abre a janela com os itens anteriores
+</span><span style="color:#75715e"></span>top.protocol(<span style="color:#e6db74">&#34;WM_DELETE_WINDOW&#34;</span>, fechando)
 top.mainloop()
 </code></pre></div><p><a href="#top">Topo</a></p>
 
