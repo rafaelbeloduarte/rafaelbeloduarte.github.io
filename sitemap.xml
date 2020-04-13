@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rafaelbeloduarte.github.io/posts/catalise/</loc>
+    <lastmod>2020-04-13T19:33:20-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rafaelbeloduarte.github.io/posts/</loc>
+    <lastmod>2020-04-13T19:33:20-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rafaelbeloduarte.github.io/tags/bioqu%C3%ADmica/</loc>
     <lastmod>2020-03-26T18:32:38-03:00</lastmod>
   </url>
@@ -14,11 +24,6 @@
   
   <url>
     <loc>https://rafaelbeloduarte.github.io/posts/esterilizacao-desinfeccao/</loc>
-    <lastmod>2020-03-26T18:32:38-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rafaelbeloduarte.github.io/posts/</loc>
     <lastmod>2020-03-26T18:32:38-03:00</lastmod>
   </url>
   
