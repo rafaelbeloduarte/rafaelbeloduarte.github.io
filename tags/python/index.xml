@@ -20,7 +20,7 @@
       <description>Software com interface gráfica escrito em Python com o intuito de captar sinais de sensores, como transdutores de pressão e termopares, acoplados a placas Arduino.
 Instruções O loop de seu controlador deve retornar os dados separados por espaços simples:
 a b c ... Ex: 1 2 3 4 5
-Você pode encontrar no Github uma versão executável para windows , como também o repositório do projeto .
+Você pode encontrar no Github uma versão executável para windows, como também o repositório do projeto.
 Se você possui ambiente python configurado, inicie o programa com: python3 projeto_sensorino.</description>
     </item>
     
