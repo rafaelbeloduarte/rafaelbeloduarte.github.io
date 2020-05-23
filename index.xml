@@ -55,8 +55,7 @@ Neste trabalho deseja-se derivar o modelo e sua solução para dois CSTR em sér
       <pubDate>Tue, 07 Jan 2020 15:31:30 -0300</pubDate>
       
       <guid>https://rafaelbeloduarte.github.io/posts/glossario-bioquimica/</guid>
-      <description>Organogramas Genética Energia e nutrientes Química Organismos vivos e substâncias de origem e/ou ação biológica Engenharia Química e Bioquímica Topo
-Genética Ácido Nucleico Os ácidos nucleicos, que incluem DNA (ácido desoxirribonucleico) e RNA (ácido ribonucleico), são constituídos de monômeros conhecidos como nucleotídeos. Ocorrem em todas as células vivas e são responsáveis pelo armazenamento e transmissão da informação genética e por sua tradução, que é expressa pela síntese precisa das proteínas. Nos eucariontes (possuem membrana nuclear individualizada e vários tipos de organelas) ficam armazenados no núcleo das células e nos procariontes dispersos no hialoplasma.</description>
+      <description>Organogramas Genética Energia e nutrientes Química Organismos vivos e substâncias de origem e/ou ação biológica Engenharia Química e Bioquímica Topo Genética Ácido Nucleico Os ácidos nucleicos, que incluem DNA (ácido desoxirribonucleico) e RNA (ácido ribonucleico), são constituídos de monômeros conhecidos como nucleotídeos. Ocorrem em todas as células vivas e são responsáveis pelo armazenamento e transmissão da informação genética e por sua tradução, que é expressa pela síntese precisa das proteínas. Nos eucariontes (possuem membrana nuclear individualizada e vários tipos de organelas) ficam armazenados no núcleo das células e nos procariontes dispersos no hialoplasma.</description>
     </item>
     
     <item>
@@ -68,7 +67,7 @@ Genética Ácido Nucleico Os ácidos nucleicos, que incluem DNA (ácido desoxirr
       <description>Software com interface gráfica escrito em Python com o intuito de captar sinais de sensores, como transdutores de pressão e termopares, acoplados a placas Arduino.
 Instruções O loop de seu controlador deve retornar os dados separados por espaços simples:
 a b c ... Ex: 1 2 3 4 5
-Você pode encontrar no Github uma versão executável para windows, como também o repositório do projeto.
+Você pode encontrar no Github uma versão executável para windows , como também o repositório do projeto .
 Se você possui ambiente python configurado, inicie o programa com: python3 projeto_sensorino.</description>
     </item>
     
@@ -92,8 +91,7 @@ Resumo Óleos vegetais podem ser utilizados como fonte de biomassa para a produ�
       <guid>https://rafaelbeloduarte.github.io/cv/</guid>
       <description>Rafael Belo Duarte  Brasileiro, solteiro, 26 anos
 rafaelbeloduarte@pm.me
-https://br.linkedin.com/in/rafaelbeloduarte
- Experiência  F.A. Colchões  Maringá - PR
+https://br.linkedin.com/in/rafaelbeloduarte  Experiência  F.A. Colchões  Maringá - PR
 Mar 2020 - Presente
 Estágio curricular realizado na área de produção de espumas de poliuretano.
  Iniciação científica  Universidade Estadual de Maringá
@@ -108,7 +106,7 @@ Participei de projeto de iniciação científica na produção de hidrocarboneto
       
       <guid>https://rafaelbeloduarte.github.io/contato/</guid>
       <description>E-mail rafaelbeloduarte@protonmail.com (rafaelbeloduarte@pm.me)
-Linkedin https://br.linkedin.com/in/rafaelbeloduarte</description>
+Linkedin https://br.linkedin.com/in/rafaelbeloduarte </description>
     </item>
     
   </channel>
