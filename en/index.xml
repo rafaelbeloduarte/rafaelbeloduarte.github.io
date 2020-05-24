@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rafael Belo Duarte</title>
+    <link>https://rafaelbeloduarte.github.io/en/</link>
+    <description>Recent content on Rafael Belo Duarte</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sat, 04 Jan 2020 18:06:21 -0300</lastBuildDate>
+    
+	<atom:link href="https://rafaelbeloduarte.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Catalysis and chemical reaction engineering</title>
+      <link>https://rafaelbeloduarte.github.io/en/posts/catalysis/</link>
+      <pubDate>Mon, 13 Apr 2020 19:33:20 -0300</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/en/posts/catalysis/</guid>
+      <description>Reaction catalyzed by catalyst &amp;hellip; Chemical reactions engineering is a sub-area of Chemical Engineering and deals with the design of reactors based on theoretical and experimental principles, where the main objective is to determine the operating variables and dimensions of reactors. For this, one of the first steps of a study of this type is to know the reaction rate expressions.
+Rate expressions for chemical reactions describe how fast a number of moles of one chemical species is being consumed to form another chemical species.</description>
+    </item>
+    
+    <item>
+      <title>Curriculum</title>
+      <link>https://rafaelbeloduarte.github.io/en/cv/</link>
+      <pubDate>Sat, 04 Jan 2020 18:06:21 -0300</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/en/cv/</guid>
+      <description>Rafael Belo Duarte  rafaelbeloduarte@pm.me
+https://br.linkedin.com/in/rafaelbeloduarte  Experience  F.A. Mattresses  Maringá - PR, Brazil
+Mar 2020 - Present
+  Curricular internship carried out in the production of polyurethane foams.
+ Scientific research  Maringá State University
+Jun 2018 – Oct 2019
+  Production of hydrocarbons from soybean oil, completed in the area of catalysis and industrial equipment.
+Education  2013-Jan 2021 (expected) Chemical Engineering Maringá State University</description>
+    </item>
+    
+    <item>
+      <title>Contact Me</title>
+      <link>https://rafaelbeloduarte.github.io/en/contact/</link>
+      <pubDate>Sat, 04 Jan 2020 17:10:06 -0300</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/en/contact/</guid>
+      <description>E-mail rafaelbeloduarte@protonmail.com (rafaelbeloduarte@pm.me)
+Linkedin https://br.linkedin.com/in/rafaelbeloduarte </description>
+    </item>
+    
+  </channel>
+</rss>
