@@ -53,21 +53,6 @@
   </url>
   
   <url>
-    <loc>https://rafaelbeloduarte.github.io/en/cv/</loc>
-    <lastmod>2020-01-04T18:06:21-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://rafaelbeloduarte.github.io/cv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rafaelbeloduarte.github.io/en/cv/"
-                />
-  </url>
-  
-  <url>
     <loc>https://rafaelbeloduarte.github.io/en/</loc>
     <lastmod>2020-01-04T18:06:21-03:00</lastmod>
     <xhtml:link
@@ -80,6 +65,11 @@
                 hreflang="en"
                 href="https://rafaelbeloduarte.github.io/en/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://rafaelbeloduarte.github.io/en/resume/</loc>
+    <lastmod>2020-01-04T18:06:21-03:00</lastmod>
   </url>
   
   <url>
