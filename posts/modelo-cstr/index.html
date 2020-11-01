@@ -63,7 +63,7 @@ Introdução Um reator contínuo de tanque agitado, ou CSTR, do inglês continuo
     <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.75.1" />
   </head>
 
   
@@ -298,13 +298,13 @@ C{_A}{_1} ( t ) = 50 ( 1 - e{^{ -1,2t }} )
 $$</p>
 <p>A Equação \ref{eq4} pode ser resolvida também por Laplace, aplicando a transformada:</p>
 <p>$$
-s C&rsquo;{_A}{_1} (s) - C{_A}{_1} ( 0 ) + 1,2C&rsquo;{_A}{_1} ( s ) = \frac{60}{ s }
+s C'{_A}{_1} (s) - C{_A}{_1} ( 0 ) + 1,2C'{_A}{_1} ( s ) = \frac{60}{ s }
 \label{eq15} \tag{15}
 $$</p>
 <p>Onde o sinal $(‘)$ é apenas para fazer referência ao domínio de Laplace e diferenciá-lo do domínio do tempo.</p>
 <p>Sabendo que $C{_A}{_1}(0)$ é igual a $0$ e simplificando:</p>
 <p>$$
-C&rsquo;{_A}{_1} (s) = 50 \frac{ 1 }{ s(\frac{s}{1,2} + 1) }
+C'{_A}{_1} (s) = 50 \frac{ 1 }{ s(\frac{s}{1,2} + 1) }
 \label{eq16} \tag{16}
 $$</p>
 <p>A transformada inversa da Equação \ref{eq16} nos leva à Equação \ref{eq14} novamente, confirmando o resultado obtido pelo método dos coeficientes a determinar.</p>
@@ -355,12 +355,12 @@ C{_A}{_2} ( t ) = \frac{600}{7} e{^{ -1,4t }} - 100 e{^{ -1,2t }} + \frac{ 100 }
 $$</p>
 <p>A Equação \ref{eq25} é a solução analítica da Equação \ref{eq8}, que pode ser resolvida também aplicando as transformadas de Laplace termo a termo:</p>
 <p>$$
-0,71429 [ {sC&rsquo;{_A}{_2} (s) - C{_A}{_2} (0)} ] + C&rsquo;{_A}{_2} ( s ) = \frac{ 14,286 }{ s } - 14,286 \frac{ 1 }{ s+1,2 }
+0,71429 [ {sC'{_A}{_2} (s) - C{_A}{_2} (0)} ] + C'{_A}{_2} ( s ) = \frac{ 14,286 }{ s } - 14,286 \frac{ 1 }{ s+1,2 }
 \label{eq26} \tag{26}
 $$</p>
 <p>Rearranjando \ref{eq26}:</p>
 <p>$$
-C&rsquo;{_A}{_2} (s) = \frac{ 14,286 }{ s(0,71429s + 1) } - 11,905 \frac{ 1 }{ (\frac{s}{1,2} + 1) (0,71429s+1)}
+C'{_A}{_2} (s) = \frac{ 14,286 }{ s(0,71429s + 1) } - 11,905 \frac{ 1 }{ (\frac{s}{1,2} + 1) (0,71429s+1)}
 \label{eq27} \tag{27}
 $$</p>
 <p>A transformada inversa da Equação \ref{eq27} é:</p>

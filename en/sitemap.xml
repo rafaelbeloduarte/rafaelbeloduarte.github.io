@@ -38,6 +38,21 @@
   </url>
   
   <url>
+    <loc>https://rafaelbeloduarte.github.io/en/</loc>
+    <lastmod>2020-04-13T19:33:20-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/"
+                />
+  </url>
+  
+  <url>
     <loc>https://rafaelbeloduarte.github.io/en/tags/</loc>
     <lastmod>2020-04-13T19:33:20-03:00</lastmod>
     <xhtml:link
@@ -60,21 +75,6 @@
   <url>
     <loc>https://rafaelbeloduarte.github.io/en/posts/sterilization-disinfection/</loc>
     <lastmod>2020-03-26T18:32:38-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rafaelbeloduarte.github.io/en/</loc>
-    <lastmod>2020-01-04T18:06:21-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://rafaelbeloduarte.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rafaelbeloduarte.github.io/en/"
-                />
   </url>
   
   <url>
