@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>procedimentos de laboratório on Rafael Belo Duarte</title>
+    <link>https://rafaelbeloduarte.github.io/tags/procedimentos-de-laborat%C3%B3rio/</link>
+    <description>Recent content in procedimentos de laboratório on Rafael Belo Duarte</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 08 Mar 2021 12:12:37 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/tags/procedimentos-de-laborat%C3%B3rio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Metilação de Ácidos Graxos para Cromatografia</title>
+      <link>https://rafaelbeloduarte.github.io/posts/metilacao/</link>
+      <pubDate>Mon, 08 Mar 2021 12:12:37 -0300</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/posts/metilacao/</guid>
+      <description>Quando se deseja analisar amostras de ácidos graxos por cromatografia gasosa, faz-se necessária a metilação destes ácidos, pois, se injetados diretamente no equipamento, eles aderem à parede da coluna causando danos irreparáveis. A metilação converte os ácidos graxos em metis ésteres, permitindo sua injeção no cromatógrafo.
+Procedimento Procedimento adaptado por Pimenta1 a partir do método de Hartman2.
+1º: Saponificação   Adicione 100µL de amostra à um tubo de ensaio;</description>
+    </item>
+    
+  </channel>
+</rss>

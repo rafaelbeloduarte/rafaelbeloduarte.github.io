@@ -3,6 +3,71 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rafaelbeloduarte.github.io/tags/cromatografia-gasosa/</loc>
+    <lastmod>2021-03-08T12:12:37-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rafaelbeloduarte.github.io/tags/engenharia-das-rea%C3%A7%C3%B5es-qu%C3%ADmicas/</loc>
+    <lastmod>2021-03-08T12:12:37-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rafaelbeloduarte.github.io/posts/metilacao/</loc>
+    <lastmod>2021-03-08T12:12:37-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rafaelbeloduarte.github.io/posts/</loc>
+    <lastmod>2021-03-08T12:12:37-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://rafaelbeloduarte.github.io/tags/procedimentos-de-laborat%C3%B3rio/</loc>
+    <lastmod>2021-03-08T12:12:37-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rafaelbeloduarte.github.io/</loc>
+    <lastmod>2021-03-08T12:12:37-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://rafaelbeloduarte.github.io/tags/</loc>
+    <lastmod>2021-03-08T12:12:37-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/tags/"
+                />
+  </url>
+  
+  <url>
     <loc>https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/</loc>
     <lastmod>2021-01-31T18:03:43-03:00</lastmod>
   </url>
@@ -18,62 +83,12 @@
   </url>
   
   <url>
-    <loc>https://rafaelbeloduarte.github.io/posts/</loc>
-    <lastmod>2021-01-31T18:03:43-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rafaelbeloduarte.github.io/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://rafaelbeloduarte.github.io/posts/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://rafaelbeloduarte.github.io/</loc>
-    <lastmod>2021-01-31T18:03:43-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rafaelbeloduarte.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://rafaelbeloduarte.github.io/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://rafaelbeloduarte.github.io/tags/</loc>
-    <lastmod>2021-01-31T18:03:43-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rafaelbeloduarte.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://rafaelbeloduarte.github.io/tags/"
-                />
-  </url>
-  
-  <url>
     <loc>https://rafaelbeloduarte.github.io/tags/cat%C3%A1lise/</loc>
     <lastmod>2020-04-13T19:33:20-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://rafaelbeloduarte.github.io/posts/catalise/</loc>
-    <lastmod>2020-04-13T19:33:20-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rafaelbeloduarte.github.io/tags/engenharia-das-rea%C3%A7%C3%B5es-qu%C3%ADmicas/</loc>
     <lastmod>2020-04-13T19:33:20-03:00</lastmod>
   </url>
   
