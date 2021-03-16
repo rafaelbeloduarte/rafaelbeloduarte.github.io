@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Rafael Belo Duarte">
+    <meta name="description" content="Aqui encontrarás meu currículo e projetos realizados.">
+    <meta name="keywords" content="blog,engenharia,engenharia química">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Fenômenos de transporte: Função erro de Gauss e a transferência de calor em regime transiente"/>
+<meta name="twitter:description" content="A função erro de Gauss (Equação \ref{eq1}) aparece quando se deseja resolver problemas de transferência de calor em regime transiente.
+$$ erf(x) = \frac{2}{\pi} \int{e^{-x^2}} dz \label{eq1} \tag{1} $$
+A função erro complementar é:
+$$ erfc(x) = 1 - erf(x) \label{eq2} \tag{2} $$
+Um exemplo de sua utilização é na solução da equação do calor para um sólido seminfinito.
+$$ \frac{\partial^2{T}}{\partial{x^2}} = \frac{1}{\alpha} \frac{\partial{T}}{\partial{t}} \label{eq3} \tag{3} $$
+T é a temperatura, x o comprimento (de uma placa ou profundidade do solo por exemplo), $\alpha$ é a difusividade térmica e t o tempo."/>
+
+    <meta property="og:title" content="Fenômenos de transporte: Função erro de Gauss e a transferência de calor em regime transiente" />
+<meta property="og:description" content="A função erro de Gauss (Equação \ref{eq1}) aparece quando se deseja resolver problemas de transferência de calor em regime transiente.
+$$ erf(x) = \frac{2}{\pi} \int{e^{-x^2}} dz \label{eq1} \tag{1} $$
+A função erro complementar é:
+$$ erfc(x) = 1 - erf(x) \label{eq2} \tag{2} $$
+Um exemplo de sua utilização é na solução da equação do calor para um sólido seminfinito.
+$$ \frac{\partial^2{T}}{\partial{x^2}} = \frac{1}{\alpha} \frac{\partial{T}}{\partial{t}} \label{eq3} \tag{3} $$
+T é a temperatura, x o comprimento (de uma placa ou profundidade do solo por exemplo), $\alpha$ é a difusividade térmica e t o tempo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rafaelbeloduarte.github.io/posts/funcao-erro/" />
+<meta property="article:published_time" content="2021-03-16T01:00:43-03:00" />
+<meta property="article:modified_time" content="2021-03-16T01:00:43-03:00" /><meta property="og:site_name" content="Rafael Belo Duarte" />
+
+
+    
+      <base href="https://rafaelbeloduarte.github.io/posts/funcao-erro/">
+    
+    <title>
+  Fenômenos de transporte: Função erro de Gauss e a transferência de calor em regime transiente · Rafael Belo Duarte
+</title>
+
+    
+      <link rel="canonical" href="https://rafaelbeloduarte.github.io/posts/funcao-erro/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+      <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/custom.css" />
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.80.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://rafaelbeloduarte.github.io/">
+      Rafael Belo Duarte
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/tags/">Tags</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/cv">Currículo</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/contato">Contato</a>
+          </li>
+        
+      
+      
+        
+        
+        
+          
+        
+          
+            
+              <li class="navigation-item menu-separator">
+                <span>|</span>
+              </li>
+              
+            
+            <li class="navigation-item">
+              <a href="https://rafaelbeloduarte.github.io/en/">English</a>
+            </li>
+          
+        
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Fenômenos de transporte: Função erro de Gauss e a transferência de calor em regime transiente</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2021-03-16T01:00:43-03:00'>
+                16/03/2021
+              </time>
+            </span>
+            <span class="reading-time">
+            <i class="fas fa-clock"></i>
+              2 minutos
+            </span>
+            <span class="word-count">
+              <i class="fas fa-file-alt"></i>
+              240 palavras
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/">engenharia química</a>
+      <span class="separator">•</span>
+    <a href="https://rafaelbeloduarte.github.io/tags/fen%C3%B4menos-de-transporte/">fenômenos de transporte</a></div>
+
+          
+        </div>
+      </header>
+
+      <div>
+        <p>A função erro de Gauss (Equação \ref{eq1}) aparece quando se deseja resolver problemas de transferência de calor em regime transiente.</p>
+<p>$$
+erf(x) = \frac{2}{\pi} \int{e^{-x^2}} dz
+\label{eq1} \tag{1}
+$$</p>
+<p>A função erro complementar é:</p>
+<p>$$
+erfc(x) = 1 - erf(x)
+\label{eq2} \tag{2}
+$$</p>
+<p>Um exemplo de sua utilização é na solução da equação do calor para um sólido seminfinito.</p>
+<p>$$
+\frac{\partial^2{T}}{\partial{x^2}} = \frac{1}{\alpha} \frac{\partial{T}}{\partial{t}}
+\label{eq3} \tag{3}
+$$</p>
+<p><strong>T</strong> é a temperatura, <strong>x</strong> o comprimento (de uma placa ou profundidade do solo por exemplo), <strong>$\alpha$</strong> é a difusividade térmica e <strong>t</strong> o tempo. A solução dessa equação envolve a utilização de uma variável similar $ \eta \equiv \frac{x}{{4 \alpha t}^{1/2}} $. São calculadas as derivadas de $ \eta $ e substitui-se na Equação \ref{eq3}. Após a mudança de variável a equação diferencial parcial é transformada em equação diferencial ordinária que, ao ser integrada, solicita a solução da integral da Equação \ref{eq1}. A solução da Equação \ref{eq3} é:</p>
+<p>$$
+\frac{T(t)-T_s}{T_i-T_s} \equiv erf (\eta)
+\label{eq4} \tag{eq4}
+$$</p>
+<p>Onde <strong>T(t)</strong> é a temperatura no tempo <strong>t</strong>, <strong>$T_s$</strong> a temperatura da superfície (<em>constante e diferente da temperatura inicial</em>) e <strong>$T_i$</strong> a temperatura inicial.</p>
+<p>O desenvolvimento, condições de contorno utilizadas e tabela com os valores das funções <strong>erf(x)</strong> e <strong>erfc(x)</strong> são apresentados em detalhes por Incropera <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<h2 id="referências">Referências</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Incropera, Frank P. DeWitt, David P. Bergman, Theodore L. Lavine, Adrienne S. Fundamentos de Transferência de Calor e Massa. 2008, 6ª ed. LTC: Rio de Janeiro, RJ. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>rafaelbeloduarte@pm.me</p>
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

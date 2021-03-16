@@ -6,7 +6,22 @@
     <description>Recent content in engenharia química on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 31 Jan 2021 18:03:43 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Mar 2021 01:00:43 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fenômenos de transporte: Função erro de Gauss e a transferência de calor em regime transiente</title>
+      <link>https://rafaelbeloduarte.github.io/posts/funcao-erro/</link>
+      <pubDate>Tue, 16 Mar 2021 01:00:43 -0300</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/posts/funcao-erro/</guid>
+      <description>A função erro de Gauss (Equação \ref{eq1}) aparece quando se deseja resolver problemas de transferência de calor em regime transiente.
+$$ erf(x) = \frac{2}{\pi} \int{e^{-x^2}} dz \label{eq1} \tag{1} $$
+A função erro complementar é:
+$$ erfc(x) = 1 - erf(x) \label{eq2} \tag{2} $$
+Um exemplo de sua utilização é na solução da equação do calor para um sólido seminfinito.
+$$ \frac{\partial^2{T}}{\partial{x^2}} = \frac{1}{\alpha} \frac{\partial{T}}{\partial{t}} \label{eq3} \tag{3} $$
+T é a temperatura, x o comprimento (de uma placa ou profundidade do solo por exemplo), $\alpha$ é a difusividade térmica e t o tempo.</description>
+    </item>
+    
     <item>
       <title>Fundamentos: equação geral dos balanços de massa</title>
       <link>https://rafaelbeloduarte.github.io/posts/fundamentos-parte1/</link>
