@@ -14,7 +14,7 @@
       
       <guid>https://rafaelbeloduarte.github.io/posts/funcao-erro/</guid>
       <description>A função erro de Gauss (Equação \ref{eq1}) aparece quando se deseja resolver problemas de transferência de calor em regime transiente.
-$$ erf(x) = \frac{2}{\sqrt{\pi}} \int{e^{-x^2}} dz \label{eq1} \tag{1} $$
+$$ erf(x) = \frac{2}{\sqrt{\pi}} \int{e^{-x^2}} dx \label{eq1} \tag{1} $$
 A função erro complementar é:
 $$ erfc(x) = 1 - erf(x) \label{eq2} \tag{2} $$
 Um exemplo de sua utilização é na solução da equação do calor para um sólido seminfinito.
