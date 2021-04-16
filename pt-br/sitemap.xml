@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/</loc>
     <lastmod>2021-03-16T01:00:43-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/fen%C3%B4menos-de-transporte/</loc>
     <lastmod>2021-03-16T01:00:43-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/funcao-erro/</loc>
     <lastmod>2021-03-16T01:00:43-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/</loc>
     <lastmod>2021-03-16T01:00:43-03:00</lastmod>
     <xhtml:link
@@ -30,9 +23,7 @@
                 hreflang="pt-br"
                 href="https://rafaelbeloduarte.github.io/posts/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/</loc>
     <lastmod>2021-03-16T01:00:43-03:00</lastmod>
     <xhtml:link
@@ -45,9 +36,7 @@
                 hreflang="pt-br"
                 href="https://rafaelbeloduarte.github.io/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/</loc>
     <lastmod>2021-03-16T01:00:43-03:00</lastmod>
     <xhtml:link
@@ -60,129 +49,76 @@
                 hreflang="pt-br"
                 href="https://rafaelbeloduarte.github.io/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/cromatografia-gasosa/</loc>
     <lastmod>2021-03-08T12:12:37-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/engenharia-das-rea%C3%A7%C3%B5es-qu%C3%ADmicas/</loc>
     <lastmod>2021-03-08T12:12:37-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/metilacao/</loc>
     <lastmod>2021-03-08T12:12:37-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/procedimentos-de-laborat%C3%B3rio/</loc>
     <lastmod>2021-03-08T12:12:37-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/fundamentos-da-engenharia-qu%C3%ADmica/</loc>
     <lastmod>2021-01-31T18:03:43-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/fundamentos-parte1/</loc>
     <lastmod>2021-01-31T18:03:43-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/cat%C3%A1lise/</loc>
     <lastmod>2020-04-13T19:33:20-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/catalise/</loc>
     <lastmod>2020-04-13T19:33:20-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/bioqu%C3%ADmica/</loc>
     <lastmod>2020-03-26T18:32:38-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/esterilizacao-desinfeccao/</loc>
     <lastmod>2020-03-26T18:32:38-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/modelagem/</loc>
     <lastmod>2020-01-17T11:40:39-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/modelo-cstr/</loc>
     <lastmod>2020-01-17T11:40:39-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/simula%C3%A7%C3%A3o/</loc>
     <lastmod>2020-01-17T11:40:39-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/reforma-etanol/</loc>
     <lastmod>2020-01-11T11:05:29-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rafaelbeloduarte.github.io/posts/glossario-bioquimica/</loc>
-    <lastmod>2020-01-07T15:31:30-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/arduino/</loc>
     <lastmod>2020-01-07T15:21:04-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/programa%C3%A7%C3%A3o/</loc>
     <lastmod>2020-01-07T15:21:04-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/projeto-sensorino/</loc>
     <lastmod>2020-01-07T15:21:04-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/python/</loc>
     <lastmod>2020-01-07T15:21:04-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/combust%C3%ADveis-renov%C3%A1veis/</loc>
     <lastmod>2020-01-04T19:04:44-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/destila%C3%A7%C3%A3o/</loc>
     <lastmod>2020-01-04T19:04:44-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/torre-de-destilacao/</loc>
     <lastmod>2020-01-04T19:04:44-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/cv/</loc>
     <lastmod>2020-01-04T18:06:21-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/contato/</loc>
     <lastmod>2020-01-04T17:10:06-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -195,5 +131,4 @@
                 href="https://rafaelbeloduarte.github.io/categories/"
                 />
   </url>
-  
 </urlset>
