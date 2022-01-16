@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://rafaelbeloduarte.github.io/tags/engenharia-das-rea%C3%A7%C3%B5es-qu%C3%ADmicas/</loc>
+    <lastmod>2022-01-16T11:40:39-03:00</lastmod>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/</loc>
-    <lastmod>2021-03-16T01:00:43-03:00</lastmod>
+    <lastmod>2022-01-16T11:40:39-03:00</lastmod>
   </url><url>
-    <loc>https://rafaelbeloduarte.github.io/tags/fen%C3%B4menos-de-transporte/</loc>
-    <lastmod>2021-03-16T01:00:43-03:00</lastmod>
+    <loc>https://rafaelbeloduarte.github.io/tags/modelagem/</loc>
+    <lastmod>2022-01-16T11:40:39-03:00</lastmod>
   </url><url>
-    <loc>https://rafaelbeloduarte.github.io/posts/funcao-erro/</loc>
-    <lastmod>2021-03-16T01:00:43-03:00</lastmod>
+    <loc>https://rafaelbeloduarte.github.io/posts/oxidacao-so2/</loc>
+    <lastmod>2022-01-16T11:40:39-03:00</lastmod>
   </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/</loc>
-    <lastmod>2021-03-16T01:00:43-03:00</lastmod>
+    <lastmod>2022-01-16T11:40:39-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -25,7 +28,7 @@
                 />
   </url><url>
     <loc>https://rafaelbeloduarte.github.io/</loc>
-    <lastmod>2021-03-16T01:00:43-03:00</lastmod>
+    <lastmod>2022-01-16T11:40:39-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -37,8 +40,11 @@
                 href="https://rafaelbeloduarte.github.io/"
                 />
   </url><url>
+    <loc>https://rafaelbeloduarte.github.io/tags/simula%C3%A7%C3%A3o/</loc>
+    <lastmod>2022-01-16T11:40:39-03:00</lastmod>
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/</loc>
-    <lastmod>2021-03-16T01:00:43-03:00</lastmod>
+    <lastmod>2022-01-16T11:40:39-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -50,10 +56,13 @@
                 href="https://rafaelbeloduarte.github.io/tags/"
                 />
   </url><url>
-    <loc>https://rafaelbeloduarte.github.io/tags/cromatografia-gasosa/</loc>
-    <lastmod>2021-03-08T12:12:37-03:00</lastmod>
+    <loc>https://rafaelbeloduarte.github.io/tags/fen%C3%B4menos-de-transporte/</loc>
+    <lastmod>2021-03-16T01:00:43-03:00</lastmod>
   </url><url>
-    <loc>https://rafaelbeloduarte.github.io/tags/engenharia-das-rea%C3%A7%C3%B5es-qu%C3%ADmicas/</loc>
+    <loc>https://rafaelbeloduarte.github.io/posts/funcao-erro/</loc>
+    <lastmod>2021-03-16T01:00:43-03:00</lastmod>
+  </url><url>
+    <loc>https://rafaelbeloduarte.github.io/tags/cromatografia-gasosa/</loc>
     <lastmod>2021-03-08T12:12:37-03:00</lastmod>
   </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/metilacao/</loc>
@@ -80,13 +89,7 @@
     <loc>https://rafaelbeloduarte.github.io/posts/esterilizacao-desinfeccao/</loc>
     <lastmod>2020-03-26T18:32:38-03:00</lastmod>
   </url><url>
-    <loc>https://rafaelbeloduarte.github.io/tags/modelagem/</loc>
-    <lastmod>2020-01-17T11:40:39-03:00</lastmod>
-  </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/modelo-cstr/</loc>
-    <lastmod>2020-01-17T11:40:39-03:00</lastmod>
-  </url><url>
-    <loc>https://rafaelbeloduarte.github.io/tags/simula%C3%A7%C3%A3o/</loc>
     <lastmod>2020-01-17T11:40:39-03:00</lastmod>
   </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/reforma-etanol/</loc>

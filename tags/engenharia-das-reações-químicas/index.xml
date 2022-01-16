@@ -6,7 +6,16 @@
     <description>Recent content in engenharia das reações químicas on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Mon, 08 Mar 2021 12:12:37 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/tags/engenharia-das-rea%C3%A7%C3%B5es-qu%C3%ADmicas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jan 2022 11:40:39 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/tags/engenharia-das-rea%C3%A7%C3%B5es-qu%C3%ADmicas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Operação de Reator Não-Adiabático: Oxidação do Dióxido de Enxofre</title>
+      <link>https://rafaelbeloduarte.github.io/posts/oxidacao-so2/</link>
+      <pubDate>Sun, 16 Jan 2022 11:40:39 -0300</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/posts/oxidacao-so2/</guid>
+      <description>Introdução O trióxido de enxofre é utilizado na fabricação do ácido sulfúrico partindo da queima do enxofre, seguida da oxidação do dióxido de enxofre produzido na primeira reação 1. O ácido sulfúrico é o produto químico de maior volume de produção nos Estados Unidos e um ótimo indicador do grau de industrialização de um país 2. O enxofre pode ser obtido de depósitos de minério, ou a partir da extração de sulfeto de hidrogênio do gás natural e petróleo 2.</description>
+    </item>
+    
     <item>
       <title>Metilação de Ácidos Graxos para Cromatografia</title>
       <link>https://rafaelbeloduarte.github.io/posts/metilacao/</link>

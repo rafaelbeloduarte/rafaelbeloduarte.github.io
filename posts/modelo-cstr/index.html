@@ -42,7 +42,7 @@ Introdução Um reator contínuo de tanque agitado, ou CSTR, do inglês continuo
     
       
       
-      <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.644ee6634d3d753a5668a4455efdb3be117a9e461d507f6f27adc36743131990.css" integrity="sha256-ZE7mY009dTpWaKRFXv2zvhF6nkYdUH9vJ63DZ0MTGZA=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -64,7 +64,7 @@ Introdução Um reator contínuo de tanque agitado, ou CSTR, do inglês continuo
     <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.89.2" />
+    <meta name="generator" content="Hugo 0.92.0" />
   </head>
 
   
@@ -101,6 +101,8 @@ Introdução Um reator contínuo de tanque agitado, ou CSTR, do inglês continuo
         
         
           
+        
+          
             
               <li class="navigation-item menu-separator">
                 <span>|</span>
@@ -110,8 +112,6 @@ Introdução Um reator contínuo de tanque agitado, ou CSTR, do inglês continuo
             <li class="navigation-item">
               <a href="https://rafaelbeloduarte.github.io/en/">English</a>
             </li>
-          
-        
           
         
       
@@ -189,8 +189,13 @@ ao longo dos tanques.</p>
 são removidos por transbordo. Pode-se assumir também que as vazões $F_0$, $F_1$, e $F_2$ são iguais pois a
 densidade foi tomada como sempre constante, as saídas ocorrem por transbordo e no momento em
 que se inicia a análise os tanques estão preenchidos.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/cstr_serie.jpg" alt="cstr_serie" title="Dois CSTR em série."></p>
-<p><strong>Figura 1: Dois CSTR em série.</strong></p>
+<p>
+  <figure>
+    <img src="https://rafaelbeloduarte.github.io/images/cstr_serie/cstr_serie.jpg" alt="cstr_serie">
+    <figcaption>Figura 1: Dois CSTR em série.</figcaption>
+  </figure>
+
+</p>
 <h2 id="resultados-e-discussão">Resultados e discussão</h2>
 <h3 id="solução-analítica">Solução analítica</h3>
 <p>Considerações:</p>
@@ -383,21 +388,46 @@ X{ _2 } = X{_1} + \frac{V{ _2 }kC{_A}{_2}}{ F_0 C{_A}{_0} }
 \label{eq31} \tag{31}
 $$</p>
 <p>Ambas definidas com relação à alimentação $F_0$.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig2.jpg" alt="Cxt" title="Dependência da concentração com o tempo."></p>
-<p><strong>Figura 2: Dependência da concentração com o tempo.</strong></p>
+<p>
+  <figure>
+    <img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig2.jpg" alt="Cxt">
+    <figcaption>Figura 2: Dependência da concentração com o tempo.</figcaption>
+  </figure>
+
+</p>
 <p>As Equações \ref{eq30} e \ref{eq31} nos levam, no estado estacionário, a um $X_1$ intermediário de $0,8333$ e uma conversão final $X_2$ igual a $0,9524$.</p>
 <p>Pode-se traçar também um gráfico relacionando o tempo com a conversão, como na Figura 3. Observa-se que no início as duas conversões são muito próximas, isto é consequência da definição adotada, que é sempre em relação à alimentação original. No primeiro instante o termo de consumo no reator dois é nulo e a conversão final é igual à intermediária. Conforme o tempo aumenta, reagente passa a entrar no segundo reator e o termo da conversão final começa a se distanciar da conversão intermediária.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig3.jpg" alt="Xxt" title="Relação entre a conversão e o tempo."></p>
-<p><strong>Figura 3: Relação entre a conversão e o tempo.</strong></p>
+<p>
+  <figure>
+    <img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig3.jpg" alt="Xxt">
+    <figcaption>Figura 3: Relação entre a conversão e o tempo.</figcaption>
+  </figure>
+
+</p>
 <h3 id="solução-numérica">Solução Numérica</h3>
 <p>Utilizando-se do método de Runge-Kutta de quarta ordem (RK45) para resolução do <a href="https://github.com/rafaelbeloduarte/cstr_serie" title="Baixe o arquivo aqui" target="_blank">modelo criado no Xcos</a>
  (Figura 6) foram obtidos perfis de concentração do componente A, e conversão intermediaria $X_1$ e final $X_2$ como segue.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig4.jpg" alt="Concentração do composto A em ambos os reatores" title="Concentração do composto A em ambos os reatores."></p>
-<p><strong>Figura 4: Concentração do composto A em ambos os reatores.</strong></p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig5.jpg" alt="Conversão em ambos os reatores" title="Conversão em ambos os reatores."></p>
-<p><strong>Figura 5: Conversão em ambos os reatores.</strong></p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig6.jpg" alt="Diagrama Xcos" title="Diagrama do modelo utilizado no Xcos."></p>
-<p><strong>Figura 6: Diagrama do modelo utilizado no Xcos.</strong></p>
+<p>
+  <figure>
+    <img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig4.jpg" alt="Concentração do composto A em ambos os reatores">
+    <figcaption>Figura 4: Concentração do composto A em ambos os reatores.</figcaption>
+  </figure>
+
+</p>
+<p>
+  <figure>
+    <img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig5.jpg" alt="Conversão em ambos os reatores">
+    <figcaption>Figura 5: Conversão em ambos os reatores.</figcaption>
+  </figure>
+
+</p>
+<p>
+  <figure>
+    <img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig6.jpg" alt="Diagrama Xcos">
+    <figcaption>Figura 6: Diagrama do modelo utilizado no Xcos.</figcaption>
+  </figure>
+
+</p>
 <p><a href="https://github.com/rafaelbeloduarte/cstr_serie" target="_blank">Baixe o arquivo da Figura 6 aqui</a>
 </p>
 <p>Qualitativamente observa-se que as curvas acima de concentração de A e de conversão em função do tempo obtidas na solução numérica apresentam as mesmas características das curvas obtidas analiticamente (apresentadas nas Figuras 2 e 3).</p>

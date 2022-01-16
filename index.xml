@@ -6,7 +6,16 @@
     <description>Recent content on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Tue, 16 Mar 2021 01:00:43 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jan 2022 11:40:39 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Operação de Reator Não-Adiabático: Oxidação do Dióxido de Enxofre</title>
+      <link>https://rafaelbeloduarte.github.io/posts/oxidacao-so2/</link>
+      <pubDate>Sun, 16 Jan 2022 11:40:39 -0300</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/posts/oxidacao-so2/</guid>
+      <description>Introdução O trióxido de enxofre é utilizado na fabricação do ácido sulfúrico partindo da queima do enxofre, seguida da oxidação do dióxido de enxofre produzido na primeira reação 1. O ácido sulfúrico é o produto químico de maior volume de produção nos Estados Unidos e um ótimo indicador do grau de industrialização de um país 2. O enxofre pode ser obtido de depósitos de minério, ou a partir da extração de sulfeto de hidrogênio do gás natural e petróleo 2.</description>
+    </item>
+    
     <item>
       <title>Fenômenos de transporte: Função erro de Gauss e a transferência de calor em regime transiente</title>
       <link>https://rafaelbeloduarte.github.io/posts/funcao-erro/</link>
@@ -88,10 +97,9 @@ Introdução Um reator contínuo de tanque agitado, ou CSTR, do inglês continuo
       
       <guid>https://rafaelbeloduarte.github.io/posts/projeto-sensorino/</guid>
       <description>Software com interface gráfica escrito em Python com o intuito de captar sinais de sensores, como transdutores de pressão e termopares, acoplados a placas Arduino.
-Instruções O loop de seu controlador deve retornar os dados separados por espaços simples:
+  Sensorino.  Instruções O loop de seu controlador deve retornar os dados separados por espaços simples:
 a b c ... Ex: 1 2 3 4 5
-Você pode encontrar no Github uma versão executável para windows , como também o repositório do projeto .
-Se você possui ambiente python configurado, inicie o programa com: python3 projeto_sensorino.</description>
+Você pode encontrar no Github uma versão executável para windows , como também o repositório do projeto .</description>
     </item>
     
     <item>
