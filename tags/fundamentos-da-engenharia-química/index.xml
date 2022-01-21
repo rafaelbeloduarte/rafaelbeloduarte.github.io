@@ -13,8 +13,7 @@
       <pubDate>Sun, 31 Jan 2021 18:03:43 -0300</pubDate>
       
       <guid>https://rafaelbeloduarte.github.io/posts/fundamentos-parte1/</guid>
-      <description>Equação geral dos balanços de massa A equação \ref{eq1} ilustra um dos conceitos mais fundamentais da engenharia química. Ela surge quando se toma um certo volume definido no espaço onde deseja-se contabilizar entradas, saídas e acúmulo de matéria, e é aplicada em uma região do espaço onde define-se uma fronteira, real ou imaginária, que pode ser um equipamento industrial, uma planta química inteira ou qualquer outra região do universo.
-$$ entrada + geração - saída - consumo = acúmulo \label{eq1} \tag{1} $$</description>
+      <description>Equação geral dos balanços de massa    A equação \ref{eq1} ilustra um dos conceitos mais fundamentais da engenharia química. Ela surge quando se toma um certo volume definido no espaço onde deseja-se contabilizar entradas, saídas e acúmulo de matéria, e é aplicada em uma região do espaço onde define-se uma fronteira, real ou imaginária, que pode ser um equipamento industrial, uma planta química inteira ou qualquer outra região do universo.</description>
     </item>
     
   </channel>

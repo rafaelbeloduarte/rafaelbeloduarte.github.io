@@ -4,9 +4,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
 
     <meta name="author" content="Rafael Belo Duarte">
-    <meta name="description" content="Here you will find my resume and projects.">
+    <meta name="description" content="How catalysis is inserted in Chemical Engineering and its relationship with reactors design.">
     <meta name="keywords" content="blog,engineering,chemical engineering">
 
     <meta name="twitter:card" content="summary"/>
@@ -22,9 +26,6 @@
 
 
 
-    
-      <base href="https://rafaelbeloduarte.github.io/en/posts/catalysis/">
-    
     <title>
   Catalysis and chemical reaction engineering · Rafael Belo Duarte
 </title>
@@ -33,14 +34,12 @@
       <link rel="canonical" href="https://rafaelbeloduarte.github.io/en/posts/catalysis/">
     
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
     
       
       
-      <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.644ee6634d3d753a5668a4455efdb3be117a9e461d507f6f27adc36743131990.css" integrity="sha256-ZE7mY009dTpWaKRFXv2zvhF6nkYdUH9vJ63DZ0MTGZA=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.d9fddbffe6f27e69985dc5fe0471cdb0e57fbf4775714bc3d847accb08f4a1f6.css" integrity="sha256-2f3b/&#43;byfmmYXcX&#43;BHHNsOV/v0d1cUvD2Eesywj0ofY=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -49,18 +48,19 @@
       
         
         
-        <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css" integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin="anonymous" media="screen" />
       
     
 
     
-      <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/custom.css" />
-    
 
     
-    
+
     <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="https://rafaelbeloduarte.github.io/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://rafaelbeloduarte.github.io/images/apple-touch-icon.png">
 
     <meta name="generator" content="Hugo 0.92.0" />
   </head>
@@ -69,51 +69,63 @@
   
     
   
-  <body class="colorscheme-auto">
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="https://rafaelbeloduarte.github.io/en">
       Rafael Belo Duarte
     </a>
-    <input type="checkbox" id="menu-toggle" />
-    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
-    <ul class="navigation-list">
-      
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/en/posts/">Blog</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/en/tags/">Tags</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://rafaelbeloduarte.github.io/en/contact">Contact me</a>
-          </li>
-        
-      
-      
-        
-        
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
         
           
-            
-              <li class="navigation-item menu-separator">
-                <span>|</span>
-              </li>
-              
-            
             <li class="navigation-item">
-              <a href="https://rafaelbeloduarte.github.io/">Português</a>
+              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/en/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/en/tags/">Tags</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/en/contact">Contact me</a>
             </li>
           
         
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://rafaelbeloduarte.github.io/">Português</a>
+              </li>
+            
+          
+            
           
         
-      
-    </ul>
+      </ul>
+    
   </section>
 </nav>
 
@@ -124,40 +136,52 @@
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Catalysis and chemical reaction engineering</h1>
+          <h1 class="title">
+            <a class="title-link" href="https://rafaelbeloduarte.github.io/en/posts/catalysis/">
+              Catalysis and chemical reaction engineering
+            </a>
+          </h1>
         </div>
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fas fa-calendar"></i>
+              <i class="fa fa-calendar" aria-hidden="true"></i>
               <time datetime='2020-04-13T19:33:20-03:00'>
                 Apr 13, 2020
               </time>
             </span>
             <span class="reading-time">
-            <i class="fas fa-clock"></i>
-              2 minutes
-            </span>
-            <span class="word-count">
-              <i class="fas fa-file-alt"></i>
-              419 words
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
             </span>
           </div>
           
-          <div class="tags">
-  <i class="fas fa-tag"></i>
-    <a href="https://rafaelbeloduarte.github.io/en/tags/chemical-engineering/">chemical engineering</a>
-      <span class="separator">•</span>
-    <a href="https://rafaelbeloduarte.github.io/en/tags/catalysis/">catalysis</a>
-      <span class="separator">•</span>
-    <a href="https://rafaelbeloduarte.github.io/en/tags/chemical-reaction-engineering/">chemical reaction engineering</a></div>
-
           
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://rafaelbeloduarte.github.io/en/tags/chemical-engineering/">chemical engineering</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://rafaelbeloduarte.github.io/en/tags/catalysis/">catalysis</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://rafaelbeloduarte.github.io/en/tags/chemical-reaction-engineering/">chemical reaction engineering</a>
+    </span></div>
+
         </div>
       </header>
 
       <div>
-        <h2 id="reaction-catalyzed-by-catalyst-">Reaction catalyzed by catalyst &hellip;</h2>
+        
+        <h2 id="reaction-catalyzed-by-catalyst-">
+  Reaction catalyzed by catalyst &hellip;
+  <a class="heading-link" href="#reaction-catalyzed-by-catalyst-">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
 <p>Chemical reactions engineering is a sub-area of Chemical Engineering and deals with the design of reactors based on theoretical and experimental principles, where the main objective is to determine the operating variables and dimensions of reactors. For this, one of the first steps of a study of this type is to know the reaction rate expressions.</p>
 <p>Rate expressions for chemical reactions describe how fast a number of moles of one chemical species is being consumed to form another chemical species. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> The rate law of a chemical reaction is given in <strong>reacted moles</strong> per <strong>volume</strong> per unit of <strong>time</strong>, or in SI units: <em>mol/(m³*s)</em>. Here comes the role of catalysis, because catalysts are compounds or materials capable of decreasing (or increasing!) the energy barrier that must be overcome for a chemical reaction to occur; and this alters the time required for reactions to happen and, consequently, the rate of reaction. Everything connected.</p>
 <p>Catalysis is divided into two major branches:</p>
@@ -170,19 +194,44 @@
 </li>
 </ul>
 <p>The qualities of catalysts can be assessed for <strong>selectivity, activity, stability and regenerability, mechanical and thermal properties.</strong> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
-<h3 id="selectivity">Selectivity</h3>
+<h3 id="selectivity">
+  Selectivity
+  <a class="heading-link" href="#selectivity">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
 <p>It is the reaction rate of the desired product in relation to the formation of the secondary products, therefore, catalysts with high selectivities are always desired.</p>
-<h3 id="activity">Activity</h3>
+<h3 id="activity">
+  Activity
+  <a class="heading-link" href="#activity">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
 <p>Activity refers to the rate at which a reaction is catalyzed, the higher the rate, the greater the activity (under identical experimental conditions).</p>
-<h3 id="regenerability-and-stability">Regenerability and stability</h3>
+<h3 id="regenerability-and-stability">
+  Regenerability and stability
+  <a class="heading-link" href="#regenerability-and-stability">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
 <p>How easy is it to recover the catalyst? Does the catalyst degrade over time?</p>
 <p>Many solid catalysts accumulate deposits of impurities or reaction products that stick to their surfaces and isolate the catalytic surface from the reaction medium, an example is coke formation in catalytic reforming.</p>
 <p>Another problem is sintering, which occurs in some solid catalysts exposed to high temperatures.</p>
 <p>Sintering is the change in shape and coalescence of small particles forming large particles, due to high temperatures. <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
-<h2 id="size-of-a-reactor">Size of a reactor</h2>
+<h2 id="size-of-a-reactor">
+  Size of a reactor
+  <a class="heading-link" href="#size-of-a-reactor">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
 <p>A tubular reactor of only 2.28 m³ (602.3 US galons) is capable of producing up to 300 million pounds (136.08 million Kg) of <a href="https://en.wikipedia.org/wiki/Ethylene" target="_blank">ethylene</a>
  per year! <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-<h2 id="references">References</h2>
+<h2 id="references">
+  References
+  <a class="heading-link" href="#references">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -196,6 +245,7 @@
 </section>
 
       </div>
+
 
       <footer>
         
@@ -230,11 +280,12 @@
 
       <footer class="footer">
   <section class="container">
+    ©
     
-      <p>rafaelbeloduarte@pm.me</p>
-    
-    
-    
+    2022
+     Rafael Belo Duarte 
+    ·
+    Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank">Coder</a>.
     
   </section>
 </footer>
@@ -242,7 +293,25 @@
     </main>
 
     
+      
+      <script src="https://rafaelbeloduarte.github.io/js/coder.min.39a51230dce2ac866c049b52573e38bf60666af4bc63c1bdf203b9b2d95b1cd6.js" integrity="sha256-OaUSMNzirIZsBJtSVz44v2BmavS8Y8G98gO5stlbHNY="></script>
+    
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
   </body>
 
 </html>

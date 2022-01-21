@@ -13,7 +13,7 @@
       <pubDate>Sun, 16 Jan 2022 11:40:39 -0300</pubDate>
       
       <guid>https://rafaelbeloduarte.github.io/posts/oxidacao-so2/</guid>
-      <description>Introdução O trióxido de enxofre é utilizado na fabricação do ácido sulfúrico partindo da queima do enxofre, seguida da oxidação do dióxido de enxofre produzido na primeira reação 1. O ácido sulfúrico é o produto químico de maior volume de produção nos Estados Unidos e um ótimo indicador do grau de industrialização de um país 2. O enxofre pode ser obtido de depósitos de minério, ou a partir da extração de sulfeto de hidrogênio do gás natural e petróleo 2.</description>
+      <description>Introdução    O trióxido de enxofre é utilizado na fabricação do ácido sulfúrico partindo da queima do enxofre, seguida da oxidação do dióxido de enxofre produzido na primeira reação 1. O ácido sulfúrico é o produto químico de maior volume de produção nos Estados Unidos e um ótimo indicador do grau de industrialização de um país 2. O enxofre pode ser obtido de depósitos de minério, ou a partir da extração de sulfeto de hidrogênio do gás natural e petróleo 2.</description>
     </item>
     
     <item>
@@ -37,8 +37,7 @@ T é a temperatura, x o comprimento (de uma placa ou profundidade do solo por ex
       <pubDate>Sun, 31 Jan 2021 18:03:43 -0300</pubDate>
       
       <guid>https://rafaelbeloduarte.github.io/posts/fundamentos-parte1/</guid>
-      <description>Equação geral dos balanços de massa A equação \ref{eq1} ilustra um dos conceitos mais fundamentais da engenharia química. Ela surge quando se toma um certo volume definido no espaço onde deseja-se contabilizar entradas, saídas e acúmulo de matéria, e é aplicada em uma região do espaço onde define-se uma fronteira, real ou imaginária, que pode ser um equipamento industrial, uma planta química inteira ou qualquer outra região do universo.
-$$ entrada + geração - saída - consumo = acúmulo \label{eq1} \tag{1} $$</description>
+      <description>Equação geral dos balanços de massa    A equação \ref{eq1} ilustra um dos conceitos mais fundamentais da engenharia química. Ela surge quando se toma um certo volume definido no espaço onde deseja-se contabilizar entradas, saídas e acúmulo de matéria, e é aplicada em uma região do espaço onde define-se uma fronteira, real ou imaginária, que pode ser um equipamento industrial, uma planta química inteira ou qualquer outra região do universo.</description>
     </item>
     
     <item>
@@ -47,7 +46,7 @@ $$ entrada + geração - saída - consumo = acúmulo \label{eq1} \tag{1} $$</des
       <pubDate>Mon, 13 Apr 2020 19:33:20 -0300</pubDate>
       
       <guid>https://rafaelbeloduarte.github.io/posts/catalise/</guid>
-      <description>Reação catalisada por catalisador&amp;hellip; Engenharia das reações químicas é uma subárea da Engenharia Química e trata do dimensionamento de reatores a partir de princípios teóricos e experimentais, onde o principal objetivo é determinar as variáveis de operação e dimensões de reatores. Para isto, um dos primeiros passos de um estudo deste tipo é conhecer as leis de velocidade das reações envolvidas.
+      <description>Reação catalisada por catalisador&amp;hellip;    Engenharia das reações químicas é uma subárea da Engenharia Química e trata do dimensionamento de reatores a partir de princípios teóricos e experimentais, onde o principal objetivo é determinar as variáveis de operação e dimensões de reatores. Para isto, um dos primeiros passos de um estudo deste tipo é conhecer as leis de velocidade das reações envolvidas.
 Leis de velocidade de reações químicas descrevem o quão rápido um número de mols de uma espécie química está sendo consumido para formar outra espécie química.</description>
     </item>
     
@@ -67,7 +66,7 @@ Leis de velocidade de reações químicas descrevem o quão rápido um número d
       
       <guid>https://rafaelbeloduarte.github.io/posts/modelo-cstr/</guid>
       <description>Autores: DUARTE, R. B. &amp;amp; M. B. S.
-Introdução Um reator contínuo de tanque agitado, ou CSTR, do inglês continuous stirred-tank reactor, é um tanque com agitação mecânica suficiente para que a mistura de seu conteúdo possa ser considerada perfeita, ou seja, a concentração é uniforme e não depende de coordenadas espaciais, quando o tanque é operado em regime permanente não há também a dependência da concentração com o tempo.</description>
+Introdução    Um reator contínuo de tanque agitado, ou CSTR, do inglês continuous stirred-tank reactor, é um tanque com agitação mecânica suficiente para que a mistura de seu conteúdo possa ser considerada perfeita, ou seja, a concentração é uniforme e não depende de coordenadas espaciais, quando o tanque é operado em regime permanente não há também a dependência da concentração com o tempo.</description>
     </item>
     
     <item>
@@ -88,7 +87,7 @@ Introdução Um reator contínuo de tanque agitado, ou CSTR, do inglês continuo
       <description>Rafael Belo Duarte (PIBIC/CNPq/FA/Uem), J. L. C. W. Pimenta, O. A. A. Santos (Coorientadora), L. M. M. Jorge (Orientador).
 Universidade Estadual de Maringá / Centro de Tecnologia / Maringá, PR.
 Área: Engenharia Química. Subárea: Operações industriais e equipamentos para Engenharia Química.
-Resumo Óleos vegetais podem ser utilizados como fonte de biomassa para a produção de combustíveis renováveis, os produtos obtidos a partir destes óleos têm baixa concentração de contaminantes e são potenciais substitutos a combustíveis obtidos a partir do petróleo.</description>
+Resumo    Óleos vegetais podem ser utilizados como fonte de biomassa para a produção de combustíveis renováveis, os produtos obtidos a partir destes óleos têm baixa concentração de contaminantes e são potenciais substitutos a combustíveis obtidos a partir do petróleo.</description>
     </item>
     
   </channel>
