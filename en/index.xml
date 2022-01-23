@@ -6,7 +6,16 @@
     <description>Recent content on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Tue, 16 Mar 2021 01:00:43 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PIMENTA, JOÃO LOURENÇO CASTAGNARI WILLIMANN ; DE OLIVEIRA CAMARGO, MARIANA ; BELO DUARTE, RAFAEL ; DOS SANTOS, ONELIA APARECIDA ANDREO ; DE MATOS JORGE, LUIZ MARIO . Deoxygenation of vegetable oils for the production of renewable diesel: Improved aerogel based catalysts. FUEL, v. 290, p. 119979, 2021.</title>
+      <link>https://rafaelbeloduarte.github.io/en/publications/fuel2021/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/en/publications/fuel2021/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Transport phenomena: Gauss error function and transient heat transfer</title>
       <link>https://rafaelbeloduarte.github.io/en/posts/error-function/</link>
@@ -20,6 +29,15 @@ $$ erfc(x) = 1 - erf(x) \label{eq2} \tag{2} $$
 An example of its use is in solving the heat equation for a semi-infinite solid.
 $$ \frac{\partial^2{T}}{\partial{x^2}} = \frac{1}{\alpha} \frac{\partial{T}}{\partial{t}} \label{eq3} \tag{3} $$
 T is the temperature, x the length (of a plate or soil depth for example), $\alpha$ is the thermal diffusivity and t the time.</description>
+    </item>
+    
+    <item>
+      <title>LOURENÇO CASTAGNARI WILLIMANN PIMENTA, JOÃO ; DE OLIVEIRA CAMARGO, MARIANA ; BELO DUARTE, RAFAEL ; APARECIDA ANDREO DOS SANTOS, ONÉLIA ; MARIO DE MATOS JORGE, LUIZ . A Novel Kinetic Model Applied to Heterogeneous Fatty Acid Deoxygenation. CHEMICAL ENGINEERING SCIENCE, v. 230, p. 116192, 2020.</title>
+      <link>https://rafaelbeloduarte.github.io/en/publications/chemesci2020/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/en/publications/chemesci2020/</guid>
+      <description></description>
     </item>
     
     <item>
