@@ -62,7 +62,7 @@
     <link rel="apple-touch-icon" href="https://rafaelbeloduarte.github.io/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="https://rafaelbeloduarte.github.io/images/apple-touch-icon.png">
 
-    <meta name="generator" content="Hugo 0.92.0" />
+    <meta name="generator" content="Hugo 0.96.0" />
   </head>
 
   
@@ -228,7 +228,7 @@ A + \frac{ 1 }{ 2 } B + I ⇌ C + I
 $$</p>
 <p>Sua lei de velocidade foi estudada por Eklund e apresentada por Fogler <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> em seu livro texto:</p>
 <p>$$
--{r_A}' = k \sqrt{ \frac{P_A}{P_C} } \left [ P_B - \left ( \frac{ P_C }{K_P P_A} \right )^2  \right ]
+-{r_A}&rsquo; = k \sqrt{ \frac{P_A}{P_C} } \left [ P_B - \left ( \frac{ P_C }{K_P P_A} \right )^2  \right ]
 \label{eq3} \tag{3}
 $$</p>
 <p>A lei de velocidade da Equação \ref{eq3} é válida entre 1278 ºR e 1489 ºR, e pode ser utilizada quando a conversão é maior que 5%; a conversões menores que 5% a lei de velocidade é aquela para a conversão de 5%. Os parâmetros $k$ e $K_p$ são a velocidade específica de reação e a constante de equilíbrio, dados abaixo, onde $T$ é a temperatura e $R$ a constante dos gases ideais ($1,987 Btu.lbmol^{-1}.^{o}R^{-1}$).</p>
@@ -342,7 +342,7 @@ $$</p>
 </p>
 <p>Tomando uma quantidade de catalisador $\Delta W$ do reator e aplicando o balanço de massa em regime permanente:</p>
 <p>$$
-F_A ( W ) - F_A ( W + \Delta W) + {r_A}' \Delta W = 0
+F_A ( W ) - F_A ( W + \Delta W) + {r_A}&rsquo; \Delta W = 0
 \label{eq9} \tag{9}
 $$</p>
 <p>Dividindo a Equação \ref{eq6} por $\Delta W$ e tomando o limite quando $\Delta W$ tende a zero, chegamos a:</p>
@@ -434,10 +434,10 @@ P_I = P_{A0} \frac{ 7,18 }{ (1-0,055X) } \frac{ P }{ P_0 }
 $$</p>
 <p>Aplicando as Equações \ref{eq15} a \ref{eq18} na Equação \ref{eq3}, com $P_{A0} = 0,22 atm$, obtém-se a velocidade de reação em função da conversão, temperatura e pressão:</p>
 <p>$$
--{ r_A }' = k \sqrt{ \frac{1-X}{X} } \left [ \frac{ (0,20 - 0,11X) }{(1-0,055X)} \frac{P}{P_0} - \left ( \frac{ X }{K_p (1-X)} \right ) ^2 \right ]
+-{ r_A }&rsquo; = k \sqrt{ \frac{1-X}{X} } \left [ \frac{ (0,20 - 0,11X) }{(1-0,055X)} \frac{P}{P_0} - \left ( \frac{ X }{K_p (1-X)} \right ) ^2 \right ]
 \label{eq19} \tag{19}
 $$</p>
-<p>Substituindo a Equação \ref{eq19} no balanço de massa (Equação \ref{eq10}) e observando da Tabela 2 que $dF_A = -F_{A0}dX$ e $F_{A0} {\frac{ dX }{ dW }} =  -{ r_A }'$. Aparece a equação diferencial ordinária do balanço de massa:</p>
+<p>Substituindo a Equação \ref{eq19} no balanço de massa (Equação \ref{eq10}) e observando da Tabela 2 que $dF_A = -F_{A0}dX$ e $F_{A0} {\frac{ dX }{ dW }} =  -{ r_A }&rsquo;$. Aparece a equação diferencial ordinária do balanço de massa:</p>
 <p>$$
 \frac{dX}{ dW } = \frac{ k }{ F_{A0} } \sqrt{ \frac{1-X}{X} } \left [ \frac{ (0,20 - 0,11X) }{(1-0,055X)} \frac{P}{P_0} - \left ( \frac{ X }{K_p (1-X)} \right ) ^2 \right ]
 \label{eq20} \tag{20}
@@ -631,14 +631,14 @@ $$</p>
 \frac{d \dot{Q}}{ dW } = \frac{ 4U }{ \rho_b D } ( T_a -T )
 \label{eq45} \tag{45}
 $$</p>
-<p>Substituindo $\frac{ dX }{ dW }$ por $-r_A'$ e $\frac{d \dot{Q}}{dW}$ na Equação \ref{eq42}:</p>
+<p>Substituindo $\frac{ dX }{ dW }$ por $-r_A&rsquo;$ e $\frac{d \dot{Q}}{dW}$ na Equação \ref{eq42}:</p>
 <p>$$
-\frac{ 4U }{ \rho_b D } ( T_a -T ) - F_{A0}({ \sum_{i=1}^{n} \theta_i C_{pi}} )\frac{ dT }{ dW } - F_{A0} ( \Delta H_{RX}^o + \int_{T_R}^T \Delta C_p dT) \frac{ -r_A'}{ F_{A0} } = 0
+\frac{ 4U }{ \rho_b D } ( T_a -T ) - F_{A0}({ \sum_{i=1}^{n} \theta_i C_{pi}} )\frac{ dT }{ dW } - F_{A0} ( \Delta H_{RX}^o + \int_{T_R}^T \Delta C_p dT) \frac{ -r_A&rsquo;}{ F_{A0} } = 0
 \label{eq46} \tag{46}
 $$</p>
 <p>Rearranjando e simplificando, chegamos à EDO do balanço de energia:</p>
 <p>$$
-\frac{dT}{ dW } = \frac{\frac{ 4U }{ \rho_b D } ( T_a -T ) + ( -r_A' )( - \Delta H_{RX} )}{ F_{A0} ( \sum_{i=1}^{n} \theta_i C_{pi} + X \Delta C_p)}
+\frac{dT}{ dW } = \frac{\frac{ 4U }{ \rho_b D } ( T_a -T ) + ( -r_A&rsquo; )( - \Delta H_{RX} )}{ F_{A0} ( \sum_{i=1}^{n} \theta_i C_{pi} + X \Delta C_p)}
 \label{eq47} \tag{47}
 $$</p>
 <h3 id="balanço-de-momento">
@@ -788,7 +788,7 @@ $$</p>
 
     
       
-      <script src="https://rafaelbeloduarte.github.io/js/coder.min.39a51230dce2ac866c049b52573e38bf60666af4bc63c1bdf203b9b2d95b1cd6.js" integrity="sha256-OaUSMNzirIZsBJtSVz44v2BmavS8Y8G98gO5stlbHNY="></script>
+      <script src="https://rafaelbeloduarte.github.io/js/coder.min.8fb86376a16e684af472a329aef502dbebcfab65ce264e9750d144912947c602.js" integrity="sha256-j7hjdqFuaEr0cqMprvUC2&#43;vPq2XOJk6XUNFEkSlHxgI="></script>
     
 
     
