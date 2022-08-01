@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://rafaelbeloduarte.github.io/publications/wendeq2022/</loc>
+    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rafaelbeloduarte.github.io/tags/publica%C3%A7%C3%B5es/</loc>
+    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rafaelbeloduarte.github.io/publications/</loc>
+    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/publications/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/publications/"
+                />
+  </url><url>
+    <loc>https://rafaelbeloduarte.github.io/</loc>
+    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/"
+                />
+  </url><url>
+    <loc>https://rafaelbeloduarte.github.io/tags/</loc>
+    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/tags/"
+                />
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/engenharia-das-rea%C3%A7%C3%B5es-qu%C3%ADmicas/</loc>
     <lastmod>2022-01-16T11:40:39-03:00</lastmod>
   </url><url>
@@ -27,53 +72,11 @@
                 href="https://rafaelbeloduarte.github.io/posts/"
                 />
   </url><url>
-    <loc>https://rafaelbeloduarte.github.io/</loc>
-    <lastmod>2022-01-16T11:40:39-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rafaelbeloduarte.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://rafaelbeloduarte.github.io/"
-                />
-  </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/simula%C3%A7%C3%A3o/</loc>
     <lastmod>2022-01-16T11:40:39-03:00</lastmod>
   </url><url>
-    <loc>https://rafaelbeloduarte.github.io/tags/</loc>
-    <lastmod>2022-01-16T11:40:39-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rafaelbeloduarte.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://rafaelbeloduarte.github.io/tags/"
-                />
-  </url><url>
     <loc>https://rafaelbeloduarte.github.io/publications/simeq2021/</loc>
     <lastmod>2021-08-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rafaelbeloduarte.github.io/tags/publica%C3%A7%C3%B5es/</loc>
-    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rafaelbeloduarte.github.io/publications/</loc>
-    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rafaelbeloduarte.github.io/en/publications/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://rafaelbeloduarte.github.io/publications/"
-                />
   </url><url>
     <loc>https://rafaelbeloduarte.github.io/publications/fuel2021/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
