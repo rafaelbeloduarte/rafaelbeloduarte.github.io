@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Rafael Belo Duarte">
+    <meta name="description" content="O livro &ldquo;The Drunkards Walk&rdquo; 1 trata de como a aleatoriedade influencia nossas vidas e das dificuldades que as pessoas têm em entender probabilidade.
+Em uma das passagens, para ilustrar esse último ponto, o autor traz o seguinte problema:
+Imagine que é lhe dada uma escolha entre 3 portas, atrás de uma das portas há um prêmio e nas outras 2 nada.
+Depois que você fez a escolha uma das portas onde não há nada é aberta e é lhe dada a escolha de trocar ou não de porta.">
+    <meta name="keywords" content="blog,engenharia,engenharia química">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="O Problema das Portas"/>
+<meta name="twitter:description" content="O livro &ldquo;The Drunkards Walk&rdquo; 1 trata de como a aleatoriedade influencia nossas vidas e das dificuldades que as pessoas têm em entender probabilidade.
+Em uma das passagens, para ilustrar esse último ponto, o autor traz o seguinte problema:
+Imagine que é lhe dada uma escolha entre 3 portas, atrás de uma das portas há um prêmio e nas outras 2 nada.
+Depois que você fez a escolha uma das portas onde não há nada é aberta e é lhe dada a escolha de trocar ou não de porta."/>
+
+    <meta property="og:title" content="O Problema das Portas" />
+<meta property="og:description" content="O livro &ldquo;The Drunkards Walk&rdquo; 1 trata de como a aleatoriedade influencia nossas vidas e das dificuldades que as pessoas têm em entender probabilidade.
+Em uma das passagens, para ilustrar esse último ponto, o autor traz o seguinte problema:
+Imagine que é lhe dada uma escolha entre 3 portas, atrás de uma das portas há um prêmio e nas outras 2 nada.
+Depois que você fez a escolha uma das portas onde não há nada é aberta e é lhe dada a escolha de trocar ou não de porta." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rafaelbeloduarte.github.io/posts/problema-das-portas/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-18T15:21:04-03:00" />
+<meta property="article:modified_time" content="2022-08-18T15:21:04-03:00" /><meta property="og:site_name" content="Rafael Belo Duarte" />
+
+
+
+    <title>
+  O Problema das Portas · Rafael Belo Duarte
+</title>
+
+    
+      <link rel="canonical" href="https://rafaelbeloduarte.github.io/posts/problema-das-portas/">
+    
+
+    <link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.d9fddbffe6f27e69985dc5fe0471cdb0e57fbf4775714bc3d847accb08f4a1f6.css" integrity="sha256-2f3b/&#43;byfmmYXcX&#43;BHHNsOV/v0d1cUvD2Eesywj0ofY=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css" integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="https://rafaelbeloduarte.github.io/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://rafaelbeloduarte.github.io/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.101.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://rafaelbeloduarte.github.io/">
+      Rafael Belo Duarte
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/posts/">Artigos</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/publications/">Publicações</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/tags/">Etiquetas</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/contato">Contato</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://rafaelbeloduarte.github.io/en/">English</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://rafaelbeloduarte.github.io/posts/problema-das-portas/">
+              O Problema das Portas
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-08-18T15:21:04-03:00">
+                18/08/2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3 minutos de leitura
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://rafaelbeloduarte.github.io/tags/estat%C3%ADstica/">estatística</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://rafaelbeloduarte.github.io/tags/probabilidade/">probabilidade</a>
+    </span></div>
+
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p>O livro &ldquo;The Drunkards Walk&rdquo; <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> trata de como a aleatoriedade influencia nossas vidas e das dificuldades que as pessoas têm em entender probabilidade.</p>
+<p>Em uma das passagens, para ilustrar esse último ponto, o autor traz o seguinte problema:</p>
+<p>Imagine que é lhe dada uma escolha entre 3 portas, atrás de uma das portas há um prêmio e nas outras 2 nada.</p>
+<p>Depois que você fez a escolha uma das portas onde não há nada é aberta e é lhe dada a escolha de trocar ou não de porta.</p>
+<p>O que é mais vantajoso? Trocar ou não trocar? Ou não faz diferença?</p>
+<p>Meu primeiro instinto, como o das maioria das pessoas segundo o autor, é que não importa se eu trocar ou não, agora nós temos apenas duas portas e minha probabilidade de ganhar é 1/2.</p>
+<p>Mas isso não é verdade, a probabilidade de ganhar se eu trocar de porta é 2/3! Enquanto que se eu não trocar, continuo com a probabilidade inicial de 1/3.</p>
+<h1 id="por-quê">
+  Por quê?
+  <a class="heading-link" href="#por-qu%c3%aa">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>Pois quando foi me revelada uma das portas, eu possuo uma informação adicional e meu espaço de possibilidades mudou. Antes era a escolha aleatória entre as 3 portas, agora é a escolha entre trocar ou não de porta. São duas escolhas DIFERENTES.</p>
+<p>A segunda escolha pode ser feita respondendo a seguinte pergunta: qual a probabilidade de escolher a porta errada? É 2/3. Dessa forma, 2/3 das vezes será escolhida a porta errada e nessas vezes será vantajoso trocar de porta.</p>
+<p>Podemos experimentar com o problema usando o seguinte algoritmo:</p>
+<ol>
+<li>Gerar uma lista aleatória, digamos que <code>0</code> são as portas vazias e <code>1</code> é o prêmio;</li>
+<li>Escolhemos uma porta (um índice da lista) de maneira aleatória;</li>
+<li>Removemos uma das portas vazias (um <code>0</code> qualquer);</li>
+<li>Trocamos nossa escolha;</li>
+<li>Repetimos <code>n</code> vezes sempre somando o <code>resultado</code> de nossa escolha aos anteriores;</li>
+<li>Dividimos a soma por <code>n</code>.</li>
+</ol>
+<p>Isso nos dará a proporção de sucessos. Em <code>python</code> podemos escrever o código abaixo. Iterando 1 milhão de vezes, a proporção é muito próxima a 2/3: 0,667355.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>import random
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>n = 1000000
+</span></span><span style="display:flex;"><span>resultado = 0
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>for i in range(1, n):
+</span></span><span style="display:flex;"><span>    lista = [0,0,1]
+</span></span><span style="display:flex;"><span>    # embaralhar a lista
+</span></span><span style="display:flex;"><span>    random.shuffle(lista)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    # escolher uma porta
+</span></span><span style="display:flex;"><span>    escolha = random.choice(lista)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    # remover 1 zero (porta sem o prêmio)
+</span></span><span style="display:flex;"><span>    lista.remove(0)
+</span></span><span style="display:flex;"><span>    # trocar a escolha
+</span></span><span style="display:flex;"><span>    indice = lista.index(escolha)
+</span></span><span style="display:flex;"><span>    if indice == 0:
+</span></span><span style="display:flex;"><span>        indice = 1
+</span></span><span style="display:flex;"><span>    else: indice = 0
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    # salvar o resultado
+</span></span><span style="display:flex;"><span>    resultado = resultado + lista[indice]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># calcular a proporção de sucessos
+</span></span><span style="display:flex;"><span>prop = resultado/n
+</span></span><span style="display:flex;"><span>print(&#34;#######################&#34;)
+</span></span><span style="display:flex;"><span>print(&#34;&#34;)
+</span></span><span style="display:flex;"><span>print(&#34;Proporção de sucessos = &#34;, prop)
+</span></span><span style="display:flex;"><span>print(&#34;&#34;)
+</span></span><span style="display:flex;"><span>print(&#34;#######################&#34;)
+</span></span></code></pre></div><h2 id="referências">
+  Referências
+  <a class="heading-link" href="#refer%c3%aancias">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Mlodinow, Leonard, 1954-. The Drunkard&rsquo;s Walk : How Randomness Rules Our Lives. New York :Pantheon Books, 2008.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    ©
+    
+    2022
+     Rafael Belo Duarte 
+    ·
+    
+    Promovido por <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank">Coder</a>.
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+      
+      <script src="https://rafaelbeloduarte.github.io/js/coder.min.9cf2dbf9b6989ef8eae941ffb4231c26d1dc026bca38f1d19fdba50177d8a9ac.js" integrity="sha256-nPLb&#43;baYnvjq6UH/tCMcJtHcAmvKOPHRn9ulAXfYqaw="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>
