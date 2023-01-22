@@ -8,11 +8,11 @@
     <language>pt-br</language>
     <lastBuildDate>Thu, 18 Aug 2022 15:21:04 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/tags/probabilidade/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>O Problema das Portas</title>
-      <link>https://rafaelbeloduarte.github.io/posts/problema-das-portas/</link>
+      <title>O Problema de Monty Hall</title>
+      <link>https://rafaelbeloduarte.github.io/posts/problema-de-monty-hall/</link>
       <pubDate>Thu, 18 Aug 2022 15:21:04 -0300</pubDate>
       
-      <guid>https://rafaelbeloduarte.github.io/posts/problema-das-portas/</guid>
+      <guid>https://rafaelbeloduarte.github.io/posts/problema-de-monty-hall/</guid>
       <description>O livro &amp;ldquo;The Drunkards Walk&amp;rdquo; 1 trata de como a aleatoriedade influencia nossas vidas e das dificuldades que as pessoas têm em entender probabilidade.
 Em uma das passagens, para ilustrar esse último ponto, o autor traz o seguinte problema:
 Imagine que é lhe dada uma escolha entre 3 portas, atrás de uma das portas há um prêmio e nas outras 2 nada.
