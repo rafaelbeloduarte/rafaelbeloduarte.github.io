@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>probability on Rafael Belo Duarte</title>
+    <link>https://rafaelbeloduarte.github.io/en/tags/probability/</link>
+    <description>Recent content in probability on Rafael Belo Duarte</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 18 Aug 2022 15:21:04 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/en/tags/probability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Monty Hall Problem</title>
+      <link>https://rafaelbeloduarte.github.io/en/posts/monty-hall-problem/</link>
+      <pubDate>Thu, 18 Aug 2022 15:21:04 -0300</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/en/posts/monty-hall-problem/</guid>
+      <description>The book &amp;ldquo;The Drunkards Walk&amp;rdquo; 1 deals with how randomness influences our lives and the difficulties people have in understanding probability.
+In one of the passages, to illustrate this last point, the author brings up the following problem:
+Imagine that you are given a choice between 3 doors, behind one of the doors there is a prize and the others hide a goat.
+After you have made the choice, one of the doors where there is nothing is opened and you are given the choice to change the door or not.</description>
+    </item>
+    
+  </channel>
+</rss>
