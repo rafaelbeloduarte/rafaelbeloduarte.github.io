@@ -2,6 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://rafaelbeloduarte.github.io/en/publications/fuel-preprint-glycerol-hdo/</loc>
+    <lastmod>2023-02-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/publications/fuel-preprint-glycerol-hdo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/publications/fuel-preprint-glycerol-hdo/"
+                />
+  </url><url>
+    <loc>https://rafaelbeloduarte.github.io/en/tags/publica%C3%A7%C3%B5es/</loc>
+    <lastmod>2023-02-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/tags/publica%C3%A7%C3%B5es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/tags/publica%C3%A7%C3%B5es/"
+                />
+  </url><url>
+    <loc>https://rafaelbeloduarte.github.io/en/publications/</loc>
+    <lastmod>2023-02-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/publications/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/publications/"
+                />
+  </url><url>
+    <loc>https://rafaelbeloduarte.github.io/en/</loc>
+    <lastmod>2023-02-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/"
+                />
+  </url><url>
+    <loc>https://rafaelbeloduarte.github.io/en/tags/</loc>
+    <lastmod>2023-02-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/tags/"
+                />
+  </url><url>
     <loc>https://rafaelbeloduarte.github.io/en/posts/</loc>
     <lastmod>2022-08-18T15:21:04-03:00</lastmod>
     <xhtml:link
@@ -18,34 +83,8 @@
     <loc>https://rafaelbeloduarte.github.io/en/tags/probability/</loc>
     <lastmod>2022-08-18T15:21:04-03:00</lastmod>
   </url><url>
-    <loc>https://rafaelbeloduarte.github.io/en/</loc>
-    <lastmod>2022-08-18T15:21:04-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://rafaelbeloduarte.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rafaelbeloduarte.github.io/en/"
-                />
-  </url><url>
     <loc>https://rafaelbeloduarte.github.io/en/tags/statistics/</loc>
     <lastmod>2022-08-18T15:21:04-03:00</lastmod>
-  </url><url>
-    <loc>https://rafaelbeloduarte.github.io/en/tags/</loc>
-    <lastmod>2022-08-18T15:21:04-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://rafaelbeloduarte.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rafaelbeloduarte.github.io/en/tags/"
-                />
   </url><url>
     <loc>https://rafaelbeloduarte.github.io/en/posts/monty-hall-problem/</loc>
     <lastmod>2022-08-18T15:21:04-03:00</lastmod>
@@ -75,19 +114,6 @@
   </url><url>
     <loc>https://rafaelbeloduarte.github.io/en/tags/publications/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rafaelbeloduarte.github.io/en/publications/</loc>
-    <lastmod>2021-04-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://rafaelbeloduarte.github.io/publications/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rafaelbeloduarte.github.io/en/publications/"
-                />
   </url><url>
     <loc>https://rafaelbeloduarte.github.io/en/tags/chemical-engineering/</loc>
     <lastmod>2021-03-16T01:00:43-03:00</lastmod>
