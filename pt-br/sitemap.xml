@@ -138,6 +138,16 @@
   </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/funcao-erro/</loc>
     <lastmod>2021-03-16T01:00:43-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/posts/error-function/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/posts/funcao-erro/"
+                />
   </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/cromatografia-gasosa/</loc>
     <lastmod>2021-03-08T12:12:37-03:00</lastmod>
@@ -172,12 +182,32 @@
   </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/catalise/</loc>
     <lastmod>2020-04-13T19:33:20-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/posts/catalysis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/posts/catalise/"
+                />
   </url><url>
     <loc>https://rafaelbeloduarte.github.io/tags/bioqu%C3%ADmica/</loc>
     <lastmod>2020-03-26T18:32:38-03:00</lastmod>
   </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/esterilizacao-desinfeccao/</loc>
     <lastmod>2020-03-26T18:32:38-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rafaelbeloduarte.github.io/en/posts/sterilization-disinfection/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://rafaelbeloduarte.github.io/posts/esterilizacao-desinfeccao/"
+                />
   </url><url>
     <loc>https://rafaelbeloduarte.github.io/posts/modelo-cstr/</loc>
     <lastmod>2020-01-17T11:40:39-03:00</lastmod>
