@@ -6,16 +6,14 @@
     <description>Recent content in chemical reaction engineering on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Apr 2020 19:33:20 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/en/tags/chemical-reaction-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Apr 2020 19:33:20 -0300</lastBuildDate>
+    <atom:link href="https://rafaelbeloduarte.github.io/en/tags/chemical-reaction-engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Catalysis and chemical reaction engineering</title>
       <link>https://rafaelbeloduarte.github.io/en/posts/catalysis/</link>
       <pubDate>Mon, 13 Apr 2020 19:33:20 -0300</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/posts/catalysis/</guid>
-      <description>Reaction catalyzed by catalyst &amp;hellip; Chemical reactions engineering is a sub-area of Chemical Engineering and deals with the design of reactors based on theoretical and experimental principles, where the main objective is to determine the operating variables and dimensions of reactors. For this, one of the first steps of a study of this type is to know the reaction rate expressions.
-Rate expressions for chemical reactions describe how fast a number of moles of one chemical species is being consumed to form another chemical species.</description>
+      <description>Reaction catalyzed by catalyst &amp;hellip; Chemical reactions engineering is a sub-area of Chemical Engineering and deals with the design of reactors based on theoretical and experimental principles, where the main objective is to determine the operating variables and dimensions of reactors. For this, one of the first steps of a study of this type is to know the reaction rate expressions.&#xA;Rate expressions for chemical reactions describe how fast a number of moles of one chemical species is being consumed to form another chemical species.</description>
     </item>
-    
   </channel>
 </rss>

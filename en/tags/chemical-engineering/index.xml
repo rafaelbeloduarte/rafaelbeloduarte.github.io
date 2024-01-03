@@ -6,40 +6,28 @@
     <description>Recent content in chemical engineering on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 16 Mar 2021 01:00:43 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/en/tags/chemical-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Mar 2021 01:00:43 -0300</lastBuildDate>
+    <atom:link href="https://rafaelbeloduarte.github.io/en/tags/chemical-engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Transport phenomena: Gauss error function and transient heat transfer</title>
       <link>https://rafaelbeloduarte.github.io/en/posts/error-function/</link>
       <pubDate>Tue, 16 Mar 2021 01:00:43 -0300</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/posts/error-function/</guid>
-      <description>The Gauss error function (Equation \ref{eq1}) appears when you want to solve transient heat transfer problems.
-$$ erf(x) = \frac{2}{\sqrt{\pi}} \int{e^{-x^2}} dx \label{eq1} \tag{1} $$
-The complementary error function is:
-$$ erfc(x) = 1 - erf(x) \label{eq2} \tag{2} $$
-An example of its use is in solving the heat equation for a semi-infinite solid.
-$$ \frac{\partial^2{T}}{\partial{x^2}} = \frac{1}{\alpha} \frac{\partial{T}}{\partial{t}} \label{eq3} \tag{3} $$
-T is the temperature, x the length (of a plate or soil depth for example), $\alpha$ is the thermal diffusivity and t the time.</description>
+      <description>The Gauss error function (Equation \ref{eq1}) appears when you want to solve transient heat transfer problems.&#xA;$$ erf(x) = \frac{2}{\sqrt{\pi}} \int{e^{-x^2}} dx \label{eq1} \tag{1} $$&#xA;The complementary error function is:&#xA;$$ erfc(x) = 1 - erf(x) \label{eq2} \tag{2} $$&#xA;An example of its use is in solving the heat equation for a semi-infinite solid.&#xA;$$ \frac{\partial^2{T}}{\partial{x^2}} = \frac{1}{\alpha} \frac{\partial{T}}{\partial{t}} \label{eq3} \tag{3} $$&#xA;T is the temperature, x the length (of a plate or soil depth for example), $\alpha$ is the thermal diffusivity and t the time.</description>
     </item>
-    
     <item>
       <title>Catalysis and chemical reaction engineering</title>
       <link>https://rafaelbeloduarte.github.io/en/posts/catalysis/</link>
       <pubDate>Mon, 13 Apr 2020 19:33:20 -0300</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/posts/catalysis/</guid>
-      <description>Reaction catalyzed by catalyst &amp;hellip; Chemical reactions engineering is a sub-area of Chemical Engineering and deals with the design of reactors based on theoretical and experimental principles, where the main objective is to determine the operating variables and dimensions of reactors. For this, one of the first steps of a study of this type is to know the reaction rate expressions.
-Rate expressions for chemical reactions describe how fast a number of moles of one chemical species is being consumed to form another chemical species.</description>
+      <description>Reaction catalyzed by catalyst &amp;hellip; Chemical reactions engineering is a sub-area of Chemical Engineering and deals with the design of reactors based on theoretical and experimental principles, where the main objective is to determine the operating variables and dimensions of reactors. For this, one of the first steps of a study of this type is to know the reaction rate expressions.&#xA;Rate expressions for chemical reactions describe how fast a number of moles of one chemical species is being consumed to form another chemical species.</description>
     </item>
-    
     <item>
       <title>Sterilization, disinfection and protection against pathogens</title>
       <link>https://rafaelbeloduarte.github.io/en/posts/sterilization-disinfection/</link>
       <pubDate>Thu, 26 Mar 2020 18:32:38 -0300</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/posts/sterilization-disinfection/</guid>
       <description>It is important to make a distinction between sterilization and disinfection. The first refers to the elimination of all viruses and life forms in a medium or surface, whereas disinfection does not require the complete destruction of contaminating elements, only a fraction, according to the level of asepsis that is desired . Whenever possible, work should be done with techniques that are able to inhibit the spread of contaminating agents after disinfection and, especially, sterilization.</description>
     </item>
-    
   </channel>
 </rss>

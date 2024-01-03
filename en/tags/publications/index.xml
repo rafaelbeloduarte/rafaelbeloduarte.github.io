@@ -6,24 +6,35 @@
     <description>Recent content in publications on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/en/tags/publications/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rafaelbeloduarte.github.io/en/tags/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A bibliometric analysis on sustainable aviation fuels: core technologies, challenges and trends</title>
+      <link>https://rafaelbeloduarte.github.io/en/publications/ujcr-saf-bib-analysis/</link>
+      <pubDate>Wed, 27 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://rafaelbeloduarte.github.io/en/publications/ujcr-saf-bib-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kinetic Study of Glycerol Hydrodeoxygenation on Al2O3 and NiMo2C/Al2O3 Catalysts</title>
+      <link>https://rafaelbeloduarte.github.io/en/publications/fuel-glycerol-hdo/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://rafaelbeloduarte.github.io/en/publications/fuel-glycerol-hdo/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Deoxygenation of Vegetable Oils for the Production of Renewable Diesel: Improved Aerogel Based Catalysts</title>
       <link>https://rafaelbeloduarte.github.io/en/publications/fuel2021/</link>
       <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/publications/fuel2021/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>A Novel Kinetic Model Applied to Heterogeneous Fatty Acid Deoxygenation</title>
       <link>https://rafaelbeloduarte.github.io/en/publications/chemesci2020/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/publications/chemesci2020/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

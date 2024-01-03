@@ -6,15 +6,14 @@
     <description>Recent content in fundamentos da engenharia química on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 31 Jan 2021 18:03:43 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/tags/fundamentos-da-engenharia-qu%C3%ADmica/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Jan 2021 18:03:43 -0300</lastBuildDate>
+    <atom:link href="https://rafaelbeloduarte.github.io/tags/fundamentos-da-engenharia-qu%C3%ADmica/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fundamentos: equação geral dos balanços de massa</title>
       <link>https://rafaelbeloduarte.github.io/posts/fundamentos-parte1/</link>
       <pubDate>Sun, 31 Jan 2021 18:03:43 -0300</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/posts/fundamentos-parte1/</guid>
       <description>Equação geral dos balanços de massa A equação \ref{eq1} ilustra um dos conceitos mais fundamentais da engenharia química. Ela surge quando se toma um certo volume definido no espaço onde deseja-se contabilizar entradas, saídas e acúmulo de matéria, e é aplicada em uma região do espaço onde define-se uma fronteira, real ou imaginária, que pode ser um equipamento industrial, uma planta química inteira ou qualquer outra região do universo.</description>
     </item>
-    
   </channel>
 </rss>
