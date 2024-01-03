@@ -1,74 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light dark">
+<head>
+  <title>
+  Fundamentos: equação geral dos balanços de massa · Rafael Belo Duarte
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 
-    
 
-    <meta name="author" content="Rafael Belo Duarte">
-    <meta name="description" content="Equação geral dos balanços de massa A equação \ref{eq1} ilustra um dos conceitos mais fundamentais da engenharia química. Ela surge quando se toma um certo volume definido no espaço onde deseja-se contabilizar entradas, saídas e acúmulo de matéria, e é aplicada em uma região do espaço onde define-se uma fronteira, real ou imaginária, que pode ser um equipamento industrial, uma planta química inteira ou qualquer outra região do universo.">
-    <meta name="keywords" content="blog,engenharia,engenharia química">
 
-    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Fundamentos: equação geral dos balanços de massa"/>
-<meta name="twitter:description" content="Equação geral dos balanços de massa A equação \ref{eq1} ilustra um dos conceitos mais fundamentais da engenharia química. Ela surge quando se toma um certo volume definido no espaço onde deseja-se contabilizar entradas, saídas e acúmulo de matéria, e é aplicada em uma região do espaço onde define-se uma fronteira, real ou imaginária, que pode ser um equipamento industrial, uma planta química inteira ou qualquer outra região do universo."/>
 
-    <meta property="og:title" content="Fundamentos: equação geral dos balanços de massa" />
-<meta property="og:description" content="Equação geral dos balanços de massa A equação \ref{eq1} ilustra um dos conceitos mais fundamentais da engenharia química. Ela surge quando se toma um certo volume definido no espaço onde deseja-se contabilizar entradas, saídas e acúmulo de matéria, e é aplicada em uma região do espaço onde define-se uma fronteira, real ou imaginária, que pode ser um equipamento industrial, uma planta química inteira ou qualquer outra região do universo." />
+<meta name="author" content="Rafael Belo Duarte">
+<meta name="description" content="Equação geral dos balanços de massa Link para o cabeçalho A Equação 1 ilustra um dos conceitos mais fundamentais da engenharia química. Ela surge quando se toma um certo volume definido no espaço onde deseja-se contabilizar entradas, saídas e acúmulo de matéria, e é aplicada em uma região do espaço onde define-se uma fronteira, real ou imaginária, que pode ser um equipamento industrial, uma planta química inteira ou qualquer outra região do universo.">
+<meta name="keywords" content="blog,engenharia,engenharia química">
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Fundamentos: equação geral dos balanços de massa"/>
+<meta name="twitter:description" content="Equação geral dos balanços de massa Link para o cabeçalho A Equação 1 ilustra um dos conceitos mais fundamentais da engenharia química. Ela surge quando se toma um certo volume definido no espaço onde deseja-se contabilizar entradas, saídas e acúmulo de matéria, e é aplicada em uma região do espaço onde define-se uma fronteira, real ou imaginária, que pode ser um equipamento industrial, uma planta química inteira ou qualquer outra região do universo."/>
+
+<meta property="og:title" content="Fundamentos: equação geral dos balanços de massa" />
+<meta property="og:description" content="Equação geral dos balanços de massa Link para o cabeçalho A Equação 1 ilustra um dos conceitos mais fundamentais da engenharia química. Ela surge quando se toma um certo volume definido no espaço onde deseja-se contabilizar entradas, saídas e acúmulo de matéria, e é aplicada em uma região do espaço onde define-se uma fronteira, real ou imaginária, que pode ser um equipamento industrial, uma planta química inteira ou qualquer outra região do universo." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://rafaelbeloduarte.github.io/posts/fundamentos-parte1/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-01-31T18:03:43-03:00" />
-<meta property="article:modified_time" content="2021-01-31T18:03:43-03:00" />
+<meta property="article:modified_time" content="2021-01-31T18:03:43-03:00" /><meta property="og:site_name" content="Rafael Belo Duarte" />
 
 
 
-    <title>
-  Fundamentos: equação geral dos balanços de massa · Rafael Belo Duarte
-</title>
 
-    
-      <link rel="canonical" href="https://rafaelbeloduarte.github.io/posts/fundamentos-parte1/">
-    
 
-    <link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+<link rel="canonical" href="https://rafaelbeloduarte.github.io/posts/fundamentos-parte1/">
 
-    
-      
-      
-      <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.d9fddbffe6f27e69985dc5fe0471cdb0e57fbf4775714bc3d847accb08f4a1f6.css" integrity="sha256-2f3b/&#43;byfmmYXcX&#43;BHHNsOV/v0d1cUvD2Eesywj0ofY=" crossorigin="anonymous" media="screen" />
-    
 
-    
+<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
-    
-      
-        
-        
-        <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css" integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin="anonymous" media="screen" />
-      
-    
-
-    
-
-    
-
-    <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_16.png" sizes="16x16">
-
-    <link rel="apple-touch-icon" href="https://rafaelbeloduarte.github.io/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://rafaelbeloduarte.github.io/images/apple-touch-icon.png">
-
-    <meta name="generator" content="Hugo 0.121.1">
-  </head>
 
   
   
-    
+  <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
   
-  <body class="preload-transitions colorscheme-auto">
     
+    
+    <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="https://rafaelbeloduarte.github.io/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://rafaelbeloduarte.github.io/img/icon_16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://rafaelbeloduarte.github.io/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://rafaelbeloduarte.github.io/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://rafaelbeloduarte.github.io/site.webmanifest">
+<link rel="mask-icon" href="https://rafaelbeloduarte.github.io/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
         <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
@@ -76,8 +92,8 @@
 </div>
 
 
-    <main class="wrapper">
-      <nav class="navigation">
+  <main class="wrapper">
+    <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="https://rafaelbeloduarte.github.io/">
       Rafael Belo Duarte
@@ -132,8 +148,8 @@
 </nav>
 
 
-      <div class="content">
-        
+    <div class="content">
+      
   <section class="container post">
     <article>
       <header>
@@ -169,35 +185,35 @@
       <a href="https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/">engenharia química</a>
     </span></div>
 
-          
         </div>
       </header>
 
-      <div>
+      <div class="post-content">
         
         <h2 id="equação-geral-dos-balanços-de-massa">
   Equação geral dos balanços de massa
   <a class="heading-link" href="#equa%c3%a7%c3%a3o-geral-dos-balan%c3%a7os-de-massa">
-    <i class="fa fa-link" aria-hidden="true"></i>
+    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h2>
-<p>A equação \ref{eq1} ilustra um dos conceitos mais fundamentais da engenharia química. Ela surge quando se toma um certo volume definido no espaço onde deseja-se contabilizar entradas, saídas e acúmulo de matéria, e é aplicada em uma região do espaço onde define-se uma fronteira, real ou imaginária, que pode ser um equipamento industrial, uma planta química inteira ou qualquer outra região do universo.</p>
+<p>A Equação 1 ilustra um dos conceitos mais fundamentais da engenharia química. Ela surge quando se toma um certo volume definido no espaço onde deseja-se contabilizar entradas, saídas e acúmulo de matéria, e é aplicada em uma região do espaço onde define-se uma fronteira, real ou imaginária, que pode ser um equipamento industrial, uma planta química inteira ou qualquer outra região do universo.</p>
 <p>$$
 entrada + geração - saída - consumo = acúmulo
-\label{eq1} \tag{1}
+\tag{1}
 $$</p>
-<p>É importante notar que os termos de geração e consumo na equação \ref{eq1} não supõem geração de matéria, pois isso viola o princípio da conservação de massa. Eles são úteis quando estuda-se sistemas com reações químicas e representam as transformações em quantidade de matéria. Por exemplo, quando surge uma molécula (geração), isto ocorre apenas a partir do consumo de outras espécies químicas, e o contrário é verdadeiro para o consumo.</p>
-<p>Portanto, podem ser escritas diversas equações para um sistema, como uma equação para cada componente químico. Obtém-se então um sistema de <a href="https://brasilescola.uol.com.br/matematica/equacao-linear.htm" target="_blank">equações lineares</a>
- (sistemas de equações não lineares é um bicho bem mais cabeludo), que pode ser resolvido caso o número de variáveis desconhecidas seja igual ao número de equações independentes, ou seja, o grau de liberdade (GL) é zero.</p>
+<p>É importante notar que os termos de geração e consumo na Equação 1 não supõem geração de matéria, pois isso viola o princípio da conservação de massa. Eles são úteis quando estuda-se sistemas com reações químicas e representam as transformações em quantidade de matéria. Por exemplo, quando surge uma molécula (geração), isto ocorre apenas a partir do consumo de outras espécies químicas, e o contrário é verdadeiro para o consumo.</p>
+<p>Portanto, podem ser escritas diversas equações para um sistema, como uma equação para cada componente químico. Obtém-se então um sistema de <a href="https://brasilescola.uol.com.br/matematica/equacao-linear.htm"  class="external-link" target="_blank" rel="noopener">equações lineares</a> (sistemas de equações não lineares é um bicho bem mais cabeludo), que pode ser resolvido caso o número de variáveis desconhecidas seja igual ao número de equações independentes, ou seja, o grau de liberdade (GL) é zero.</p>
 <p>$$
 graus\ de\ liberdade = número\ de\ variáveis - número\ de\ equações\ independentes
-\label{eq2} \tag{2}
+\tag{2}
 $$</p>
 <p>Sistemas com graus de liberdade menor que zero não possuem solução, e em sistemas com graus de liberdade maior que zero existem infinitas soluções e devem ser feitas suposições até que tenha-se GL = 0.</p>
 <h2 id="referências">
   Referências
   <a class="heading-link" href="#refer%c3%aancias">
-    <i class="fa fa-link" aria-hidden="true"></i>
+    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h2>
 <p>Felder, R. M. e Rousseau, R. W., 2005. Elementary principles of chemical processes. Wiley, Hoboken, NJ.</p>
@@ -213,31 +229,33 @@ $$</p>
         
         
         
+        
+        
       </footer>
     </article>
 
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [
-          ['$', '$'], ['\\(', '\\)']
-        ],
-        processEscapes: true,
-        processEnvironments: true
-      },
-      options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
       }
-    };
-  </script>
+    );"></script>
   </section>
 
-      </div>
+    </div>
 
-      <footer class="footer">
+    <footer class="footer">
   <section class="container">
     ©
     
@@ -245,33 +263,54 @@ $$</p>
      Rafael Belo Duarte 
     ·
     
-    Promovido por <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank">Coder</a>.
+    Promovido por <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
     
   </section>
 </footer>
 
-    </main>
+  </main>
 
-    
-      
-      <script src="https://rafaelbeloduarte.github.io/js/coder.min.9cf2dbf9b6989ef8eae941ffb4231c26d1dc026bca38f1d19fdba50177d8a9ac.js" integrity="sha256-nPLb&#43;baYnvjq6UH/tCMcJtHcAmvKOPHRn9ulAXfYqaw="></script>
-    
+  
 
-    
+  
+  
+  <script src="https://rafaelbeloduarte.github.io/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
 
-    
+  
 
-    
+  
 
-    
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-  </body>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
 
 </html>
