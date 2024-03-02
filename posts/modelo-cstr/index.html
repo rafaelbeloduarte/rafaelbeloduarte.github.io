@@ -131,6 +131,8 @@ Introdução Link para o cabeçalho Um reator contínuo de tanque agitado, ou CS
           
           
             
+          
+            
               
                 <li class="navigation-item menu-separator">
                   <span>|</span>
@@ -140,8 +142,6 @@ Introdução Link para o cabeçalho Um reator contínuo de tanque agitado, ou CS
               <li class="navigation-item">
                 <a href="https://rafaelbeloduarte.github.io/en/">English</a>
               </li>
-            
-          
             
           
         
@@ -181,15 +181,15 @@ Introdução Link para o cabeçalho Um reator contínuo de tanque agitado, ou CS
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/">engenharia química</a>
+      <a href="https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/">Engenharia Química</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="https://rafaelbeloduarte.github.io/tags/modelagem/">modelagem</a>
+      <a href="https://rafaelbeloduarte.github.io/tags/modelagem/">Modelagem</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="https://rafaelbeloduarte.github.io/tags/simula%C3%A7%C3%A3o/">simulação</a>
+      <a href="https://rafaelbeloduarte.github.io/tags/simula%C3%A7%C3%A3o/">Simulação</a>
     </span></div>
 
         </div>
@@ -221,7 +221,7 @@ ao longo dos tanques.</p>
 são removidos por transbordo. Pode-se assumir também que as vazões $F_0$, $F_1$, e $F_2$ são iguais pois a
 densidade foi tomada como sempre constante, as saídas ocorrem por transbordo e no momento em
 que se inicia a análise os tanques estão preenchidos.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/cstr_serie.jpg" alt="cstr_serie" title="Figura 1: Dois CSTR em série."></p>
+<p><img alt="cstr_serie" src="https://rafaelbeloduarte.github.io/images/cstr_serie/cstr_serie.jpg" title="Figura 1: Dois CSTR em série."></p>
 <h2 id="resultados-e-discussão">
   Resultados e discussão
   <a class="heading-link" href="#resultados-e-discuss%c3%a3o">
@@ -426,10 +426,10 @@ X{ _2 } = X{_1} + \frac{V{ _2 }kC{_A}{_2}}{ F_0 C{_A}{_0} }
 \tag{31}
 $$</p>
 <p>Ambas definidas com relação à alimentação $F_0$.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig2.jpg" alt="Cxt" title="Figura 2: Dependência da concentração com o tempo."></p>
+<p><img alt="Cxt" src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig2.jpg" title="Figura 2: Dependência da concentração com o tempo."></p>
 <p>As Equações 30} e 31} nos levam, no estado estacionário, a um $X_1$ intermediário de $0,8333$ e uma conversão final $X_2$ igual a $0,9524$.</p>
 <p>Pode-se traçar também um gráfico relacionando o tempo com a conversão, como na Figura 3. Observa-se que no início as duas conversões são muito próximas, isto é consequência da definição adotada, que é sempre em relação à alimentação original. No primeiro instante o termo de consumo no reator dois é nulo e a conversão final é igual à intermediária. Conforme o tempo aumenta, reagente passa a entrar no segundo reator e o termo da conversão final começa a se distanciar da conversão intermediária.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig3.jpg" alt="Xxt" title="Figura 3: Relação entre a conversão e o tempo."></p>
+<p><img alt="Xxt" src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig3.jpg" title="Figura 3: Relação entre a conversão e o tempo."></p>
 <h3 id="solução-numérica">
   Solução Numérica
   <a class="heading-link" href="#solu%c3%a7%c3%a3o-num%c3%a9rica">
@@ -438,9 +438,9 @@ $$</p>
   </a>
 </h3>
 <p>Utilizando-se do método de Runge-Kutta de quarta ordem (RK45) para resolução do <a href="https://github.com/rafaelbeloduarte/cstr_serie" title="Baixe o arquivo aqui"  class="external-link" target="_blank" rel="noopener">modelo criado no Xcos</a> (Figura 6) foram obtidos perfis de concentração do componente A, e conversão intermediaria $X_1$ e final $X_2$ como segue.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig4.jpg" alt="Concentração do composto A em ambos os reatores" title="Figura 4: Concentração do composto A em ambos os reatores."></p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig5.jpg" alt="Conversão em ambos os reatores" title="Figura 5: Conversão em ambos os reatores."></p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig6.jpg" alt="Diagrama Xcos" title="Figura 6: Diagrama do modelo utilizado no Xcos."></p>
+<p><img alt="Concentração do composto A em ambos os reatores" src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig4.jpg" title="Figura 4: Concentração do composto A em ambos os reatores."></p>
+<p><img alt="Conversão em ambos os reatores" src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig5.jpg" title="Figura 5: Conversão em ambos os reatores."></p>
+<p><img alt="Diagrama Xcos" src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig6.jpg" title="Figura 6: Diagrama do modelo utilizado no Xcos."></p>
 <p><a href="https://github.com/rafaelbeloduarte/cstr_serie"  class="external-link" target="_blank" rel="noopener">Baixe o arquivo da Figura 6 aqui</a></p>
 <p>Qualitativamente observa-se que as curvas acima de concentração de A e de conversão em função do tempo obtidas na solução numérica apresentam as mesmas características das curvas obtidas analiticamente (apresentadas nas Figuras 2 e 3).</p>
 <p>Em estado estacionário a solução numérica resulta em $C{_A}{_1} = 50 mol.m{^-}{^3}$ $C{_A}{_2} = 14,286 mol.m{^-}{^3}$.</p>
