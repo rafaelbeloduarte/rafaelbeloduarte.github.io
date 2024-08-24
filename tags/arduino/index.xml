@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>arduino on Rafael Belo Duarte</title>
+    <title>Arduino on Rafael Belo Duarte</title>
     <link>https://rafaelbeloduarte.github.io/tags/arduino/</link>
-    <description>Recent content in arduino on Rafael Belo Duarte</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Arduino on Rafael Belo Duarte</description>
+    <generator>Hugo</generator>
     <language>pt-br</language>
-    <lastBuildDate>Tue, 07 Jan 2020 15:21:04 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jan 2020 15:21:04 -0300</lastBuildDate>
+    <atom:link href="https://rafaelbeloduarte.github.io/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projeto Sensorino</title>
       <link>https://rafaelbeloduarte.github.io/posts/projeto-sensorino/</link>
       <pubDate>Tue, 07 Jan 2020 15:21:04 -0300</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/posts/projeto-sensorino/</guid>
-      <description>Software com interface gráfica escrito em Python com o intuito de captar sinais de sensores, como transdutores de pressão e termopares, acoplados a placas Arduino.
-Instruções Link para o cabeçalho O loop de seu controlador deve retornar os dados separados por espaços simples:
-a b c ... Ex: 1 2 3 4 5
-Você pode encontrar no Github uma versão executável para windows, como também o repositório do projeto.
-Se você possui ambiente python configurado, inicie o programa com: python3 projeto_sensorino.</description>
+      <description>Software com interface gráfica escrito em Python com o intuito de captar sinais de sensores, como transdutores de pressão e termopares, acoplados a placas Arduino.&#xA;Instruções Link para o cabeçalho O loop de seu controlador deve retornar os dados separados por espaços simples:&#xA;a b c ... Ex: 1 2 3 4 5&#xA;Você pode encontrar no Github uma versão executável para windows, como também o repositório do projeto.&#xA;Se você possui ambiente python configurado, inicie o programa com: python3 projeto_sensorino.</description>
     </item>
-    
   </channel>
 </rss>

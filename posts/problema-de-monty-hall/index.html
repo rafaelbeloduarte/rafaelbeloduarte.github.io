@@ -18,23 +18,30 @@ Em uma das passagens, para ilustrar esse último ponto, o autor traz o seguinte 
 Imagine que é lhe dada uma escolha entre 3 portas, atrás de uma das portas há um prêmio e nas outras 2 nada.
 Depois que você fez a escolha uma das portas onde não há nada é aberta e é lhe dada a escolha de trocar ou não de porta.">
 <meta name="keywords" content="blog,engenharia,engenharia química">
+<meta name="fediverse:creator" content="" />
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="O Problema de Monty Hall"/>
-<meta name="twitter:description" content="O livro &ldquo;The Drunkards Walk&rdquo; 1 trata de como a aleatoriedade influencia nossas vidas e das dificuldades que as pessoas têm em entender probabilidade.
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="O Problema de Monty Hall">
+  <meta name="twitter:description" content="O livro “The Drunkards Walk” 1 trata de como a aleatoriedade influencia nossas vidas e das dificuldades que as pessoas têm em entender probabilidade.
 Em uma das passagens, para ilustrar esse último ponto, o autor traz o seguinte problema:
 Imagine que é lhe dada uma escolha entre 3 portas, atrás de uma das portas há um prêmio e nas outras 2 nada.
-Depois que você fez a escolha uma das portas onde não há nada é aberta e é lhe dada a escolha de trocar ou não de porta."/>
+Depois que você fez a escolha uma das portas onde não há nada é aberta e é lhe dada a escolha de trocar ou não de porta.">
 
-<meta property="og:title" content="O Problema de Monty Hall" />
-<meta property="og:description" content="O livro &ldquo;The Drunkards Walk&rdquo; 1 trata de como a aleatoriedade influencia nossas vidas e das dificuldades que as pessoas têm em entender probabilidade.
+<meta property="og:url" content="https://rafaelbeloduarte.github.io/posts/problema-de-monty-hall/">
+  <meta property="og:site_name" content="Rafael Belo Duarte">
+  <meta property="og:title" content="O Problema de Monty Hall">
+  <meta property="og:description" content="O livro “The Drunkards Walk” 1 trata de como a aleatoriedade influencia nossas vidas e das dificuldades que as pessoas têm em entender probabilidade.
 Em uma das passagens, para ilustrar esse último ponto, o autor traz o seguinte problema:
 Imagine que é lhe dada uma escolha entre 3 portas, atrás de uma das portas há um prêmio e nas outras 2 nada.
-Depois que você fez a escolha uma das portas onde não há nada é aberta e é lhe dada a escolha de trocar ou não de porta." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://rafaelbeloduarte.github.io/posts/problema-de-monty-hall/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-08-18T15:21:04-03:00" />
-<meta property="article:modified_time" content="2022-08-18T15:21:04-03:00" /><meta property="og:site_name" content="Rafael Belo Duarte" />
+Depois que você fez a escolha uma das portas onde não há nada é aberta e é lhe dada a escolha de trocar ou não de porta.">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-08-18T15:21:04-03:00">
+    <meta property="article:modified_time" content="2022-08-18T15:21:04-03:00">
+    <meta property="article:tag" content="Estatística">
+    <meta property="article:tag" content="Probabilidade">
 
 
 
@@ -42,12 +49,14 @@ Depois que você fez a escolha uma das portas onde não há nada é aberta e é 
 <link rel="canonical" href="https://rafaelbeloduarte.github.io/posts/problema-de-monty-hall/">
 
 
-<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
 
 
   
   
-  <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.07092c1350ffd254998dc43a44ae96e617d14af4df4602626878df89189c5e1a.css" integrity="sha256-BwksE1D/0lSZjcQ6RK6W5hfRSvTfRgJiaHjfiRicXho=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -96,7 +105,7 @@ Depois que você fez a escolha uma das portas onde não há nada é aberta e é 
   
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
     </a>
 </div>
 
@@ -104,31 +113,33 @@ Depois que você fez a escolha uma das portas onde não há nada é aberta e é 
   <main class="wrapper">
     <nav class="navigation">
   <section class="container">
+    
     <a class="navigation-title" href="https://rafaelbeloduarte.github.io/">
       Rafael Belo Duarte
     </a>
     
+    
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
       </label>
       <ul class="navigation-list">
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/posts/">Textos</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/posts/">Textos</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/publications/">Publicações</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/publications/">Publicações</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/tags/">Etiquetas</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/tags/">Etiquetas</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/contato">Contato</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/contato">Contato</a>
             </li>
           
         
@@ -170,26 +181,26 @@ Depois que você fez a escolha uma das portas onde não há nada é aberta e é 
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
               <time datetime="2022-08-18T15:21:04-03:00">
                 18/08/2022
               </time>
             </span>
             <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
               3 minutos de leitura
             </span>
           </div>
           
           
           <div class="tags">
-  <i class="fa fa-tag" aria-hidden="true"></i>
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="https://rafaelbeloduarte.github.io/tags/estat%C3%ADstica/">estatística</a>
+      <a href="https://rafaelbeloduarte.github.io/tags/estat%C3%ADstica/">Estatística</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="https://rafaelbeloduarte.github.io/tags/probabilidade/">probabilidade</a>
+      <a href="https://rafaelbeloduarte.github.io/tags/probabilidade/">Probabilidade</a>
     </span></div>
 
         </div>
@@ -207,7 +218,7 @@ Depois que você fez a escolha uma das portas onde não há nada é aberta e é 
 <h1 id="por-quê">
   Por quê?
   <a class="heading-link" href="#por-qu%c3%aa">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h1>
@@ -257,7 +268,7 @@ Depois que você fez a escolha uma das portas onde não há nada é aberta e é 
 </span></span></code></pre></div><h2 id="referências">
   Referências
   <a class="heading-link" href="#refer%c3%aancias">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h2>
@@ -280,6 +291,9 @@ Depois que você fez a escolha uma das portas onde não há nada é aberta e é 
         
         
         
+        
+        
+
         
         
       </footer>
@@ -331,6 +345,11 @@ Depois que você fez a escolha uma das portas onde não há nada é aberta e é 
   
 
   
+
+
+  
+  
+
 
 
   

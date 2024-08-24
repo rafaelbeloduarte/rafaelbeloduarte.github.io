@@ -15,17 +15,26 @@
 <meta name="author" content="Rafael Belo Duarte">
 <meta name="description" content="Introdução Link para o cabeçalho O trióxido de enxofre é utilizado na fabricação do ácido sulfúrico partindo da queima do enxofre, seguida da oxidação do dióxido de enxofre produzido na primeira reação 1. O ácido sulfúrico é o produto químico de maior volume de produção nos Estados Unidos e um ótimo indicador do grau de industrialização de um país 2. O enxofre pode ser obtido de depósitos de minério, ou a partir da extração de sulfeto de hidrogênio do gás natural e petróleo 2.">
 <meta name="keywords" content="blog,engenharia,engenharia química">
+<meta name="fediverse:creator" content="" />
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Operação de Reator Não-Adiabático: Oxidação do Dióxido de Enxofre"/>
-<meta name="twitter:description" content="Introdução Link para o cabeçalho O trióxido de enxofre é utilizado na fabricação do ácido sulfúrico partindo da queima do enxofre, seguida da oxidação do dióxido de enxofre produzido na primeira reação 1. O ácido sulfúrico é o produto químico de maior volume de produção nos Estados Unidos e um ótimo indicador do grau de industrialização de um país 2. O enxofre pode ser obtido de depósitos de minério, ou a partir da extração de sulfeto de hidrogênio do gás natural e petróleo 2."/>
 
-<meta property="og:title" content="Operação de Reator Não-Adiabático: Oxidação do Dióxido de Enxofre" />
-<meta property="og:description" content="Introdução Link para o cabeçalho O trióxido de enxofre é utilizado na fabricação do ácido sulfúrico partindo da queima do enxofre, seguida da oxidação do dióxido de enxofre produzido na primeira reação 1. O ácido sulfúrico é o produto químico de maior volume de produção nos Estados Unidos e um ótimo indicador do grau de industrialização de um país 2. O enxofre pode ser obtido de depósitos de minério, ou a partir da extração de sulfeto de hidrogênio do gás natural e petróleo 2." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://rafaelbeloduarte.github.io/posts/oxidacao-so2/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-01-16T11:40:39-03:00" />
-<meta property="article:modified_time" content="2022-01-16T11:40:39-03:00" /><meta property="og:site_name" content="Rafael Belo Duarte" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Operação de Reator Não-Adiabático: Oxidação do Dióxido de Enxofre">
+  <meta name="twitter:description" content="Introdução Link para o cabeçalho O trióxido de enxofre é utilizado na fabricação do ácido sulfúrico partindo da queima do enxofre, seguida da oxidação do dióxido de enxofre produzido na primeira reação 1. O ácido sulfúrico é o produto químico de maior volume de produção nos Estados Unidos e um ótimo indicador do grau de industrialização de um país 2. O enxofre pode ser obtido de depósitos de minério, ou a partir da extração de sulfeto de hidrogênio do gás natural e petróleo 2.">
+
+<meta property="og:url" content="https://rafaelbeloduarte.github.io/posts/oxidacao-so2/">
+  <meta property="og:site_name" content="Rafael Belo Duarte">
+  <meta property="og:title" content="Operação de Reator Não-Adiabático: Oxidação do Dióxido de Enxofre">
+  <meta property="og:description" content="Introdução Link para o cabeçalho O trióxido de enxofre é utilizado na fabricação do ácido sulfúrico partindo da queima do enxofre, seguida da oxidação do dióxido de enxofre produzido na primeira reação 1. O ácido sulfúrico é o produto químico de maior volume de produção nos Estados Unidos e um ótimo indicador do grau de industrialização de um país 2. O enxofre pode ser obtido de depósitos de minério, ou a partir da extração de sulfeto de hidrogênio do gás natural e petróleo 2.">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-01-16T11:40:39-03:00">
+    <meta property="article:modified_time" content="2022-01-16T11:40:39-03:00">
+    <meta property="article:tag" content="Engenharia Química">
+    <meta property="article:tag" content="Engenharia Das Reações Químicas">
+    <meta property="article:tag" content="Modelagem">
+    <meta property="article:tag" content="Simulação">
 
 
 
@@ -33,12 +42,14 @@
 <link rel="canonical" href="https://rafaelbeloduarte.github.io/posts/oxidacao-so2/">
 
 
-<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
 
 
   
   
-  <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.07092c1350ffd254998dc43a44ae96e617d14af4df4602626878df89189c5e1a.css" integrity="sha256-BwksE1D/0lSZjcQ6RK6W5hfRSvTfRgJiaHjfiRicXho=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -87,7 +98,7 @@
   
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
     </a>
 </div>
 
@@ -95,37 +106,41 @@
   <main class="wrapper">
     <nav class="navigation">
   <section class="container">
+    
     <a class="navigation-title" href="https://rafaelbeloduarte.github.io/">
       Rafael Belo Duarte
     </a>
     
+    
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
       </label>
       <ul class="navigation-list">
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/posts/">Textos</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/posts/">Textos</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/publications/">Publicações</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/publications/">Publicações</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/tags/">Etiquetas</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/tags/">Etiquetas</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/contato">Contato</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/contato">Contato</a>
             </li>
           
         
         
           
           
+          
+            
           
             
               
@@ -137,8 +152,6 @@
               <li class="navigation-item">
                 <a href="https://rafaelbeloduarte.github.io/en/">English</a>
               </li>
-            
-          
             
           
         
@@ -163,34 +176,34 @@
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
               <time datetime="2022-01-16T11:40:39-03:00">
                 16/01/2022
               </time>
             </span>
             <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
               17 minutos de leitura
             </span>
           </div>
           
           
           <div class="tags">
-  <i class="fa fa-tag" aria-hidden="true"></i>
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/">engenharia química</a>
+      <a href="https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/">Engenharia Química</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="https://rafaelbeloduarte.github.io/tags/engenharia-das-rea%C3%A7%C3%B5es-qu%C3%ADmicas/">engenharia das reações químicas</a>
+      <a href="https://rafaelbeloduarte.github.io/tags/engenharia-das-rea%C3%A7%C3%B5es-qu%C3%ADmicas/">Engenharia Das Reações Químicas</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="https://rafaelbeloduarte.github.io/tags/modelagem/">modelagem</a>
+      <a href="https://rafaelbeloduarte.github.io/tags/modelagem/">Modelagem</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="https://rafaelbeloduarte.github.io/tags/simula%C3%A7%C3%A3o/">simulação</a>
+      <a href="https://rafaelbeloduarte.github.io/tags/simula%C3%A7%C3%A3o/">Simulação</a>
     </span></div>
 
         </div>
@@ -201,7 +214,7 @@
         <h2 id="introdução">
   Introdução
   <a class="heading-link" href="#introdu%c3%a7%c3%a3o">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h2>
@@ -211,7 +224,7 @@
 <h2 id="resultados-e-discussão">
   Resultados e discussão
   <a class="heading-link" href="#resultados-e-discuss%c3%a3o">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h2>
@@ -328,12 +341,12 @@ $$</p>
 <h3 id="balanço-de-massa">
   Balanço de Massa
   <a class="heading-link" href="#balan%c3%a7o-de-massa">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h3>
 <p>Os balanços serão realizados para um único tubo, pois eles estão em paralelo, então os perfis de conversão, pressão e temperatura são iguais em todos. O balanço de massa em um reator tubular de leito empacotado é realizado observando a Figura 1.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/oxidacao_SO2/BM_PBR.jpg" alt="BM_PBR" title="Figura 1: Balanço de massa em reator de leito fixo."></p>
+<p><img alt="BM_PBR" src="https://rafaelbeloduarte.github.io/images/oxidacao_SO2/BM_PBR.jpg" title="Figura 1: Balanço de massa em reator de leito fixo."></p>
 <p>Tomando uma quantidade de catalisador $\Delta W$ do reator e aplicando o balanço de massa em regime permanente:</p>
 <p>$$
 F_A ( W ) - F_A ( W + \Delta W) + {r_A}&rsquo; \Delta W = 0
@@ -444,7 +457,7 @@ $$</p>
 <h3 id="balanço-de-energia">
   Balanço de Energia
   <a class="heading-link" href="#balan%c3%a7o-de-energia">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h3>
@@ -639,7 +652,7 @@ $$</p>
 <h3 id="balanço-de-momento">
   Balanço de Momento
   <a class="heading-link" href="#balan%c3%a7o-de-momento">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h3>
@@ -664,26 +677,26 @@ $$</p>
 <h3 id="solução-numérica-do-sistema-de-equações-diferenciais-e-discussão-dos-resultados">
   Solução Numérica do Sistema de Equações Diferenciais e Discussão dos Resultados
   <a class="heading-link" href="#solu%c3%a7%c3%a3o-num%c3%a9rica-do-sistema-de-equa%c3%a7%c3%b5es-diferenciais-e-discuss%c3%a3o-dos-resultados">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h3>
 <p>Resolvendo numericamente o sistema de equações diferenciais 20}, 47} e 49} no software Octave versão 6.2.0, utilizando o método de Dormand-Prince de ordem 4, com pressão inicial de $2 atm$, conversão inicial zero e temperatura na entrada de $1200 ^oR$, obtemos o gráfico da Figura 2, com as curvas de temperatura, conversão e conversão de equilíbrio (quando a velocidade de reação é nula).</p>
 <p><a href="https://github.com/rafaelbeloduarte/oxidacao_SO2_octave"  class="external-link" target="_blank" rel="noopener">Link para os códigos do Octave</a></p>
 <p>Percebe-se da Figura 2 que a conversão está muito abaixo da conversão de equilíbrio devido à baixa temperatura de alimentação, outro ponto a se notar é que a temperatura do fluido de refrigeração é mais alta que a temperatura de entrada, de maneira que nos primeiros $1,5 ft$ do reator, o fluido de refrigeração na verdade fornece calor para o reator, a partir desse ponto a temperatura aumenta até um máximo de $1332 ^oR$ caindo a $1273 ^oR$ na saída, com conversão final de 62%.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/oxidacao_SO2/figura2.png" alt="figura2" title="Figura 2: Perfis de conversão, conversão de equilíbrio e temperatura ao longo do reator para temperatura de alimentação de 1200 ºR."></p>
+<p><img alt="figura2" src="https://rafaelbeloduarte.github.io/images/oxidacao_SO2/figura2.png" title="Figura 2: Perfis de conversão, conversão de equilíbrio e temperatura ao longo do reator para temperatura de alimentação de 1200 ºR."></p>
 <p>Aumentando a temperatura de alimentação para $1400 ^oR$, produz-se o gráfico da Figura 3. Preferível comparada à anterior, a conversão se aproxima mais da conversão de equilíbrio, sendo a conversão na saída 90,75% (98,60% é a conversão de equilíbrio). Nos primeiros $4 ft$ do reator a conversão já atinge 91% de seu valor final, isto ocorre pois nesta região a reação se aproxima do equilíbrio.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/oxidacao_SO2/figura3.png" alt="figura3" title="Figura 3: Perfis de conversão, conversão de equilíbrio e temperatura ao longo do reator para temperatura de alimentação de 1400 ºR."></p>
+<p><img alt="figura3" src="https://rafaelbeloduarte.github.io/images/oxidacao_SO2/figura3.png" title="Figura 3: Perfis de conversão, conversão de equilíbrio e temperatura ao longo do reator para temperatura de alimentação de 1400 ºR."></p>
 <p>Confeccionando um gráfico da conversão final em função da temperatura inicial de $1200 ^oR$ a $1600 ^oR$ (Figura 4), encontra-se que a conversão é máxima (91,37%) quando a temperatura de alimentação é de $1508 ^oR$. Se os termos de queda de pressão são removidos a temperatura ótima de alimentação é elevada para $1543 ^oR$, com conversão de 93,03%. A temperatura máxima na qual a lei de velocidade é válida é $1489 ^oR$, ambas as máximas encontradas são superiores ao limite mas muito próximas. Dentro do intervalo de validade da lei de velocidade as curvas da conversão contra a temperatura de alimentação são exclusivamente crescentes e não há ponto de máximo, os pontos máximos na Figura 4 foram encontrados apenas após o intervalo de busca ser expandido.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/oxidacao_SO2/figura4.png" alt="figura4" title="Figura 4: Conversão final em função da temperatura de entrada, com e sem queda de pressão."></p>
+<p><img alt="figura4" src="https://rafaelbeloduarte.github.io/images/oxidacao_SO2/figura4.png" title="Figura 4: Conversão final em função da temperatura de entrada, com e sem queda de pressão."></p>
 <p>Identificada a temperatura ótima de alimentação de $1508 ^oR$, podemos produzir o gráfico da Figura 5, com os perfis de temperatura e conversão. A conversão final é 91,37% e, semelhante às Figuras 2 e 3, a conversão de equilíbrio cai para um mínimo de 68% em $0,57 ft$, devido ao aumento brusco na temperatura até um máximo de $1636 ^oR$, quando a concentração do produto já é alta o suficiente para que a reação inversa se torne importante.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/oxidacao_SO2/figura5.png" alt="figura5" title="Figura 5: Perfis de conversão, conversão de equilíbrio e temperatura ao longo do reator para temperatura de alimentação de $1508 ^oR$."></p>
+<p><img alt="figura5" src="https://rafaelbeloduarte.github.io/images/oxidacao_SO2/figura5.png" title="Figura 5: Perfis de conversão, conversão de equilíbrio e temperatura ao longo do reator para temperatura de alimentação de $1508 ^oR$."></p>
 <p>O autor <sup id="fnref3:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> nos informa que a temperatura não deve exceder $1585 ^oR$ em nenhum ponto do reator, devido a sinterização do catalisador. Respeitando esta restrição, não será possível operar o reator na temperatura ótima de alimentação, pois dos $0,13 ft$ aos $1,55 ft$ a temperatura excede o limite.</p>
 <p>Para finalizar, a máxima temperatura de entrada possível é $1435 ^oR$, $73 ^oR$ abaixo da temperatura que produz a máxima conversão global. Mas se compararmos as conversões de saída obtidas nas duas temperaturas, 91,37% para a aquela e 91,18% para esta, percebe-se que o aumento na conversão é diminuto, e não há grandes perdas se a alimentação for realizada a $1435 ^oR$. Ainda limitada pela conversão de equilíbrio, nesta temperatura de entrada, 90% da conversão é atingida nos primeiros $3,67 ft$ do reator.</p>
 <h2 id="conclusão">
   Conclusão
   <a class="heading-link" href="#conclus%c3%a3o">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h2>
@@ -691,7 +704,7 @@ $$</p>
 <h2 id="referências">
   Referências
   <a class="heading-link" href="#refer%c3%aancias">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h2>
@@ -726,6 +739,9 @@ $$</p>
         
         
         
+        
+        
+
         
         
       </footer>
@@ -777,6 +793,11 @@ $$</p>
   
 
   
+
+
+  
+  
+
 
 
   

@@ -21,29 +21,36 @@ An example of its use is in solving the heat equation for a semi-infinite solid.
 $$ \frac{\partial^2{T}}{\partial{x^2}} = \frac{1}{\alpha} \frac{\partial{T}}{\partial{t}} \tag{3} $$
 T is the temperature, x the length (of a plate or soil depth for example), $\alpha$ is the thermal diffusivity and t the time.">
 <meta name="keywords" content="blog,engineering,chemical engineering">
+<meta name="fediverse:creator" content="" />
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Transport phenomena: Gauss error function and transient heat transfer"/>
-<meta name="twitter:description" content="The Gauss error function (Equation 1) appears when you want to solve transient heat transfer problems.
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Transport phenomena: Gauss error function and transient heat transfer">
+  <meta name="twitter:description" content="The Gauss error function (Equation 1) appears when you want to solve transient heat transfer problems.
 $$ erf(x) = \frac{2}{\sqrt{\pi}} \int{e^{-x^2}} dx \tag{1} $$
 The complementary error function is:
 $$ erfc(x) = 1 - erf(x) \tag{2} $$
 An example of its use is in solving the heat equation for a semi-infinite solid.
 $$ \frac{\partial^2{T}}{\partial{x^2}} = \frac{1}{\alpha} \frac{\partial{T}}{\partial{t}} \tag{3} $$
-T is the temperature, x the length (of a plate or soil depth for example), $\alpha$ is the thermal diffusivity and t the time."/>
+T is the temperature, x the length (of a plate or soil depth for example), $\alpha$ is the thermal diffusivity and t the time.">
 
-<meta property="og:title" content="Transport phenomena: Gauss error function and transient heat transfer" />
-<meta property="og:description" content="The Gauss error function (Equation 1) appears when you want to solve transient heat transfer problems.
+<meta property="og:url" content="https://rafaelbeloduarte.github.io/en/posts/error-function/">
+  <meta property="og:site_name" content="Rafael Belo Duarte">
+  <meta property="og:title" content="Transport phenomena: Gauss error function and transient heat transfer">
+  <meta property="og:description" content="The Gauss error function (Equation 1) appears when you want to solve transient heat transfer problems.
 $$ erf(x) = \frac{2}{\sqrt{\pi}} \int{e^{-x^2}} dx \tag{1} $$
 The complementary error function is:
 $$ erfc(x) = 1 - erf(x) \tag{2} $$
 An example of its use is in solving the heat equation for a semi-infinite solid.
 $$ \frac{\partial^2{T}}{\partial{x^2}} = \frac{1}{\alpha} \frac{\partial{T}}{\partial{t}} \tag{3} $$
-T is the temperature, x the length (of a plate or soil depth for example), $\alpha$ is the thermal diffusivity and t the time." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://rafaelbeloduarte.github.io/en/posts/error-function/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-03-16T01:00:43-03:00" />
-<meta property="article:modified_time" content="2021-03-16T01:00:43-03:00" />
+T is the temperature, x the length (of a plate or soil depth for example), $\alpha$ is the thermal diffusivity and t the time.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-03-16T01:00:43-03:00">
+    <meta property="article:modified_time" content="2021-03-16T01:00:43-03:00">
+    <meta property="article:tag" content="Chemical Engineering">
+    <meta property="article:tag" content="Transport Phenomena">
 
 
 
@@ -51,12 +58,14 @@ T is the temperature, x the length (of a plate or soil depth for example), $\alp
 <link rel="canonical" href="https://rafaelbeloduarte.github.io/en/posts/error-function/">
 
 
-<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
 
 
   
   
-  <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.07092c1350ffd254998dc43a44ae96e617d14af4df4602626878df89189c5e1a.css" integrity="sha256-BwksE1D/0lSZjcQ6RK6W5hfRSvTfRgJiaHjfiRicXho=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -105,7 +114,7 @@ T is the temperature, x the length (of a plate or soil depth for example), $\alp
   
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
     </a>
 </div>
 
@@ -113,31 +122,33 @@ T is the temperature, x the length (of a plate or soil depth for example), $\alp
   <main class="wrapper">
     <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="https://rafaelbeloduarte.github.io/en">
+    
+    <a class="navigation-title" href="https://rafaelbeloduarte.github.io/en/">
       Rafael Belo Duarte
     </a>
     
+    
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
       </label>
       <ul class="navigation-list">
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/en/posts/">Blog</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/en/posts/">Blog</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/en/publications/">Publications</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/en/publications/">Publications</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/en/tags/">Tags</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/en/tags/">Tags</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/en/contact">Contact me</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/en/contact">Contact me</a>
             </li>
           
         
@@ -179,26 +190,26 @@ T is the temperature, x the length (of a plate or soil depth for example), $\alp
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
               <time datetime="2021-03-16T01:00:43-03:00">
                 Mar 16, 2021
               </time>
             </span>
             <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
               2-minute read
             </span>
           </div>
           
           
           <div class="tags">
-  <i class="fa fa-tag" aria-hidden="true"></i>
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="https://rafaelbeloduarte.github.io/en/tags/chemical-engineering/">chemical engineering</a>
+      <a href="https://rafaelbeloduarte.github.io/en/tags/chemical-engineering/">Chemical Engineering</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="https://rafaelbeloduarte.github.io/en/tags/transport-phenomena/">transport phenomena</a>
+      <a href="https://rafaelbeloduarte.github.io/en/tags/transport-phenomena/">Transport Phenomena</a>
     </span></div>
 
         </div>
@@ -231,7 +242,7 @@ $$</p>
 <h2 id="references">
   References
   <a class="heading-link" href="#references">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -254,6 +265,9 @@ $$</p>
         
         
         
+        
+        
+
         
         
       </footer>
@@ -305,6 +319,11 @@ $$</p>
   
 
   
+
+
+  
+  
+
 
 
   

@@ -4,108 +4,79 @@
     <title>Rafael Belo Duarte</title>
     <link>https://rafaelbeloduarte.github.io/en/</link>
     <description>Recent content on Rafael Belo Duarte</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
-    <lastBuildDate>Sat, 24 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 24 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rafaelbeloduarte.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>An overview on biogas reforming for synthesis of sustainable aviation fuel</title>
       <link>https://rafaelbeloduarte.github.io/en/publications/ijhe-biogas-reforming-review/</link>
       <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/publications/ijhe-biogas-reforming-review/</guid>
       <description>https://doi.org/10.1016/j.ijhydene.2024.08.330</description>
     </item>
-    
     <item>
       <title>A bibliometric analysis on sustainable aviation fuels: core technologies, challenges and trends</title>
       <link>https://rafaelbeloduarte.github.io/en/publications/ujcr-saf-bib-analysis/</link>
       <pubDate>Wed, 27 Dec 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/publications/ujcr-saf-bib-analysis/</guid>
       <description>https://doi.org/10.37256/ujcr.1220234147</description>
     </item>
-    
     <item>
       <title>Kinetic Study of Glycerol Hydrodeoxygenation on Al2O3 and NiMo2C/Al2O3 Catalysts</title>
       <link>https://rafaelbeloduarte.github.io/en/publications/fuel-glycerol-hdo/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/publications/fuel-glycerol-hdo/</guid>
       <description>https://doi.org/10.1016/j.fuel.2023.129257</description>
     </item>
-    
     <item>
       <title>The Monty Hall Problem</title>
       <link>https://rafaelbeloduarte.github.io/en/posts/monty-hall-problem/</link>
       <pubDate>Thu, 18 Aug 2022 15:21:04 -0300</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/posts/monty-hall-problem/</guid>
-      <description>The book &amp;ldquo;The Drunkards Walk&amp;rdquo; 1 deals with how randomness influences our lives and the difficulties people have in understanding probability.
-In one of the passages, to illustrate this last point, the author brings up the following problem:
-Imagine that you are given a choice between 3 doors, behind one of the doors there is a prize and the others hide a goat.
-After you have made the choice, one of the doors where there is nothing is opened and you are given the choice to change the door or not.</description>
+      <description>The book &amp;ldquo;The Drunkards Walk&amp;rdquo; 1 deals with how randomness influences our lives and the difficulties people have in understanding probability.&#xA;In one of the passages, to illustrate this last point, the author brings up the following problem:&#xA;Imagine that you are given a choice between 3 doors, behind one of the doors there is a prize and the others hide a goat.&#xA;After you have made the choice, one of the doors where there is nothing is opened and you are given the choice to change the door or not.</description>
     </item>
-    
     <item>
       <title>Deoxygenation of Vegetable Oils for the Production of Renewable Diesel: Improved Aerogel Based Catalysts</title>
       <link>https://rafaelbeloduarte.github.io/en/publications/fuel2021/</link>
       <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/publications/fuel2021/</guid>
       <description>http://dx.doi.org/10.1016/j.fuel.2020.119979</description>
     </item>
-    
     <item>
       <title>Transport phenomena: Gauss error function and transient heat transfer</title>
       <link>https://rafaelbeloduarte.github.io/en/posts/error-function/</link>
       <pubDate>Tue, 16 Mar 2021 01:00:43 -0300</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/posts/error-function/</guid>
-      <description>The Gauss error function (Equation 1) appears when you want to solve transient heat transfer problems.
-$$ erf(x) = \frac{2}{\sqrt{\pi}} \int{e^{-x^2}} dx \tag{1} $$
-The complementary error function is:
-$$ erfc(x) = 1 - erf(x) \tag{2} $$
-An example of its use is in solving the heat equation for a semi-infinite solid.
-$$ \frac{\partial^2{T}}{\partial{x^2}} = \frac{1}{\alpha} \frac{\partial{T}}{\partial{t}} \tag{3} $$
-T is the temperature, x the length (of a plate or soil depth for example), $\alpha$ is the thermal diffusivity and t the time.</description>
+      <description>The Gauss error function (Equation 1) appears when you want to solve transient heat transfer problems.&#xA;$$ erf(x) = \frac{2}{\sqrt{\pi}} \int{e^{-x^2}} dx \tag{1} $$&#xA;The complementary error function is:&#xA;$$ erfc(x) = 1 - erf(x) \tag{2} $$&#xA;An example of its use is in solving the heat equation for a semi-infinite solid.&#xA;$$ \frac{\partial^2{T}}{\partial{x^2}} = \frac{1}{\alpha} \frac{\partial{T}}{\partial{t}} \tag{3} $$&#xA;T is the temperature, x the length (of a plate or soil depth for example), $\alpha$ is the thermal diffusivity and t the time.</description>
     </item>
-    
     <item>
       <title>A Novel Kinetic Model Applied to Heterogeneous Fatty Acid Deoxygenation</title>
       <link>https://rafaelbeloduarte.github.io/en/publications/chemesci2020/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/publications/chemesci2020/</guid>
       <description>http://dx.doi.org/10.1016/j.ces.2020.116192</description>
     </item>
-    
     <item>
       <title>Catalysis and chemical reaction engineering</title>
       <link>https://rafaelbeloduarte.github.io/en/posts/catalysis/</link>
       <pubDate>Mon, 13 Apr 2020 19:33:20 -0300</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/posts/catalysis/</guid>
-      <description>Reaction catalyzed by catalyst &amp;hellip; Link to heading Chemical reactions engineering is a sub-area of Chemical Engineering and deals with the design of reactors based on theoretical and experimental principles, where the main objective is to determine the operating variables and dimensions of reactors. For this, one of the first steps of a study of this type is to know the reaction rate expressions.
-Rate expressions for chemical reactions describe how fast a number of moles of one chemical species is being consumed to form another chemical species.</description>
+      <description>Reaction catalyzed by catalyst &amp;hellip; Link to heading Chemical reactions engineering is a sub-area of Chemical Engineering and deals with the design of reactors based on theoretical and experimental principles, where the main objective is to determine the operating variables and dimensions of reactors. For this, one of the first steps of a study of this type is to know the reaction rate expressions.&#xA;Rate expressions for chemical reactions describe how fast a number of moles of one chemical species is being consumed to form another chemical species.</description>
     </item>
-    
     <item>
       <title>Sterilization, disinfection and protection against pathogens</title>
       <link>https://rafaelbeloduarte.github.io/en/posts/sterilization-disinfection/</link>
       <pubDate>Thu, 26 Mar 2020 18:32:38 -0300</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/posts/sterilization-disinfection/</guid>
       <description>It is important to make a distinction between sterilization and disinfection. The first refers to the elimination of all viruses and life forms in a medium or surface, whereas disinfection does not require the complete destruction of contaminating elements, only a fraction, according to the level of asepsis that is desired . Whenever possible, work should be done with techniques that are able to inhibit the spread of contaminating agents after disinfection and, especially, sterilization.</description>
     </item>
-    
     <item>
       <title>Contact Me</title>
       <link>https://rafaelbeloduarte.github.io/en/contact/</link>
       <pubDate>Sat, 04 Jan 2020 17:10:06 -0300</pubDate>
-      
       <guid>https://rafaelbeloduarte.github.io/en/contact/</guid>
       <description>E-mail Link to heading rafaelbeloduarte@pm.me</description>
     </item>
-    
   </channel>
 </rss>

@@ -16,19 +16,27 @@
 <meta name="description" content="Autores: DUARTE, R. B. &amp; M. B. S.
 Introdução Link para o cabeçalho Um reator contínuo de tanque agitado, ou CSTR, do inglês continuous stirred-tank reactor, é um tanque com agitação mecânica suficiente para que a mistura de seu conteúdo possa ser considerada perfeita, ou seja, a concentração é uniforme e não depende de coordenadas espaciais, quando o tanque é operado em regime permanente não há também a dependência da concentração com o tempo.">
 <meta name="keywords" content="blog,engenharia,engenharia química">
+<meta name="fediverse:creator" content="" />
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Modelagem e solução de um sistema com dois reatores contínuos de tanques agitados em série"/>
-<meta name="twitter:description" content="Autores: DUARTE, R. B. &amp; M. B. S.
-Introdução Link para o cabeçalho Um reator contínuo de tanque agitado, ou CSTR, do inglês continuous stirred-tank reactor, é um tanque com agitação mecânica suficiente para que a mistura de seu conteúdo possa ser considerada perfeita, ou seja, a concentração é uniforme e não depende de coordenadas espaciais, quando o tanque é operado em regime permanente não há também a dependência da concentração com o tempo."/>
 
-<meta property="og:title" content="Modelagem e solução de um sistema com dois reatores contínuos de tanques agitados em série" />
-<meta property="og:description" content="Autores: DUARTE, R. B. &amp; M. B. S.
-Introdução Link para o cabeçalho Um reator contínuo de tanque agitado, ou CSTR, do inglês continuous stirred-tank reactor, é um tanque com agitação mecânica suficiente para que a mistura de seu conteúdo possa ser considerada perfeita, ou seja, a concentração é uniforme e não depende de coordenadas espaciais, quando o tanque é operado em regime permanente não há também a dependência da concentração com o tempo." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://rafaelbeloduarte.github.io/posts/modelo-cstr/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-01-17T11:40:39-03:00" />
-<meta property="article:modified_time" content="2020-01-17T11:40:39-03:00" /><meta property="og:site_name" content="Rafael Belo Duarte" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Modelagem e solução de um sistema com dois reatores contínuos de tanques agitados em série">
+  <meta name="twitter:description" content="Autores: DUARTE, R. B. &amp; M. B. S.
+Introdução Link para o cabeçalho Um reator contínuo de tanque agitado, ou CSTR, do inglês continuous stirred-tank reactor, é um tanque com agitação mecânica suficiente para que a mistura de seu conteúdo possa ser considerada perfeita, ou seja, a concentração é uniforme e não depende de coordenadas espaciais, quando o tanque é operado em regime permanente não há também a dependência da concentração com o tempo.">
+
+<meta property="og:url" content="https://rafaelbeloduarte.github.io/posts/modelo-cstr/">
+  <meta property="og:site_name" content="Rafael Belo Duarte">
+  <meta property="og:title" content="Modelagem e solução de um sistema com dois reatores contínuos de tanques agitados em série">
+  <meta property="og:description" content="Autores: DUARTE, R. B. &amp; M. B. S.
+Introdução Link para o cabeçalho Um reator contínuo de tanque agitado, ou CSTR, do inglês continuous stirred-tank reactor, é um tanque com agitação mecânica suficiente para que a mistura de seu conteúdo possa ser considerada perfeita, ou seja, a concentração é uniforme e não depende de coordenadas espaciais, quando o tanque é operado em regime permanente não há também a dependência da concentração com o tempo.">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-01-17T11:40:39-03:00">
+    <meta property="article:modified_time" content="2020-01-17T11:40:39-03:00">
+    <meta property="article:tag" content="Engenharia Química">
+    <meta property="article:tag" content="Modelagem">
+    <meta property="article:tag" content="Simulação">
 
 
 
@@ -36,12 +44,14 @@ Introdução Link para o cabeçalho Um reator contínuo de tanque agitado, ou CS
 <link rel="canonical" href="https://rafaelbeloduarte.github.io/posts/modelo-cstr/">
 
 
-<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://rafaelbeloduarte.github.io/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
 
 
   
   
-  <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="https://rafaelbeloduarte.github.io/css/coder.min.07092c1350ffd254998dc43a44ae96e617d14af4df4602626878df89189c5e1a.css" integrity="sha256-BwksE1D/0lSZjcQ6RK6W5hfRSvTfRgJiaHjfiRicXho=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -90,7 +100,7 @@ Introdução Link para o cabeçalho Um reator contínuo de tanque agitado, ou CS
   
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
     </a>
 </div>
 
@@ -98,37 +108,41 @@ Introdução Link para o cabeçalho Um reator contínuo de tanque agitado, ou CS
   <main class="wrapper">
     <nav class="navigation">
   <section class="container">
+    
     <a class="navigation-title" href="https://rafaelbeloduarte.github.io/">
       Rafael Belo Duarte
     </a>
     
+    
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
       </label>
       <ul class="navigation-list">
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/posts/">Textos</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/posts/">Textos</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/publications/">Publicações</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/publications/">Publicações</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/tags/">Etiquetas</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/tags/">Etiquetas</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://rafaelbeloduarte.github.io/contato">Contato</a>
+              <a class="navigation-link " href="https://rafaelbeloduarte.github.io/contato">Contato</a>
             </li>
           
         
         
           
           
+          
+            
           
             
               
@@ -140,8 +154,6 @@ Introdução Link para o cabeçalho Um reator contínuo de tanque agitado, ou CS
               <li class="navigation-item">
                 <a href="https://rafaelbeloduarte.github.io/en/">English</a>
               </li>
-            
-          
             
           
         
@@ -166,30 +178,30 @@ Introdução Link para o cabeçalho Um reator contínuo de tanque agitado, ou CS
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
               <time datetime="2020-01-17T11:40:39-03:00">
                 17/01/2020
               </time>
             </span>
             <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
               9 minutos de leitura
             </span>
           </div>
           
           
           <div class="tags">
-  <i class="fa fa-tag" aria-hidden="true"></i>
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/">engenharia química</a>
+      <a href="https://rafaelbeloduarte.github.io/tags/engenharia-qu%C3%ADmica/">Engenharia Química</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="https://rafaelbeloduarte.github.io/tags/modelagem/">modelagem</a>
+      <a href="https://rafaelbeloduarte.github.io/tags/modelagem/">Modelagem</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="https://rafaelbeloduarte.github.io/tags/simula%C3%A7%C3%A3o/">simulação</a>
+      <a href="https://rafaelbeloduarte.github.io/tags/simula%C3%A7%C3%A3o/">Simulação</a>
     </span></div>
 
         </div>
@@ -201,7 +213,7 @@ Introdução Link para o cabeçalho Um reator contínuo de tanque agitado, ou CS
 <h2 id="introdução">
   Introdução
   <a class="heading-link" href="#introdu%c3%a7%c3%a3o">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h2>
@@ -221,18 +233,18 @@ ao longo dos tanques.</p>
 são removidos por transbordo. Pode-se assumir também que as vazões $F_0$, $F_1$, e $F_2$ são iguais pois a
 densidade foi tomada como sempre constante, as saídas ocorrem por transbordo e no momento em
 que se inicia a análise os tanques estão preenchidos.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/cstr_serie.jpg" alt="cstr_serie" title="Figura 1: Dois CSTR em série."></p>
+<p><img alt="cstr_serie" src="https://rafaelbeloduarte.github.io/images/cstr_serie/cstr_serie.jpg" title="Figura 1: Dois CSTR em série."></p>
 <h2 id="resultados-e-discussão">
   Resultados e discussão
   <a class="heading-link" href="#resultados-e-discuss%c3%a3o">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h2>
 <h3 id="solução-analítica">
   Solução analítica
   <a class="heading-link" href="#solu%c3%a7%c3%a3o-anal%c3%adtica">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h3>
@@ -426,21 +438,21 @@ X{ _2 } = X{_1} + \frac{V{ _2 }kC{_A}{_2}}{ F_0 C{_A}{_0} }
 \tag{31}
 $$</p>
 <p>Ambas definidas com relação à alimentação $F_0$.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig2.jpg" alt="Cxt" title="Figura 2: Dependência da concentração com o tempo."></p>
+<p><img alt="Cxt" src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig2.jpg" title="Figura 2: Dependência da concentração com o tempo."></p>
 <p>As Equações 30} e 31} nos levam, no estado estacionário, a um $X_1$ intermediário de $0,8333$ e uma conversão final $X_2$ igual a $0,9524$.</p>
 <p>Pode-se traçar também um gráfico relacionando o tempo com a conversão, como na Figura 3. Observa-se que no início as duas conversões são muito próximas, isto é consequência da definição adotada, que é sempre em relação à alimentação original. No primeiro instante o termo de consumo no reator dois é nulo e a conversão final é igual à intermediária. Conforme o tempo aumenta, reagente passa a entrar no segundo reator e o termo da conversão final começa a se distanciar da conversão intermediária.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig3.jpg" alt="Xxt" title="Figura 3: Relação entre a conversão e o tempo."></p>
+<p><img alt="Xxt" src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig3.jpg" title="Figura 3: Relação entre a conversão e o tempo."></p>
 <h3 id="solução-numérica">
   Solução Numérica
   <a class="heading-link" href="#solu%c3%a7%c3%a3o-num%c3%a9rica">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h3>
 <p>Utilizando-se do método de Runge-Kutta de quarta ordem (RK45) para resolução do <a href="https://github.com/rafaelbeloduarte/cstr_serie" title="Baixe o arquivo aqui"  class="external-link" target="_blank" rel="noopener">modelo criado no Xcos</a> (Figura 6) foram obtidos perfis de concentração do componente A, e conversão intermediaria $X_1$ e final $X_2$ como segue.</p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig4.jpg" alt="Concentração do composto A em ambos os reatores" title="Figura 4: Concentração do composto A em ambos os reatores."></p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig5.jpg" alt="Conversão em ambos os reatores" title="Figura 5: Conversão em ambos os reatores."></p>
-<p><img src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig6.jpg" alt="Diagrama Xcos" title="Figura 6: Diagrama do modelo utilizado no Xcos."></p>
+<p><img alt="Concentração do composto A em ambos os reatores" src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig4.jpg" title="Figura 4: Concentração do composto A em ambos os reatores."></p>
+<p><img alt="Conversão em ambos os reatores" src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig5.jpg" title="Figura 5: Conversão em ambos os reatores."></p>
+<p><img alt="Diagrama Xcos" src="https://rafaelbeloduarte.github.io/images/cstr_serie/fig6.jpg" title="Figura 6: Diagrama do modelo utilizado no Xcos."></p>
 <p><a href="https://github.com/rafaelbeloduarte/cstr_serie"  class="external-link" target="_blank" rel="noopener">Baixe o arquivo da Figura 6 aqui</a></p>
 <p>Qualitativamente observa-se que as curvas acima de concentração de A e de conversão em função do tempo obtidas na solução numérica apresentam as mesmas características das curvas obtidas analiticamente (apresentadas nas Figuras 2 e 3).</p>
 <p>Em estado estacionário a solução numérica resulta em $C{_A}{_1} = 50 mol.m{^-}{^3}$ $C{_A}{_2} = 14,286 mol.m{^-}{^3}$.</p>
@@ -511,6 +523,9 @@ $$</p>
         
         
         
+
+        
+        
       </footer>
     </article>
 
@@ -560,6 +575,11 @@ $$</p>
   
 
   
+
+
+  
+  
+
 
 
   
