@@ -5,64 +5,88 @@
     <link>https://rafaelbeloduarte.github.io/en/tags/</link>
     <description>Recent content in Tags on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 27 Dec 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rafaelbeloduarte.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>pt-br</language>
+    <lastBuildDate>Sat, 24 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Publications</title>
+      <title>publicações</title>
+      <link>https://rafaelbeloduarte.github.io/en/tags/publica%C3%A7%C3%B5es/</link>
+      <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/en/tags/publica%C3%A7%C3%B5es/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>publications</title>
       <link>https://rafaelbeloduarte.github.io/en/tags/publications/</link>
       <pubDate>Wed, 27 Dec 2023 00:00:00 +0000</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/en/tags/publications/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Probability</title>
+      <title>probability</title>
       <link>https://rafaelbeloduarte.github.io/en/tags/probability/</link>
       <pubDate>Thu, 18 Aug 2022 15:21:04 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/en/tags/probability/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Statistics</title>
+      <title>statistics</title>
       <link>https://rafaelbeloduarte.github.io/en/tags/statistics/</link>
       <pubDate>Thu, 18 Aug 2022 15:21:04 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/en/tags/statistics/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Chemical Engineering</title>
+      <title>chemical engineering</title>
       <link>https://rafaelbeloduarte.github.io/en/tags/chemical-engineering/</link>
       <pubDate>Tue, 16 Mar 2021 01:00:43 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/en/tags/chemical-engineering/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Transport Phenomena</title>
+      <title>transport phenomena</title>
       <link>https://rafaelbeloduarte.github.io/en/tags/transport-phenomena/</link>
       <pubDate>Tue, 16 Mar 2021 01:00:43 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/en/tags/transport-phenomena/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Catalysis</title>
+      <title>catalysis</title>
       <link>https://rafaelbeloduarte.github.io/en/tags/catalysis/</link>
       <pubDate>Mon, 13 Apr 2020 19:33:20 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/en/tags/catalysis/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Chemical Reaction Engineering</title>
+      <title>chemical reaction engineering</title>
       <link>https://rafaelbeloduarte.github.io/en/tags/chemical-reaction-engineering/</link>
       <pubDate>Mon, 13 Apr 2020 19:33:20 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/en/tags/chemical-reaction-engineering/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Biochemistry</title>
+      <title>biochemistry</title>
       <link>https://rafaelbeloduarte.github.io/en/tags/biochemistry/</link>
       <pubDate>Thu, 26 Mar 2020 18:32:38 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/en/tags/biochemistry/</guid>
       <description></description>
     </item>
+    
   </channel>
 </rss>

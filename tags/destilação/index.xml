@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Destilação on Rafael Belo Duarte</title>
+    <title>destilação on Rafael Belo Duarte</title>
     <link>https://rafaelbeloduarte.github.io/tags/destila%C3%A7%C3%A3o/</link>
-    <description>Recent content in Destilação on Rafael Belo Duarte</description>
+    <description>Recent content in destilação on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 04 Jan 2020 19:04:44 -0300</lastBuildDate>
-    <atom:link href="https://rafaelbeloduarte.github.io/tags/destila%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Jan 2020 19:04:44 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/tags/destila%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dimensionamento de coluna de destilação para separação de hidrocarbonetos obtidos a partir  da desoxigenação de Ácido oleico com catalisador aerogel</title>
       <link>https://rafaelbeloduarte.github.io/posts/torre-de-destilacao/</link>
       <pubDate>Sat, 04 Jan 2020 19:04:44 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/posts/torre-de-destilacao/</guid>
-      <description>Rafael Belo Duarte (PIBIC/CNPq/FA/Uem), J. L. C. W. Pimenta, O. A. A. Santos (Coorientadora), L. M. M. Jorge (Orientador).&#xA;Universidade Estadual de Maringá / Centro de Tecnologia / Maringá, PR.&#xA;Área: Engenharia Química. Subárea: Operações industriais e equipamentos para Engenharia Química.&#xA;Resumo Link para o cabeçalho Óleos vegetais podem ser utilizados como fonte de biomassa para a produção de combustíveis renováveis, os produtos obtidos a partir destes óleos têm baixa concentração de contaminantes e são potenciais substitutos a combustíveis obtidos a partir do petróleo.</description>
+      <description>Rafael Belo Duarte (PIBIC/CNPq/FA/Uem), J. L. C. W. Pimenta, O. A. A. Santos (Coorientadora), L. M. M. Jorge (Orientador).
+Universidade Estadual de Maringá / Centro de Tecnologia / Maringá, PR.
+Área: Engenharia Química. Subárea: Operações industriais e equipamentos para Engenharia Química.
+Resumo Link para o cabeçalho Óleos vegetais podem ser utilizados como fonte de biomassa para a produção de combustíveis renováveis, os produtos obtidos a partir destes óleos têm baixa concentração de contaminantes e são potenciais substitutos a combustíveis obtidos a partir do petróleo.</description>
     </item>
+    
   </channel>
 </rss>

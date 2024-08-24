@@ -1,75 +1,101 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publicações on Rafael Belo Duarte</title>
+    <title>publicações on Rafael Belo Duarte</title>
     <link>https://rafaelbeloduarte.github.io/tags/publica%C3%A7%C3%B5es/</link>
-    <description>Recent content in Publicações on Rafael Belo Duarte</description>
+    <description>Recent content in publicações on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Wed, 27 Dec 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rafaelbeloduarte.github.io/tags/publica%C3%A7%C3%B5es/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/tags/publica%C3%A7%C3%B5es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An overview on biogas reforming for synthesis of sustainable aviation fuel</title>
+      <link>https://rafaelbeloduarte.github.io/publications/ijhe-biogas-reforming-review/</link>
+      <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafaelbeloduarte.github.io/publications/ijhe-biogas-reforming-review/</guid>
+      <description>https://doi.org/10.1016/j.ijhydene.2024.08.330</description>
+    </item>
+    
     <item>
       <title>A bibliometric analysis on sustainable aviation fuels: core technologies, challenges and trends</title>
       <link>https://rafaelbeloduarte.github.io/publications/ujcr-saf-bib-analysis/</link>
       <pubDate>Wed, 27 Dec 2023 00:00:00 +0000</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/publications/ujcr-saf-bib-analysis/</guid>
       <description>https://doi.org/10.37256/ujcr.1220234147</description>
     </item>
+    
     <item>
       <title>Kinetic Study of Glycerol Hydrodeoxygenation on Al2O3 and NiMo2C/Al2O3 Catalysts</title>
       <link>https://rafaelbeloduarte.github.io/publications/fuel-glycerol-hdo/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/publications/fuel-glycerol-hdo/</guid>
       <description>https://doi.org/10.1016/j.fuel.2023.129257</description>
     </item>
+    
     <item>
       <title>Degradação da Atrazina: Fotocatálise sob Radiação UVA em Óxido de Zinco Comercial em Diferentes Concentrações e Temperaturas</title>
       <link>https://rafaelbeloduarte.github.io/publications/eaic2022-braz/</link>
       <pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/publications/eaic2022-braz/</guid>
       <description>http://www.eaic.uem.br/eaic2022/anais/artigos/5783.pdf</description>
     </item>
+    
     <item>
       <title>Desafios no Desenvolvimento de Catalisadores para a Hidrodesoxigenação do Glicerol</title>
       <link>https://rafaelbeloduarte.github.io/publications/wendeq2022/</link>
       <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/publications/wendeq2022/</guid>
       <description>http://dx.doi.org/10.29327/166591.2-10</description>
     </item>
+    
     <item>
       <title>Degradação da Atrazina em Óxido de Zinco sob Radiações UVA E UVC: Avaliação dos Efeitos de Fotocatálise, Fotólise e Adsorção</title>
       <link>https://rafaelbeloduarte.github.io/publications/simeq2021/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/publications/simeq2021/</guid>
       <description>http://dx.doi.org/10.13140/RG.2.2.21000.96008</description>
     </item>
+    
     <item>
       <title>Deoxygenation of Vegetable Oils for the Production of Renewable Diesel: Improved Aerogel Based Catalysts</title>
       <link>https://rafaelbeloduarte.github.io/publications/fuel2021/</link>
       <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/publications/fuel2021/</guid>
       <description>http://dx.doi.org/10.1016/j.fuel.2020.119979</description>
     </item>
+    
     <item>
       <title>A Novel Kinetic Model Applied to Heterogeneous Fatty Acid Deoxygenation</title>
       <link>https://rafaelbeloduarte.github.io/publications/chemesci2020/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/publications/chemesci2020/</guid>
       <description>http://dx.doi.org/10.1016/j.ces.2020.116192</description>
     </item>
+    
     <item>
       <title>Dimensionamento de Coluna de Destilação para Separação de Hidrocarbonetos Obtidos a Partir da Desoxigenação de Ácido Oleico com Catalisador Aerogel</title>
       <link>https://rafaelbeloduarte.github.io/publications/eaic2019/</link>
       <pubDate>Thu, 10 Oct 2019 01:00:43 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/publications/eaic2019/</guid>
       <description>http://www.eaic.uem.br/eaic2019/anais/artigos/3231.pdf</description>
     </item>
+    
     <item>
       <title>Comparação da Desoxigenação de Ácido Oleico em Fase Líquida e Fase Gasosa com Catalisador Aerogel</title>
       <link>https://rafaelbeloduarte.github.io/publications/cbcat2019/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/publications/cbcat2019/</guid>
       <description>https://drive.google.com/file/d/1oSj4S7A06qzKaXchL3xhFZpmY7lG7QJc/view?usp=sharing</description>
     </item>
+    
   </channel>
 </rss>

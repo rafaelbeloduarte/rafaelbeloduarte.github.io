@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Biochemistry on Rafael Belo Duarte</title>
+    <title>biochemistry on Rafael Belo Duarte</title>
     <link>https://rafaelbeloduarte.github.io/en/tags/biochemistry/</link>
-    <description>Recent content in Biochemistry on Rafael Belo Duarte</description>
+    <description>Recent content in biochemistry on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 26 Mar 2020 18:32:38 -0300</lastBuildDate>
-    <atom:link href="https://rafaelbeloduarte.github.io/en/tags/biochemistry/index.xml" rel="self" type="application/rss+xml" />
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 26 Mar 2020 18:32:38 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/en/tags/biochemistry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sterilization, disinfection and protection against pathogens</title>
       <link>https://rafaelbeloduarte.github.io/en/posts/sterilization-disinfection/</link>
       <pubDate>Thu, 26 Mar 2020 18:32:38 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/en/posts/sterilization-disinfection/</guid>
       <description>It is important to make a distinction between sterilization and disinfection. The first refers to the elimination of all viruses and life forms in a medium or surface, whereas disinfection does not require the complete destruction of contaminating elements, only a fraction, according to the level of asepsis that is desired . Whenever possible, work should be done with techniques that are able to inhibit the spread of contaminating agents after disinfection and, especially, sterilization.</description>
     </item>
+    
   </channel>
 </rss>

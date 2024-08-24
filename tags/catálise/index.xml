@@ -1,33 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Catálise on Rafael Belo Duarte</title>
+    <title>catálise on Rafael Belo Duarte</title>
     <link>https://rafaelbeloduarte.github.io/tags/cat%C3%A1lise/</link>
-    <description>Recent content in Catálise on Rafael Belo Duarte</description>
+    <description>Recent content in catálise on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Mon, 13 Apr 2020 19:33:20 -0300</lastBuildDate>
-    <atom:link href="https://rafaelbeloduarte.github.io/tags/cat%C3%A1lise/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Apr 2020 19:33:20 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/tags/cat%C3%A1lise/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Catálise e engenharia das reações químicas</title>
       <link>https://rafaelbeloduarte.github.io/posts/catalise/</link>
       <pubDate>Mon, 13 Apr 2020 19:33:20 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/posts/catalise/</guid>
-      <description>Reação catalisada por catalisador&amp;hellip; Link para o cabeçalho Engenharia das reações químicas é uma subárea da Engenharia Química e trata do dimensionamento de reatores a partir de princípios teóricos e experimentais, onde o principal objetivo é determinar as variáveis de operação e dimensões de reatores. Para isto, um dos primeiros passos de um estudo deste tipo é conhecer as leis de velocidade das reações envolvidas.&#xA;Leis de velocidade de reações químicas descrevem o quão rápido um número de mols de uma espécie química está sendo consumido para formar outra espécie química.</description>
+      <description>Reação catalisada por catalisador&amp;hellip; Link para o cabeçalho Engenharia das reações químicas é uma subárea da Engenharia Química e trata do dimensionamento de reatores a partir de princípios teóricos e experimentais, onde o principal objetivo é determinar as variáveis de operação e dimensões de reatores. Para isto, um dos primeiros passos de um estudo deste tipo é conhecer as leis de velocidade das reações envolvidas.
+Leis de velocidade de reações químicas descrevem o quão rápido um número de mols de uma espécie química está sendo consumido para formar outra espécie química.</description>
     </item>
+    
     <item>
       <title>Revisão da reforma a vapor do etanol sobre catalisadores suportados em alumina sol-gel</title>
       <link>https://rafaelbeloduarte.github.io/posts/reforma-etanol/</link>
       <pubDate>Sat, 11 Jan 2020 11:05:29 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/posts/reforma-etanol/</guid>
       <description>Uma das maiores preocupações da sociedade atualmente é relacionada aos impactos humanos no ambiente em que ocupamos. E a indústria segue essa tendência, tanto por pressões de seus clientes quanto por motivações econômicas, pois, conforme o conhecimento de tecnologias limpas avança, sua viabilidade econômica também melhora, muitas vezes sendo mais atrativas em relação à processos já consolidados. Silva 1 analisou a reforma a vapor de etanol (RVE) e concluiu que o processo é capaz de apresentar alta eficiência ecológica, pois utiliza uma fonte renovável de matéria-prima.</description>
     </item>
+    
     <item>
       <title>Dimensionamento de coluna de destilação para separação de hidrocarbonetos obtidos a partir  da desoxigenação de Ácido oleico com catalisador aerogel</title>
       <link>https://rafaelbeloduarte.github.io/posts/torre-de-destilacao/</link>
       <pubDate>Sat, 04 Jan 2020 19:04:44 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/posts/torre-de-destilacao/</guid>
-      <description>Rafael Belo Duarte (PIBIC/CNPq/FA/Uem), J. L. C. W. Pimenta, O. A. A. Santos (Coorientadora), L. M. M. Jorge (Orientador).&#xA;Universidade Estadual de Maringá / Centro de Tecnologia / Maringá, PR.&#xA;Área: Engenharia Química. Subárea: Operações industriais e equipamentos para Engenharia Química.&#xA;Resumo Link para o cabeçalho Óleos vegetais podem ser utilizados como fonte de biomassa para a produção de combustíveis renováveis, os produtos obtidos a partir destes óleos têm baixa concentração de contaminantes e são potenciais substitutos a combustíveis obtidos a partir do petróleo.</description>
+      <description>Rafael Belo Duarte (PIBIC/CNPq/FA/Uem), J. L. C. W. Pimenta, O. A. A. Santos (Coorientadora), L. M. M. Jorge (Orientador).
+Universidade Estadual de Maringá / Centro de Tecnologia / Maringá, PR.
+Área: Engenharia Química. Subárea: Operações industriais e equipamentos para Engenharia Química.
+Resumo Link para o cabeçalho Óleos vegetais podem ser utilizados como fonte de biomassa para a produção de combustíveis renováveis, os produtos obtidos a partir destes óleos têm baixa concentração de contaminantes e são potenciais substitutos a combustíveis obtidos a partir do petróleo.</description>
     </item>
+    
   </channel>
 </rss>

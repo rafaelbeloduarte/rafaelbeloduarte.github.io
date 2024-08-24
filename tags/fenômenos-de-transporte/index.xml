@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fenômenos De Transporte on Rafael Belo Duarte</title>
+    <title>fenômenos de transporte on Rafael Belo Duarte</title>
     <link>https://rafaelbeloduarte.github.io/tags/fen%C3%B4menos-de-transporte/</link>
-    <description>Recent content in Fenômenos De Transporte on Rafael Belo Duarte</description>
+    <description>Recent content in fenômenos de transporte on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Tue, 16 Mar 2021 01:00:43 -0300</lastBuildDate>
-    <atom:link href="https://rafaelbeloduarte.github.io/tags/fen%C3%B4menos-de-transporte/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Mar 2021 01:00:43 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/tags/fen%C3%B4menos-de-transporte/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fenômenos de transporte: Função erro de Gauss e a transferência de calor em regime transiente</title>
       <link>https://rafaelbeloduarte.github.io/posts/funcao-erro/</link>
       <pubDate>Tue, 16 Mar 2021 01:00:43 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/posts/funcao-erro/</guid>
-      <description>A função erro de Gauss (Equação 1) aparece quando se deseja resolver problemas de transferência de calor em regime transiente.&#xA;$$ erf(x) = \frac{2}{\sqrt{\pi}} \int{e^{-x^2}} dx \tag{1} $$&#xA;A função erro complementar é:&#xA;$$ erfc(x) = 1 - erf(x) \tag{2} $$&#xA;Um exemplo de sua utilização é na solução da equação do calor para um sólido seminfinito.&#xA;$$ \frac{\partial^2{T}}{\partial{x^2}} = \frac{1}{\alpha} \frac{\partial{T}}{\partial{t}} \tag{3} $$&#xA;T é a temperatura, x o comprimento (de uma placa ou profundidade do solo por exemplo), $\alpha$ é a difusividade térmica e t o tempo.</description>
+      <description>A função erro de Gauss (Equação 1) aparece quando se deseja resolver problemas de transferência de calor em regime transiente.
+$$ erf(x) = \frac{2}{\sqrt{\pi}} \int{e^{-x^2}} dx \tag{1} $$
+A função erro complementar é:
+$$ erfc(x) = 1 - erf(x) \tag{2} $$
+Um exemplo de sua utilização é na solução da equação do calor para um sólido seminfinito.
+$$ \frac{\partial^2{T}}{\partial{x^2}} = \frac{1}{\alpha} \frac{\partial{T}}{\partial{t}} \tag{3} $$
+T é a temperatura, x o comprimento (de uma placa ou profundidade do solo por exemplo), $\alpha$ é a difusividade térmica e t o tempo.</description>
     </item>
+    
   </channel>
 </rss>

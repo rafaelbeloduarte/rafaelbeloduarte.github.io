@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Estatística on Rafael Belo Duarte</title>
+    <title>estatística on Rafael Belo Duarte</title>
     <link>https://rafaelbeloduarte.github.io/tags/estat%C3%ADstica/</link>
-    <description>Recent content in Estatística on Rafael Belo Duarte</description>
+    <description>Recent content in estatística on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Thu, 18 Aug 2022 15:21:04 -0300</lastBuildDate>
-    <atom:link href="https://rafaelbeloduarte.github.io/tags/estat%C3%ADstica/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Aug 2022 15:21:04 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/tags/estat%C3%ADstica/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>O Problema de Monty Hall</title>
       <link>https://rafaelbeloduarte.github.io/posts/problema-de-monty-hall/</link>
       <pubDate>Thu, 18 Aug 2022 15:21:04 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/posts/problema-de-monty-hall/</guid>
-      <description>O livro &amp;ldquo;The Drunkards Walk&amp;rdquo; 1 trata de como a aleatoriedade influencia nossas vidas e das dificuldades que as pessoas têm em entender probabilidade.&#xA;Em uma das passagens, para ilustrar esse último ponto, o autor traz o seguinte problema:&#xA;Imagine que é lhe dada uma escolha entre 3 portas, atrás de uma das portas há um prêmio e nas outras 2 nada.&#xA;Depois que você fez a escolha uma das portas onde não há nada é aberta e é lhe dada a escolha de trocar ou não de porta.</description>
+      <description>O livro &amp;ldquo;The Drunkards Walk&amp;rdquo; 1 trata de como a aleatoriedade influencia nossas vidas e das dificuldades que as pessoas têm em entender probabilidade.
+Em uma das passagens, para ilustrar esse último ponto, o autor traz o seguinte problema:
+Imagine que é lhe dada uma escolha entre 3 portas, atrás de uma das portas há um prêmio e nas outras 2 nada.
+Depois que você fez a escolha uma das portas onde não há nada é aberta e é lhe dada a escolha de trocar ou não de porta.</description>
     </item>
+    
   </channel>
 </rss>

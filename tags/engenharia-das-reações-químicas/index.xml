@@ -1,40 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Engenharia Das Reações Químicas on Rafael Belo Duarte</title>
+    <title>engenharia das reações químicas on Rafael Belo Duarte</title>
     <link>https://rafaelbeloduarte.github.io/tags/engenharia-das-rea%C3%A7%C3%B5es-qu%C3%ADmicas/</link>
-    <description>Recent content in Engenharia Das Reações Químicas on Rafael Belo Duarte</description>
+    <description>Recent content in engenharia das reações químicas on Rafael Belo Duarte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 16 Jan 2022 11:40:39 -0300</lastBuildDate>
-    <atom:link href="https://rafaelbeloduarte.github.io/tags/engenharia-das-rea%C3%A7%C3%B5es-qu%C3%ADmicas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jan 2022 11:40:39 -0300</lastBuildDate><atom:link href="https://rafaelbeloduarte.github.io/tags/engenharia-das-rea%C3%A7%C3%B5es-qu%C3%ADmicas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Operação de Reator Não-Adiabático: Oxidação do Dióxido de Enxofre</title>
       <link>https://rafaelbeloduarte.github.io/posts/oxidacao-so2/</link>
       <pubDate>Sun, 16 Jan 2022 11:40:39 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/posts/oxidacao-so2/</guid>
       <description>Introdução Link para o cabeçalho O trióxido de enxofre é utilizado na fabricação do ácido sulfúrico partindo da queima do enxofre, seguida da oxidação do dióxido de enxofre produzido na primeira reação 1. O ácido sulfúrico é o produto químico de maior volume de produção nos Estados Unidos e um ótimo indicador do grau de industrialização de um país 2. O enxofre pode ser obtido de depósitos de minério, ou a partir da extração de sulfeto de hidrogênio do gás natural e petróleo 2.</description>
     </item>
+    
     <item>
       <title>Metilação de Ácidos Graxos para Cromatografia</title>
       <link>https://rafaelbeloduarte.github.io/posts/metilacao/</link>
       <pubDate>Mon, 08 Mar 2021 12:12:37 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/posts/metilacao/</guid>
-      <description>Quando se deseja analisar amostras de ácidos graxos por cromatografia gasosa, faz-se necessária a metilação destes ácidos, pois se injetados diretamente no equipamento, eles aderem à parede da coluna causando danos irreparáveis. A metilação converte os ácidos graxos em metis ésteres, permitindo sua injeção no cromatógrafo.&#xA;Procedimento Link para o cabeçalho Procedimento adaptado por Pimenta1 a partir do método de Hartman2.&#xA;1º: Saponificação Link para o cabeçalho Adicione 100 µL de amostra à um tubo de ensaio;</description>
+      <description>Quando se deseja analisar amostras de ácidos graxos por cromatografia gasosa, faz-se necessária a metilação destes ácidos, pois se injetados diretamente no equipamento, eles aderem à parede da coluna causando danos irreparáveis. A metilação converte os ácidos graxos em metis ésteres, permitindo sua injeção no cromatógrafo.
+Procedimento Link para o cabeçalho Procedimento adaptado por Pimenta1 a partir do método de Hartman2.
+1º: Saponificação Link para o cabeçalho Adicione 100 µL de amostra à um tubo de ensaio;</description>
     </item>
+    
     <item>
       <title>Catálise e engenharia das reações químicas</title>
       <link>https://rafaelbeloduarte.github.io/posts/catalise/</link>
       <pubDate>Mon, 13 Apr 2020 19:33:20 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/posts/catalise/</guid>
-      <description>Reação catalisada por catalisador&amp;hellip; Link para o cabeçalho Engenharia das reações químicas é uma subárea da Engenharia Química e trata do dimensionamento de reatores a partir de princípios teóricos e experimentais, onde o principal objetivo é determinar as variáveis de operação e dimensões de reatores. Para isto, um dos primeiros passos de um estudo deste tipo é conhecer as leis de velocidade das reações envolvidas.&#xA;Leis de velocidade de reações químicas descrevem o quão rápido um número de mols de uma espécie química está sendo consumido para formar outra espécie química.</description>
+      <description>Reação catalisada por catalisador&amp;hellip; Link para o cabeçalho Engenharia das reações químicas é uma subárea da Engenharia Química e trata do dimensionamento de reatores a partir de princípios teóricos e experimentais, onde o principal objetivo é determinar as variáveis de operação e dimensões de reatores. Para isto, um dos primeiros passos de um estudo deste tipo é conhecer as leis de velocidade das reações envolvidas.
+Leis de velocidade de reações químicas descrevem o quão rápido um número de mols de uma espécie química está sendo consumido para formar outra espécie química.</description>
     </item>
+    
     <item>
       <title>Revisão da reforma a vapor do etanol sobre catalisadores suportados em alumina sol-gel</title>
       <link>https://rafaelbeloduarte.github.io/posts/reforma-etanol/</link>
       <pubDate>Sat, 11 Jan 2020 11:05:29 -0300</pubDate>
+      
       <guid>https://rafaelbeloduarte.github.io/posts/reforma-etanol/</guid>
       <description>Uma das maiores preocupações da sociedade atualmente é relacionada aos impactos humanos no ambiente em que ocupamos. E a indústria segue essa tendência, tanto por pressões de seus clientes quanto por motivações econômicas, pois, conforme o conhecimento de tecnologias limpas avança, sua viabilidade econômica também melhora, muitas vezes sendo mais atrativas em relação à processos já consolidados. Silva 1 analisou a reforma a vapor de etanol (RVE) e concluiu que o processo é capaz de apresentar alta eficiência ecológica, pois utiliza uma fonte renovável de matéria-prima.</description>
     </item>
+    
   </channel>
 </rss>
